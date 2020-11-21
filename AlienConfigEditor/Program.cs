@@ -24,7 +24,7 @@ namespace AlienConfigEditor
         static void Main(string[] args)
         {
             //Set paths
-            if (args.Length > 1) for (int i = 1; i < args.Length; i++) SharedData.pathToAI += args[i] + " ";
+            if (args.Length > 0) for (int i = 0; i < args.Length; i++) SharedData.pathToAI += args[i] + " ";
             else SharedData.pathToAI = Environment.CurrentDirectory + " ";
             SharedData.pathToAI = SharedData.pathToAI.Substring(0, SharedData.pathToAI.Length - 1);
             SharedData.pathToWorkingFiles = SharedData.pathToAI + "/DATA/MODTOOLS/WORKING_FILES/";

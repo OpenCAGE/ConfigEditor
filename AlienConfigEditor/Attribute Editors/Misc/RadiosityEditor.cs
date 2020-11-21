@@ -107,64 +107,13 @@ namespace AlienConfigEditor
             //Update cursor and begin
             Cursor.Current = Cursors.WaitCursor;
 
-            //Set common file paths
-            pathToLightingFile = SharedData.pathToAI + @"\DATA\RADIOSITY_SETTINGS.TXT";
-            pathToSkinFile = SharedData.pathToAI + @"\DATA\SKIN_SHADING_SETTINGS.TXT";
-            pathToHairFile = SharedData.pathToAI + @"\DATA\HAIR_SHADING_SETTINGS.TXT";
-
-            //Split lighting data to array
-            string[] lightingDataPrimary = Regex.Split(File.ReadAllText(pathToLightingFile), "=|\r\n"); 
-            string[] lightingData = { "", "", "", "", "", "", "", "", "" };
-            int counter = 0;
-            int counterMain = 0;
-            foreach (string lighting in lightingDataPrimary)
-            {
-                if (counterMain % 2 != 0)
-                {
-                    if (lighting != "")
-                    {
-                        lightingData[counter] = lighting;
-                        counter++;
-                    }
-                }
-                counterMain++;
-            }
-
-            //Split skin data to array
-            string[] skinDataPrimary = Regex.Split(File.ReadAllText(pathToSkinFile), "=|\r\n");
-            string[] skinData = { "", "" };
-            counter = 0;
-            counterMain = 0;
-            foreach (string skin in skinDataPrimary)
-            {
-                if (counterMain % 2 != 0)
-                {
-                    if (skin != "")
-                    {
-                        skinData[counter] = skin;
-                        counter++;
-                    }
-                }
-                counterMain++;
-            }
-
-            //Split hair data to array
-            string[] hairDataPrimary = Regex.Split(File.ReadAllText(pathToHairFile), "=|\r\n");
-            string[] hairData = { "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" };
-            counter = 0;
-            counterMain = 0;
-            foreach (string hair in hairDataPrimary)
-            {
-                if (counterMain % 2 != 0)
-                {
-                    if (hair != "")
-                    {
-                        hairData[counter] = hair;
-                        counter++;
-                    }
-                }
-                counterMain++;
-            }
+            //Split data to arrays & parse
+            string[] lightingData = File.ReadAllLines(SharedData.pathToAI + @"\DATA\RADIOSITY_SETTINGS.TXT");
+            for (int i = 0; i < lightingData.Length; i++) if (lightingData[i] != "") lightingData[i] = lightingData[i].Split('=')[1];
+            string[] skinData = File.ReadAllLines(SharedData.pathToAI + @"\DATA\SKIN_SHADING_SETTINGS.TXT");
+            for (int i = 0; i < skinData.Length; i++) if (skinData[i] != "") skinData[i] = skinData[i].Split('=')[1];
+            string[] hairData = File.ReadAllLines(SharedData.pathToAI + @"\DATA\HAIR_SHADING_SETTINGS.TXT");
+            for (int i = 0; i < hairData.Length; i++) if (hairData[i] != "") hairData[i] = hairData[i].Split('=')[1];
 
             //Set data - RADIOSITY
             gRadiosityEmissiveSurfaceScale.Text = lightingData[1];

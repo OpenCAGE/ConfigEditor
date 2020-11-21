@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigEditor));
-            this.openBehaviourTreePackager = new System.Windows.Forms.Button();
             this.openCharEd = new System.Windows.Forms.Button();
             this.openAlienConfig = new System.Windows.Forms.Button();
             this.openDifficultyEditor = new System.Windows.Forms.Button();
@@ -46,7 +45,6 @@
             this.CloseButton = new System.Windows.Forms.Button();
             this.HeaderText = new System.Windows.Forms.Label();
             this.HeaderImage = new System.Windows.Forms.PictureBox();
-            this.Title2 = new System.Windows.Forms.Label();
             this.Title3 = new System.Windows.Forms.Label();
             this.Title1 = new System.Windows.Forms.Label();
             this.Title4 = new System.Windows.Forms.Label();
@@ -54,23 +52,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.HeaderImage)).BeginInit();
             this.SuspendLayout();
             // 
-            // openBehaviourTreePackager
-            // 
-            this.openBehaviourTreePackager.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.openBehaviourTreePackager.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openBehaviourTreePackager.Location = new System.Drawing.Point(96, 547);
-            this.openBehaviourTreePackager.Name = "openBehaviourTreePackager";
-            this.openBehaviourTreePackager.Size = new System.Drawing.Size(229, 50);
-            this.openBehaviourTreePackager.TabIndex = 1;
-            this.openBehaviourTreePackager.Text = "Behaviour Tree Tool";
-            this.openBehaviourTreePackager.UseVisualStyleBackColor = true;
-            this.openBehaviourTreePackager.Click += new System.EventHandler(this.openBehaviourTreePackager_Click);
-            // 
             // openCharEd
             // 
             this.openCharEd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openCharEd.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openCharEd.Location = new System.Drawing.Point(96, 773);
+            this.openCharEd.Location = new System.Drawing.Point(96, 660);
             this.openCharEd.Name = "openCharEd";
             this.openCharEd.Size = new System.Drawing.Size(229, 50);
             this.openCharEd.TabIndex = 6;
@@ -82,7 +68,7 @@
             // 
             this.openAlienConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openAlienConfig.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openAlienConfig.Location = new System.Drawing.Point(96, 717);
+            this.openAlienConfig.Location = new System.Drawing.Point(96, 604);
             this.openAlienConfig.Name = "openAlienConfig";
             this.openAlienConfig.Size = new System.Drawing.Size(229, 50);
             this.openAlienConfig.TabIndex = 4;
@@ -94,7 +80,7 @@
             // 
             this.openDifficultyEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openDifficultyEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openDifficultyEditor.Location = new System.Drawing.Point(96, 661);
+            this.openDifficultyEditor.Location = new System.Drawing.Point(96, 548);
             this.openDifficultyEditor.Name = "openDifficultyEditor";
             this.openDifficultyEditor.Size = new System.Drawing.Size(229, 50);
             this.openDifficultyEditor.TabIndex = 2;
@@ -106,7 +92,7 @@
             // 
             this.openCharViewconeEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openCharViewconeEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openCharViewconeEditor.Location = new System.Drawing.Point(331, 661);
+            this.openCharViewconeEditor.Location = new System.Drawing.Point(331, 548);
             this.openCharViewconeEditor.Name = "openCharViewconeEditor";
             this.openCharViewconeEditor.Size = new System.Drawing.Size(229, 50);
             this.openCharViewconeEditor.TabIndex = 3;
@@ -118,7 +104,7 @@
             // 
             this.openLocomotionEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openLocomotionEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openLocomotionEditor.Location = new System.Drawing.Point(331, 773);
+            this.openLocomotionEditor.Location = new System.Drawing.Point(331, 660);
             this.openLocomotionEditor.Name = "openLocomotionEditor";
             this.openLocomotionEditor.Size = new System.Drawing.Size(229, 50);
             this.openLocomotionEditor.TabIndex = 7;
@@ -130,7 +116,7 @@
             // 
             this.openViewconeEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openViewconeEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openViewconeEditor.Location = new System.Drawing.Point(331, 717);
+            this.openViewconeEditor.Location = new System.Drawing.Point(331, 604);
             this.openViewconeEditor.Name = "openViewconeEditor";
             this.openViewconeEditor.Size = new System.Drawing.Size(229, 50);
             this.openViewconeEditor.TabIndex = 5;
@@ -142,7 +128,7 @@
             // 
             this.openWeaponEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openWeaponEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openWeaponEditor.Location = new System.Drawing.Point(864, 547);
+            this.openWeaponEditor.Location = new System.Drawing.Point(331, 773);
             this.openWeaponEditor.Name = "openWeaponEditor";
             this.openWeaponEditor.Size = new System.Drawing.Size(229, 50);
             this.openWeaponEditor.TabIndex = 9;
@@ -154,7 +140,7 @@
             // 
             this.openGraphicsSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openGraphicsSettings.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openGraphicsSettings.Location = new System.Drawing.Point(864, 717);
+            this.openGraphicsSettings.Location = new System.Drawing.Point(864, 604);
             this.openGraphicsSettings.Name = "openGraphicsSettings";
             this.openGraphicsSettings.Size = new System.Drawing.Size(229, 50);
             this.openGraphicsSettings.TabIndex = 13;
@@ -166,7 +152,7 @@
             // 
             this.openRadiosityEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openRadiosityEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openRadiosityEditor.Location = new System.Drawing.Point(864, 661);
+            this.openRadiosityEditor.Location = new System.Drawing.Point(864, 548);
             this.openRadiosityEditor.Name = "openRadiosityEditor";
             this.openRadiosityEditor.Size = new System.Drawing.Size(229, 50);
             this.openRadiosityEditor.TabIndex = 11;
@@ -178,7 +164,7 @@
             // 
             this.openHackEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openHackEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openHackEditor.Location = new System.Drawing.Point(629, 773);
+            this.openHackEditor.Location = new System.Drawing.Point(629, 660);
             this.openHackEditor.Name = "openHackEditor";
             this.openHackEditor.Size = new System.Drawing.Size(229, 50);
             this.openHackEditor.TabIndex = 14;
@@ -190,7 +176,7 @@
             // 
             this.openLoadscreenEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openLoadscreenEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openLoadscreenEditor.Location = new System.Drawing.Point(629, 661);
+            this.openLoadscreenEditor.Location = new System.Drawing.Point(629, 548);
             this.openLoadscreenEditor.Name = "openLoadscreenEditor";
             this.openLoadscreenEditor.Size = new System.Drawing.Size(229, 50);
             this.openLoadscreenEditor.TabIndex = 10;
@@ -202,7 +188,7 @@
             // 
             this.openBlueprintEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openBlueprintEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openBlueprintEditor.Location = new System.Drawing.Point(629, 717);
+            this.openBlueprintEditor.Location = new System.Drawing.Point(629, 604);
             this.openBlueprintEditor.Name = "openBlueprintEditor";
             this.openBlueprintEditor.Size = new System.Drawing.Size(229, 50);
             this.openBlueprintEditor.TabIndex = 12;
@@ -214,7 +200,7 @@
             // 
             this.openLootInvSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openLootInvSettings.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openLootInvSettings.Location = new System.Drawing.Point(629, 547);
+            this.openLootInvSettings.Location = new System.Drawing.Point(96, 773);
             this.openLootInvSettings.Name = "openLootInvSettings";
             this.openLootInvSettings.Size = new System.Drawing.Size(229, 50);
             this.openLootInvSettings.TabIndex = 8;
@@ -256,21 +242,11 @@
             this.HeaderImage.TabIndex = 31;
             this.HeaderImage.TabStop = false;
             // 
-            // Title2
-            // 
-            this.Title2.AutoSize = true;
-            this.Title2.Font = new System.Drawing.Font("Isolation", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title2.Location = new System.Drawing.Point(90, 511);
-            this.Title2.Name = "Title2";
-            this.Title2.Size = new System.Drawing.Size(217, 33);
-            this.Title2.TabIndex = 46;
-            this.Title2.Text = "Behaviour Trees";
-            // 
             // Title3
             // 
             this.Title3.AutoSize = true;
             this.Title3.Font = new System.Drawing.Font("Isolation", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title3.Location = new System.Drawing.Point(90, 625);
+            this.Title3.Location = new System.Drawing.Point(90, 512);
             this.Title3.Name = "Title3";
             this.Title3.Size = new System.Drawing.Size(324, 33);
             this.Title3.TabIndex = 47;
@@ -280,7 +256,7 @@
             // 
             this.Title1.AutoSize = true;
             this.Title1.Font = new System.Drawing.Font("Isolation", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title1.Location = new System.Drawing.Point(623, 511);
+            this.Title1.Location = new System.Drawing.Point(90, 737);
             this.Title1.Name = "Title1";
             this.Title1.Size = new System.Drawing.Size(242, 33);
             this.Title1.TabIndex = 48;
@@ -290,7 +266,7 @@
             // 
             this.Title4.AutoSize = true;
             this.Title4.Font = new System.Drawing.Font("Isolation", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title4.Location = new System.Drawing.Point(623, 625);
+            this.Title4.Location = new System.Drawing.Point(623, 512);
             this.Title4.Name = "Title4";
             this.Title4.Size = new System.Drawing.Size(349, 33);
             this.Title4.TabIndex = 49;
@@ -301,7 +277,7 @@
             this.openMaterialPropEditor.Enabled = false;
             this.openMaterialPropEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openMaterialPropEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openMaterialPropEditor.Location = new System.Drawing.Point(864, 773);
+            this.openMaterialPropEditor.Location = new System.Drawing.Point(864, 660);
             this.openMaterialPropEditor.Name = "openMaterialPropEditor";
             this.openMaterialPropEditor.Size = new System.Drawing.Size(229, 50);
             this.openMaterialPropEditor.TabIndex = 50;
@@ -327,9 +303,7 @@
             this.Controls.Add(this.openCharViewconeEditor);
             this.Controls.Add(this.Title3);
             this.Controls.Add(this.openLocomotionEditor);
-            this.Controls.Add(this.Title2);
             this.Controls.Add(this.openViewconeEditor);
-            this.Controls.Add(this.openBehaviourTreePackager);
             this.Controls.Add(this.openDifficultyEditor);
             this.Controls.Add(this.openAlienConfig);
             this.Controls.Add(this.HeaderText);
@@ -351,8 +325,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button openBehaviourTreePackager;
         private System.Windows.Forms.Button openCharEd;
         private System.Windows.Forms.Button openAlienConfig;
         private System.Windows.Forms.Button openDifficultyEditor;
@@ -369,7 +341,6 @@
         private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.Label HeaderText;
         private System.Windows.Forms.PictureBox HeaderImage;
-        private System.Windows.Forms.Label Title2;
         private System.Windows.Forms.Label Title3;
         private System.Windows.Forms.Label Title1;
         private System.Windows.Forms.Label Title4;

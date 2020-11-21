@@ -26,7 +26,6 @@ namespace AlienConfigEditor
             HeaderText.Font = FontManager.GetFont(1, 80);
             HeaderText.Parent = HeaderImage;
             Title1.Font = FontManager.GetFont(0, 20);
-            Title2.Font = FontManager.GetFont(0, 20);
             Title3.Font = FontManager.GetFont(0, 20);
             Title4.Font = FontManager.GetFont(0, 20);
         }
