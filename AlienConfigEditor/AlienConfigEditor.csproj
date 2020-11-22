@@ -225,7 +225,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="SharedAssets\Fonts\FontManager.cs" />
-    <Compile Include="SharedAssets\SettingsManager.cs" />
     <EmbeddedResource Include=".ayz Pack Tools\Filemanager_ExportMod.resx">
       <DependentUpon>Filemanager_ExportMod.cs</DependentUpon>
     </EmbeddedResource>
