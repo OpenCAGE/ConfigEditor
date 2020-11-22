@@ -103,9 +103,9 @@
             // 
             // HeaderImage
             // 
-            this.HeaderImage.BackgroundImage = global::AlienConfigEditor.Properties.Resources.NPC_DOOR;
+            this.HeaderImage.BackgroundImage = global::AlienConfigEditor.Properties.Resources.NPC_DOOR_min;
             this.HeaderImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.HeaderImage.InitialImage = global::AlienConfigEditor.Properties.Resources.NPC_DOOR;
+            this.HeaderImage.InitialImage = global::AlienConfigEditor.Properties.Resources.NPC_DOOR_min;
             this.HeaderImage.Location = new System.Drawing.Point(-6, -2);
             this.HeaderImage.Name = "HeaderImage";
             this.HeaderImage.Size = new System.Drawing.Size(1223, 498);

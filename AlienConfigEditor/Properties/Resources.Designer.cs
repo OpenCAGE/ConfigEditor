@@ -93,9 +93,9 @@ namespace AlienConfigEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ALIEN_DOORWAY {
+        internal static System.Drawing.Bitmap ALIEN_DOORWAY_min {
             get {
-                object obj = ResourceManager.GetObject("ALIEN_DOORWAY", resourceCulture);
+                object obj = ResourceManager.GetObject("ALIEN_DOORWAY_min", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +133,9 @@ namespace AlienConfigEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ANDROID_DOORWAY {
+        internal static System.Drawing.Bitmap ANDROID_DOORWAY_min {
             get {
-                object obj = ResourceManager.GetObject("ANDROID_DOORWAY", resourceCulture);
+                object obj = ResourceManager.GetObject("ANDROID_DOORWAY_min", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -303,9 +303,9 @@ namespace AlienConfigEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CONNOR {
+        internal static System.Drawing.Bitmap CONNOR_min {
             get {
-                object obj = ResourceManager.GetObject("CONNOR", resourceCulture);
+                object obj = ResourceManager.GetObject("CONNOR_min", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -434,8 +434,7 @@ namespace AlienConfigEditor.Properties {
         ///					&lt;WindowsExperienceIndex type=&quot;GPU&quot; value=&quot;5.0&quot;/&gt;
         ///				&lt;/DefaultRequirements&gt;
         ///			&lt;/Quality&gt;
-        ///			&lt;Quality name=&quot;Off&quot; 		bool=&quot;0&quot;		precedence=&quot;2&quot;/&gt;
-        ///		 [rest of string was truncated]&quot;;.
+        ///			&lt;Quality name=&quot;Off&quot; 		bool=&quot;0&quot;		preced [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ENGINE_SETTINGS {
             get {
@@ -510,7 +509,7 @@ namespace AlienConfigEditor.Properties {
         ///    &lt;slot name=&quot;PISTOL_WEAPON_SLOT&quot; x=&quot;3&quot; y=&quot;0&quot; width=&quot;2&quot; height=&quot;1&quot; /&gt;
         ///    &lt;slot name=&quot;MELEE_WEAPON&quot; x=&quot;3&quot; y=&quot;1&quot; width=&quot;2&quot; height=&quot;1&quot; /&gt;
         ///	&lt;slot name=&quot;CATTLEPROD_SLOT&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;3&quot; height=&quot;1&quot; /&gt;
-        ///    &lt;slot name=&quot;FLAME_THROWER_WEAPON_SLOT&quot; x=&quot;0&quot; y=&quot;0&quot;  [rest of string was truncated]&quot;;.
+        ///    &lt;slot name=&quot;FLAME_THROWER_WEAPON_SLOT&quot; x=&quot;0&quot;  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GBL_ITEM1 {
             get {
@@ -640,7 +639,7 @@ namespace AlienConfigEditor.Properties {
         ///sub_strand_frequency=17.26
         ///sub_strand_spec_shift=0.055
         ///softening_length=0.0109
-        ///softening_normal_bias=0 [rest of string was truncated]&quot;;.
+        ///so [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string HAIR_SHADING_SETTINGS {
             get {
@@ -721,9 +720,9 @@ namespace AlienConfigEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap KUHLMAN_DEATH {
+        internal static System.Drawing.Bitmap KUHLMAN_DEATH_min {
             get {
-                object obj = ResourceManager.GetObject("KUHLMAN_DEATH", resourceCulture);
+                object obj = ResourceManager.GetObject("KUHLMAN_DEATH_min", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -731,9 +730,9 @@ namespace AlienConfigEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap landing {
+        internal static System.Drawing.Bitmap landing_min {
             get {
-                object obj = ResourceManager.GetObject("landing", resourceCulture);
+                object obj = ResourceManager.GetObject("landing_min", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -831,9 +830,9 @@ namespace AlienConfigEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap NPC_DOOR {
+        internal static System.Drawing.Bitmap NPC_DOOR_min {
             get {
-                object obj = ResourceManager.GetObject("NPC_DOOR", resourceCulture);
+                object obj = ResourceManager.GetObject("NPC_DOOR_min", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -929,9 +928,9 @@ namespace AlienConfigEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SEEGSON_MAGAZINEMAN {
+        internal static System.Drawing.Bitmap SEEGSON_MAGAZINEMAN_min {
             get {
-                object obj = ResourceManager.GetObject("SEEGSON_MAGAZINEMAN", resourceCulture);
+                object obj = ResourceManager.GetObject("SEEGSON_MAGAZINEMAN_min", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -1020,9 +1019,9 @@ namespace AlienConfigEditor.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap TAYLOR {
+        internal static System.Drawing.Bitmap TAYLOR_min {
             get {
-                object obj = ResourceManager.GetObject("TAYLOR", resourceCulture);
+                object obj = ResourceManager.GetObject("TAYLOR_min", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -24,7 +24,7 @@ namespace AlienConfigEditor
         static void Main(string[] args)
         {
             //Set paths
-            if (args.Length > 0) for (int i = 0; i < args.Length; i++) SharedData.pathToAI += args[i] + " ";
+            if (args.Length > 0 && args[0] == "-opencage") for (int i = 1; i < args.Length; i++) SharedData.pathToAI += args[i] + " ";
             else SharedData.pathToAI = Environment.CurrentDirectory + " ";
             SharedData.pathToAI = SharedData.pathToAI.Substring(0, SharedData.pathToAI.Length - 1);
             SharedData.pathToWorkingFiles = SharedData.pathToAI + "/DATA/MODTOOLS/WORKING_FILES/";
@@ -36,6 +36,11 @@ namespace AlienConfigEditor
             //Create required directories
             if (!Directory.Exists(SharedData.pathToWorkingFiles)) Directory.CreateDirectory(SharedData.pathToWorkingFiles);
             if (!Directory.Exists(SharedData.pathToModsFolder)) Directory.CreateDirectory(SharedData.pathToModsFolder);
+
+            //Add font resources for use
+            FontManager.AddFont(Properties.Resources.Isolation_Isolation);
+            FontManager.AddFont(Properties.Resources.JixellationBold_Jixellation);
+            FontManager.AddFont(Properties.Resources.NostromoBoldCond_Nostromo_Cond);
 
             //Run app
             Application.EnableVisualStyles();

@@ -1,0 +1,3 @@
+[submodule "AlienConfigEditor/SharedAssets"]
+	path = AlienConfigEditor/SharedAssets
+	url = https://github.com/OpenCAGE/SharedAssets

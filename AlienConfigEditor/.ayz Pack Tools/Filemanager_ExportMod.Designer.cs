@@ -170,9 +170,9 @@
             // 
             // HeaderImage
             // 
-            this.HeaderImage.BackgroundImage = global::AlienConfigEditor.Properties.Resources.SEEGSON_MAGAZINEMAN;
+            this.HeaderImage.BackgroundImage = global::AlienConfigEditor.Properties.Resources.SEEGSON_MAGAZINEMAN_min;
             this.HeaderImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.HeaderImage.InitialImage = global::AlienConfigEditor.Properties.Resources.SEEGSON_MAGAZINEMAN;
+            this.HeaderImage.InitialImage = global::AlienConfigEditor.Properties.Resources.SEEGSON_MAGAZINEMAN_min;
             this.HeaderImage.Location = new System.Drawing.Point(-4, -1);
             this.HeaderImage.Name = "HeaderImage";
             this.HeaderImage.Size = new System.Drawing.Size(1223, 498);
