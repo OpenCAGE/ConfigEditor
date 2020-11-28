@@ -44,7 +44,6 @@ namespace AlienConfigEditor
                 if (checkBox2.Checked) { CheckedCheckboxes += "GBL_ITEMS,"; }
                 if (checkBox3.Checked) { CheckedCheckboxes += "LIGHTING,"; }
                 if (checkBox6.Checked) { CheckedCheckboxes += "ALIENCONFIGS,"; }
-                if (checkBox7.Checked) { CheckedCheckboxes += "BEHAVIOR,"; }
                 if (checkBox8.Checked) { CheckedCheckboxes += "CHR_INFO,"; }
                 if (checkBox9.Checked) { CheckedCheckboxes += "DIFFICULTYSETTINGS,"; }
                 if (checkBox10.Checked) { CheckedCheckboxes += "VIEW_CONE_SETS,"; }
@@ -155,7 +154,6 @@ namespace AlienConfigEditor
                 checkBox2.Checked == false &&
                 checkBox3.Checked == false &&
                 checkBox6.Checked == false &&
-                checkBox7.Checked == false &&
                 checkBox8.Checked == false &&
                 checkBox9.Checked == false &&
                 checkBox10.Checked == false &&
