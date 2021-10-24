@@ -49,6 +49,7 @@
             this.Title1 = new System.Windows.Forms.Label();
             this.Title4 = new System.Windows.Forms.Label();
             this.openMaterialPropEditor = new System.Windows.Forms.Button();
+            this.openLocalisationEditor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.HeaderImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -285,11 +286,24 @@
             this.openMaterialPropEditor.UseVisualStyleBackColor = true;
             this.openMaterialPropEditor.Click += new System.EventHandler(this.openMaterialPropEditor_Click);
             // 
+            // openLocalisationEditor
+            // 
+            this.openLocalisationEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openLocalisationEditor.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.openLocalisationEditor.Location = new System.Drawing.Point(629, 716);
+            this.openLocalisationEditor.Name = "openLocalisationEditor";
+            this.openLocalisationEditor.Size = new System.Drawing.Size(229, 50);
+            this.openLocalisationEditor.TabIndex = 51;
+            this.openLocalisationEditor.Text = "Localisation Editor";
+            this.openLocalisationEditor.UseVisualStyleBackColor = true;
+            this.openLocalisationEditor.Click += new System.EventHandler(this.openLocalisationEditor_Click);
+            // 
             // ConfigEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1189, 875);
+            this.Controls.Add(this.openLocalisationEditor);
             this.Controls.Add(this.openMaterialPropEditor);
             this.Controls.Add(this.openGraphicsSettings);
             this.Controls.Add(this.Title4);
@@ -345,5 +359,6 @@
         private System.Windows.Forms.Label Title1;
         private System.Windows.Forms.Label Title4;
         private System.Windows.Forms.Button openMaterialPropEditor;
+        private System.Windows.Forms.Button openLocalisationEditor;
     }
 }
