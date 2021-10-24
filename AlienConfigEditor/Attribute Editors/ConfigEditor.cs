@@ -140,6 +140,13 @@ namespace AlienConfigEditor
             openGraphicsEditor.Show();
         }
 
+        //Open localisation editor
+        private void openLocalisationEditor_Click(object sender, EventArgs e)
+        {
+            LocalisationEditor openLocalisationEditor = new LocalisationEditor();
+            openLocalisationEditor.Show();
+        }
+
         //Close
         bool closedManually = false;
         private void CloseButton_Click(object sender, EventArgs e)
