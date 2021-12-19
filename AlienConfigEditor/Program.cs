@@ -44,7 +44,7 @@ namespace AlienConfigEditor
 
             //Run app
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
+            Application.SetCompatibleTextRenderingDefault(true);
             Landing mainLandingPage = new Landing();
             mainLandingPage.Show();
             Application.Run();
