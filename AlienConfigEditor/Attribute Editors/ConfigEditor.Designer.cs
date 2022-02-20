@@ -57,7 +57,7 @@
             // 
             this.openCharEd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openCharEd.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openCharEd.Location = new System.Drawing.Point(96, 660);
+            this.openCharEd.Location = new System.Drawing.Point(96, 665);
             this.openCharEd.Name = "openCharEd";
             this.openCharEd.Size = new System.Drawing.Size(229, 50);
             this.openCharEd.TabIndex = 6;
@@ -69,7 +69,7 @@
             // 
             this.openAlienConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openAlienConfig.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openAlienConfig.Location = new System.Drawing.Point(96, 604);
+            this.openAlienConfig.Location = new System.Drawing.Point(96, 609);
             this.openAlienConfig.Name = "openAlienConfig";
             this.openAlienConfig.Size = new System.Drawing.Size(229, 50);
             this.openAlienConfig.TabIndex = 4;
@@ -81,7 +81,7 @@
             // 
             this.openDifficultyEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openDifficultyEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openDifficultyEditor.Location = new System.Drawing.Point(96, 548);
+            this.openDifficultyEditor.Location = new System.Drawing.Point(96, 553);
             this.openDifficultyEditor.Name = "openDifficultyEditor";
             this.openDifficultyEditor.Size = new System.Drawing.Size(229, 50);
             this.openDifficultyEditor.TabIndex = 2;
@@ -93,7 +93,7 @@
             // 
             this.openCharViewconeEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openCharViewconeEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openCharViewconeEditor.Location = new System.Drawing.Point(331, 548);
+            this.openCharViewconeEditor.Location = new System.Drawing.Point(331, 553);
             this.openCharViewconeEditor.Name = "openCharViewconeEditor";
             this.openCharViewconeEditor.Size = new System.Drawing.Size(229, 50);
             this.openCharViewconeEditor.TabIndex = 3;
@@ -105,7 +105,7 @@
             // 
             this.openLocomotionEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openLocomotionEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openLocomotionEditor.Location = new System.Drawing.Point(331, 660);
+            this.openLocomotionEditor.Location = new System.Drawing.Point(331, 665);
             this.openLocomotionEditor.Name = "openLocomotionEditor";
             this.openLocomotionEditor.Size = new System.Drawing.Size(229, 50);
             this.openLocomotionEditor.TabIndex = 7;
@@ -117,7 +117,7 @@
             // 
             this.openViewconeEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openViewconeEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openViewconeEditor.Location = new System.Drawing.Point(331, 604);
+            this.openViewconeEditor.Location = new System.Drawing.Point(331, 609);
             this.openViewconeEditor.Name = "openViewconeEditor";
             this.openViewconeEditor.Size = new System.Drawing.Size(229, 50);
             this.openViewconeEditor.TabIndex = 5;
@@ -129,7 +129,7 @@
             // 
             this.openWeaponEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openWeaponEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openWeaponEditor.Location = new System.Drawing.Point(331, 773);
+            this.openWeaponEditor.Location = new System.Drawing.Point(331, 778);
             this.openWeaponEditor.Name = "openWeaponEditor";
             this.openWeaponEditor.Size = new System.Drawing.Size(229, 50);
             this.openWeaponEditor.TabIndex = 9;
@@ -141,7 +141,7 @@
             // 
             this.openGraphicsSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openGraphicsSettings.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openGraphicsSettings.Location = new System.Drawing.Point(864, 604);
+            this.openGraphicsSettings.Location = new System.Drawing.Point(864, 609);
             this.openGraphicsSettings.Name = "openGraphicsSettings";
             this.openGraphicsSettings.Size = new System.Drawing.Size(229, 50);
             this.openGraphicsSettings.TabIndex = 13;
@@ -153,7 +153,7 @@
             // 
             this.openRadiosityEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openRadiosityEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openRadiosityEditor.Location = new System.Drawing.Point(864, 548);
+            this.openRadiosityEditor.Location = new System.Drawing.Point(864, 553);
             this.openRadiosityEditor.Name = "openRadiosityEditor";
             this.openRadiosityEditor.Size = new System.Drawing.Size(229, 50);
             this.openRadiosityEditor.TabIndex = 11;
@@ -165,7 +165,7 @@
             // 
             this.openHackEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openHackEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openHackEditor.Location = new System.Drawing.Point(629, 660);
+            this.openHackEditor.Location = new System.Drawing.Point(629, 665);
             this.openHackEditor.Name = "openHackEditor";
             this.openHackEditor.Size = new System.Drawing.Size(229, 50);
             this.openHackEditor.TabIndex = 14;
@@ -177,7 +177,7 @@
             // 
             this.openLoadscreenEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openLoadscreenEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openLoadscreenEditor.Location = new System.Drawing.Point(629, 548);
+            this.openLoadscreenEditor.Location = new System.Drawing.Point(629, 553);
             this.openLoadscreenEditor.Name = "openLoadscreenEditor";
             this.openLoadscreenEditor.Size = new System.Drawing.Size(229, 50);
             this.openLoadscreenEditor.TabIndex = 10;
@@ -189,7 +189,7 @@
             // 
             this.openBlueprintEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openBlueprintEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openBlueprintEditor.Location = new System.Drawing.Point(629, 604);
+            this.openBlueprintEditor.Location = new System.Drawing.Point(629, 609);
             this.openBlueprintEditor.Name = "openBlueprintEditor";
             this.openBlueprintEditor.Size = new System.Drawing.Size(229, 50);
             this.openBlueprintEditor.TabIndex = 12;
@@ -201,7 +201,7 @@
             // 
             this.openLootInvSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openLootInvSettings.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openLootInvSettings.Location = new System.Drawing.Point(96, 773);
+            this.openLootInvSettings.Location = new System.Drawing.Point(96, 778);
             this.openLootInvSettings.Name = "openLootInvSettings";
             this.openLootInvSettings.Size = new System.Drawing.Size(229, 50);
             this.openLootInvSettings.TabIndex = 8;
@@ -278,7 +278,7 @@
             this.openMaterialPropEditor.Enabled = false;
             this.openMaterialPropEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openMaterialPropEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openMaterialPropEditor.Location = new System.Drawing.Point(864, 660);
+            this.openMaterialPropEditor.Location = new System.Drawing.Point(864, 665);
             this.openMaterialPropEditor.Name = "openMaterialPropEditor";
             this.openMaterialPropEditor.Size = new System.Drawing.Size(229, 50);
             this.openMaterialPropEditor.TabIndex = 50;
@@ -290,7 +290,7 @@
             // 
             this.openLocalisationEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openLocalisationEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openLocalisationEditor.Location = new System.Drawing.Point(629, 716);
+            this.openLocalisationEditor.Location = new System.Drawing.Point(629, 721);
             this.openLocalisationEditor.Name = "openLocalisationEditor";
             this.openLocalisationEditor.Size = new System.Drawing.Size(229, 50);
             this.openLocalisationEditor.TabIndex = 51;
