@@ -1,0 +1,576 @@
+<package activation="always_on" id="Main">
+
+	
+	<metadata>
+	
+		<setting id="depot_id" platform="PC" value="214491" />
+		
+		
+		<setting id="storage_type" value="bd25" />
+		</metadata>
+
+	
+	<chunks>
+		<chunk id="Executable">
+			<files>
+				</files>
+		</chunk>
+		<chunk id="SystemFiles">
+			<folders>
+				</folders> 
+			<files>
+				</files>
+		</chunk> 
+        <chunk id="FrontEndEssentials">
+			<files>
+				<file id="Data\UI\Movies\KGCrop.usm" />
+			</files>
+        </chunk>
+		<chunk id="Main">
+			
+			
+			<tags>
+				<tag> Production\Frontend </tag>
+			</tags>
+					
+			<folders>				
+				<folder id="Data\aim_ik_data" />
+				<folder id="Data\alienconfigs" />
+				<folder id="Data\anim_sys" />
+				<folder id="Data\awards" />
+				<folder id="Data\behavior" />
+				<folder id="Data\binary_behavior" />
+				<folder id="Data\camera_info" />
+				<folder id="Data\chr_info" />
+				<folder id="Data\chr_mdls" />
+				<folder id="Data\debug_font" />
+				<folder id="Data\difficultysettings" />
+				<folder id="Data\ENV\GLOBAL" />
+				<folder id="Data\ENV\Production\Frontend" />
+				<folder id="Data\fx" />
+				<folder id="Data\global" />
+				<folder id="Data\material_data" />
+				<folder id="Data\ReferenceSkeletons" />
+				<folder id="Data\Shaders" />
+				<folder id="Data\Text" />
+				<folder id="Data\UI\Classes" />
+				<folder id="Data\UI\Data" />
+				<folder id="Data\UI\Fonts" />				
+				<folder id="Data\UI\Images" />				
+				<folder id="Data\UI\Maps" />				
+				<folder id="Data\UI\Missing_Persons" />				
+				<folder id="Data\UI\Screens" />				
+				<folder id="Data\view_cone_sets" />
+				<folder id="Data\weapon_info" />
+				<folder id="Data\saves_data" />
+			</folders>
+			
+			<files>				
+				
+				<file id="Data\*.*" />
+				<file id="Data\UI\*.*" />
+				<file id="Data\UI\Movies\Attract.usm" />
+				<file id="Data\UI\Movies\CA_IDENT.usm" />
+				<file id="Data\UI\Movies\FOX_IDENT.usm" />
+				<file id="Data\UI\Movies\AMD_IDENT.usm" platform="PC" />
+				<file id="Data\UI\Movies\MW_LEGALBLOCK.usm" />
+				<file id="Data\UI\Movies\alien_isolation_sting.usm" />
+				<file id="Data\UI\Movies\CS10_Station01.usm" />
+				<file id="Data\sound\init.bnk" />
+				<file id="Data\sound\UI.bnk" />
+				<file id="Data\sound\Launch_Chunk.pck" />   
+				<file id="Data\packages\main.pkg" />
+				<file id="Data\awards\main_award_list.xml" />
+			</files>
+		</chunk>
+		
+		<chunk id="InitialLoadingScreens">			
+			<files>
+				<file id="Data\UI\Movies\D_Exterior_17.usm" />
+				<file id="Data\UI\Movies\Exterior_07.usm" />
+				<file id="Data\UI\Movies\F_Exterior_01.usm" />
+				<file id="Data\UI\Movies\Exterior_22.usm" />
+				<file id="Data\UI\Movies\G_Exterior_13.usm" />
+				<file id="Data\UI\Movies\F_Exterior_20.usm" />
+			</files>
+		</chunk>
+				
+		<chunk id="BSP_Torrens_required_audio">
+			<files>
+				<file id="Data\sound\Convolution_corridor.bnk" />
+				<file id="Data\sound\Convolution_detachable_lab.bnk" />
+				<file id="Data\sound\Convolution_Ladder_Shaft.bnk" />
+				<file id="Data\sound\Convolution_large_room.bnk" />
+				<file id="Data\sound\Convolution_Long_Hallway.bnk" />
+				<file id="Data\sound\Convolution_medium_room.bnk" />
+				<file id="Data\sound\Convolution_Multistorey_LargeRoom.bnk" />
+				<file id="Data\sound\Convolution_Planetview_Room.bnk" />
+				<file id="Data\sound\Convolution_small_room.bnk" />
+				<file id="Data\sound\Convolution_Staircase.bnk" />
+				<file id="Data\sound\Convolution_vent.bnk" />
+				<file id="Data\sound\DynamicLoad_BSP_Torrens.bnk" />
+				<file id="Data\sound\Environmental_Music.bnk" />
+				<file id="Data\sound\Explosions.bnk" />
+				<file id="Data\sound\FALLBACK_Foley.bnk" />
+				<file id="Data\sound\Foley_NPC.bnk" />
+				<file id="Data\sound\Foley_Player.bnk" />
+				<file id="Data\sound\Footstep_Sweeteners.bnk" />
+				<file id="Data\sound\FS_Trainers_Carpet.bnk" />
+				<file id="Data\sound\FS_Trainers_Linoleum.bnk" />
+				<file id="Data\sound\FS_Trainers_Metal_Grate.bnk" />
+				<file id="Data\sound\FS_Trainers_Metal_Grate_Loose.bnk" />
+				<file id="Data\sound\FS_Trainers_Metal_Solid.bnk" />
+				<file id="Data\sound\FS_Trainers_Metal_Vent.bnk" />
+				<file id="Data\sound\FS_Trainers_Plastic_Solid.bnk" />
+				<file id="Data\sound\FS_Trainers_Rubber_solid.bnk" />
+				<file id="Data\sound\Global_Lifts_Transit.bnk" />
+				<file id="Data\sound\Humanoid_Footsteps.bnk" />
+				<file id="Data\sound\Init.bnk" />
+				<file id="Data\sound\M01_Torrens.bnk" />
+				<file id="Data\sound\MS_1.bnk" />
+				<file id="Data\sound\Physics.bnk" />
+				<file id="Data\sound\Projectile_Impacts.bnk" />
+				<file id="Data\sound\Scripted_Events.bnk" />
+				<file id="Data\sound\State_Change_Events.bnk" />
+				<file id="Data\sound\Torch.bnk" />
+				<file id="Data\sound\Torrens_AMB.bnk" />
+				<file id="Data\sound\UI.bnk" />
+				<file id="Data\sound\Weapons.bnk" />
+				<file id="Data\sound\MOTIONTRACKER.BNK" />
+				<file id="Data\sound\FS_FLATS_PLASTIC_SOLID.BNK" />
+				<file id="Data\sound\FS_BOOTS_PLASTIC_SOLID.BNK" />	
+				<file id="Data\sound\FS_FLATS_RUBBER_SOLID.BNK" />	
+				<file id="Data\sound\FS_FLATS_METAL_SOLID.BNK" />	
+				<file id="Data\sound\FS_BOOTS_METAL_SOLID.BNK" />
+				<file id="Data\sound\FS_BOOTS_RUBBER_SOLID.BNK" />
+				<file id="Data\sound\FS_BAREFEET_METAL_SOLID.BNK" />
+				<file id="Data\sound\FS_BAREFEET_PLASTIC_SOLID.BNK" />
+				<file id="Data\sound\PREBUFFERED_ENVIRONMENT.BNK" />
+				<file id="DATA\SOUND\FS_BAREFEET_METAL_GRATE.BNK" />
+
+				<file id="Data\sound\English(US)\Dialogue_Generic.bnk" />
+				<file id="Data\sound\English(US)\Dialogue_M0101.bnk" />
+				<file id="Data\sound\English(US)\Player_Vocalisations.bnk" />	
+				
+				<file id="DATA\SOUND\FRENCH(FRANCE)\Dialogue_Generic.BNK" />
+				<file id="DATA\SOUND\FRENCH(FRANCE)\Dialogue_M0101.BNK" />
+				<file id="DATA\SOUND\FRENCH(FRANCE)\Player_Vocalisations.BNK" />
+				
+				<file id="DATA\SOUND\GERMAN\Dialogue_Generic.BNK" />
+				<file id="DATA\SOUND\GERMAN\Dialogue_M0101.BNK" />
+				<file id="DATA\SOUND\GERMAN\Player_Vocalisations.BNK" />
+				
+				<file id="DATA\SOUND\ITALIAN\Dialogue_Generic.BNK" />
+				<file id="DATA\SOUND\ITALIAN\Dialogue_M0101.BNK" />
+				<file id="DATA\SOUND\ITALIAN\Player_Vocalisations.BNK" />
+				
+				<file id="DATA\SOUND\PORTUGUESE(BRAZIL)\Dialogue_Generic.BNK" />
+				<file id="DATA\SOUND\PORTUGUESE(BRAZIL)\Dialogue_M0101.BNK" />
+				<file id="DATA\SOUND\PORTUGUESE(BRAZIL)\Player_Vocalisations.BNK" />
+				
+				<file id="DATA\SOUND\RUSSIAN\Dialogue_Generic.BNK" />
+				<file id="DATA\SOUND\RUSSIAN\Dialogue_M0101.BNK" />
+				<file id="DATA\SOUND\RUSSIAN\Player_Vocalisations.BNK" />
+				
+				<file id="DATA\SOUND\SPANISH(SPAIN)\Dialogue_Generic.BNK" />
+				<file id="DATA\SOUND\SPANISH(SPAIN)\Dialogue_M0101.BNK" />
+				<file id="DATA\SOUND\SPANISH(SPAIN)\Player_Vocalisations.BNK" />
+				
+				<file id="Data\sound\*_Dialogue.pck" />
+				
+				
+				<file id="DATA\SOUND\69721645.WEM" />
+				<file id="DATA\SOUND\818365453.WEM" />
+				<file id="DATA\SOUND\544155063.WEM" />
+				<file id="DATA\SOUND\815210517.WEM" />
+				<file id="DATA\SOUND\619394973.WEM" />
+				<file id="DATA\SOUND\529087414.WEM" />
+				<file id="DATA\SOUND\991379801.WEM" />
+				<file id="DATA\SOUND\786861521.WEM" />
+				<file id="DATA\SOUND\82322067.WEM" />
+				<file id="DATA\SOUND\582111921.WEM" />
+				<file id="DATA\SOUND\155885782.WEM" />
+				<file id="DATA\SOUND\49150574.WEM" />				
+			</files>
+		</chunk>
+		<chunk id="Production\BSP_Torrens">
+			<tags>
+				<tag> Production\BSP_Torrens </tag>
+			</tags>
+			<folders>
+				<folder id="Data\ENV\Production\BSP_Torrens" />				
+			</folders>
+			<files>
+				<file id="Data\UI\Movies\cutscene_00.usm" />
+				<file id="Data\UI\Movies\cutscene_01.usm" />				
+			</files>
+		</chunk>
+		<chunk id="torrens_to_airport_cs">
+			<files>
+				<file id="Data\UI\Movies\cutscene_08_09_10.usm" />
+			</files>
+		</chunk>
+		<chunk id="Data\Sound">
+			<tags>
+				<tag> Data\Sound </tag>
+			</tags>
+			<folders>
+				<folder id="Data\Sound" />				
+				<folder id="Data\Sound\English(US)" />
+			</folders>
+			<files>
+				
+			</files>
+		</chunk>	
+		<chunk id="Production\HAB_Airport">
+			<tags>
+				<tag> Production\HAB_Airport </tag>
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\HAB_Airport" />
+			</folders>
+			<files>
+				<file id="Data\UI\Movies\cutscene_11.usm" />
+				<file id="Data\UI\Movies\cutscene_12.usm" />
+			</files>
+		</chunk>
+		<chunk id="LoadingScreens">			
+			<tag> LoadingScreens </tag>
+			<files>
+				<file id="Data\UI\Movies\D_Exterior_04.usm" />
+				<file id="Data\UI\Movies\D_Exterior_05.usm" />
+				<file id="Data\UI\Movies\D_Exterior_06.usm" />
+				<file id="Data\UI\Movies\D_Exterior_09.usm" />
+				<file id="Data\UI\Movies\D_Exterior_17.usm" />
+				<file id="Data\UI\Movies\D_Exterior_19.usm" />
+				<file id="Data\UI\Movies\Derelict_01.usm" />
+				<file id="Data\UI\Movies\Exterior_03.usm" />
+				<file id="Data\UI\Movies\Exterior_07.usm" />
+				<file id="Data\UI\Movies\Exterior_08.usm" />
+				<file id="Data\UI\Movies\Exterior_21.usm" />
+				<file id="Data\UI\Movies\Exterior_22.usm" />
+				<file id="Data\UI\Movies\Exterior_25.usm" />
+				<file id="Data\UI\Movies\Exterior_26.usm" />
+				<file id="Data\UI\Movies\Exterior_27.usm" />
+				<file id="Data\UI\Movies\Exterior_Com_01.usm" />
+				<file id="Data\UI\Movies\Exterior_Com_02.usm" />
+				<file id="Data\UI\Movies\Exterior_Com_03.usm" />
+				<file id="Data\UI\Movies\Exterior_Com_04.usm" />
+				<file id="Data\UI\Movies\Exterior_Com_05.usm" />
+				<file id="Data\UI\Movies\F_Exterior_01.usm" />
+				<file id="Data\UI\Movies\F_Exterior_02.usm" />
+				<file id="Data\UI\Movies\F_Exterior_11.usm" />
+				<file id="Data\UI\Movies\F_Exterior_12.usm" />
+				<file id="Data\UI\Movies\F_Exterior_18.usm" />
+				<file id="Data\UI\Movies\F_Exterior_20.usm" />
+				<file id="Data\UI\Movies\F_Exterior_23.usm" />
+				<file id="Data\UI\Movies\G_Exterior_13.usm" />
+				<file id="Data\UI\Movies\G_Exterior_14.usm" />
+				<file id="Data\UI\Movies\G_Exterior_16.usm" />
+				<file id="Data\UI\Movies\Interior_And_01.usm" />
+				<file id="Data\UI\Movies\Interior_Apo_01.usm" />
+				<file id="Data\UI\Movies\Interior_Com_01.usm" />
+				<file id="Data\UI\Movies\Interior_Haz_01.usm" />
+				<file id="Data\UI\Movies\Interior_HosL_01.usm" />
+				<file id="Data\UI\Movies\Interior_RD_01.usm" />
+				<file id="Data\UI\Movies\Interior_Reac_01.usm" />
+				<file id="Data\UI\Movies\Interior_Shop_01.usm" />
+				<file id="Data\UI\Movies\Interior_Shop_02.usm" />
+				<file id="Data\UI\Movies\Interior_Thub_01.usm" />
+				<file id="Data\UI\Movies\Interior03.usm" />
+				<file id="Data\UI\Movies\Landing_01.usm" />
+				<file id="Data\UI\Movies\Landing_02.usm" />
+				<file id="Data\UI\Movies\Nostromo_01.usm" />
+				<file id="Data\UI\Movies\Nostromo_02.usm" />
+				<file id="Data\UI\Movies\Shuttle_02.usm" />
+				<file id="Data\UI\Movies\Shuttle_01.usm" />
+				
+				
+				<file id="Data\UI\Movies\cutscene_finalscene.usm" />
+				
+			</files>
+		</chunk>
+		<chunk id="Production\TECH_Hub">
+			<tags>
+				<tag> Production\TECH_Hub </tag>
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\TECH_Hub" />
+			</folders>
+			<files>
+				<file id="Data\UI\Movies\cutscene_15.usm" />
+			</files>
+		</chunk>
+		<chunk id="Production\TECH_Comms">
+			<tags>
+				<tag> Production\TECH_Comms </tag>
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\TECH_Comms" />
+			</folders>
+			<files>
+				</files>
+		</chunk>
+		<chunk id="Production\SCI_Hub">
+			<tags>
+				<tag> Production\SCI_Hub </tag>
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\SCI_Hub" />
+			</folders>
+			<files>
+				
+				<file id="Data\UI\Movies\cutscene_20.usm" />
+				</files>
+		</chunk>
+		<chunk id="Production\SCI_HospitalUpper">
+			<tags>
+				<tag> Production\SCI_HospitalUpper </tag>
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\SCI_HospitalUpper" />
+			</folders>
+			<files>
+				</files>
+		</chunk>
+		<chunk id="Production\SCI_HospitalLower">
+			<tags>
+				<tag> Production\SCI_HospitalLower </tag>
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\SCI_HospitalLower" />
+			</folders>
+			<files>
+				<file id="Data\UI\Movies\cutscene_17.usm" />
+				</files>
+		</chunk>
+		<chunk id="Production\SCI_AndroidLab">
+			<tags>
+				<tag> Production\SCI_AndroidLab </tag>
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\SCI_AndroidLab" />
+			</folders>
+			<files>
+				</files>
+		</chunk>
+		<chunk id="Production\BSP_LV426_Pt01">
+			<tags>
+				<tag> Production\BSP_LV426_Pt01 </tag>
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\BSP_LV426_Pt01" />
+			</folders>
+			<files>
+				</files>
+		</chunk>
+		<chunk id="Production\BSP_LV426_Pt02">
+			<tags>
+				<tag> Production\BSP_LV426_Pt02 </tag>
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\BSP_LV426_Pt02" />
+			</folders>
+			<files>
+				</files>
+		</chunk>
+		<chunk id="Production\HAB_ShoppingCentre">
+			<tags>
+				<tag> Production\HAB_ShoppingCentre </tag>
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\HAB_ShoppingCentre" />
+			</folders>
+			<files>
+				<file id="Data\UI\Movies\cutscene_25.usm" />
+				</files>
+		</chunk>
+		<chunk id="Production\TECH_RnD">
+			<tags>
+				<tag> Production\TECH_RnD </tag>
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\TECH_RnD" />
+			</folders>
+			<files>
+				</files>
+		</chunk>
+		<chunk id="Production\TECH_RnD_HzdLab">
+			<tags>
+				<tag> Production\TECH_RnD_HzdLab </tag>
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\TECH_RnD_HzdLab" />
+			</folders>
+			<files>
+				<file id="Data\UI\Movies\M14_Scene07.usm" />
+			</files>
+		</chunk>
+		<chunk id="Production\TECH_MuthrCore">
+			<tags>
+				<tag> Production\TECH_MuthrCore </tag> 
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\TECH_MuthrCore" />
+			</folders>
+			<files>
+				<file id="Data\UI\Movies\cutscene_29.usm" />
+			</files>
+		</chunk>
+		<chunk id="Production\ENG_ReactorCore">
+			<tags>
+				<tag> Production\ENG_ReactorCore </tag>
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\ENG_ReactorCore" />
+			</folders>
+			<files>
+				</files>
+		</chunk>
+		<chunk id="Production\ENG_Alien_Nest">
+			<tags>
+				<tag> Production\ENG_Alien_Nest </tag>
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\ENG_Alien_Nest" />
+			</folders>
+			<files>
+				<file id="data\ENV\Production\ENG_Alien_Nest.psarc" />
+			</files>
+		</chunk>
+		<chunk id="Production\Solace">
+			<tags>
+				<tag> Production\Solace </tag>
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\Solace" />
+			</folders>
+			<files>
+				<file id="Data\UI\Movies\cutscene_101.usm" />
+			</files>
+		</chunk>
+		<chunk id="Production\HAB_CorporatePent">
+			<tags>
+				<tag> Production\HAB_CorporatePent </tag>
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\HAB_CorporatePent" />
+			</folders>
+			<files>
+				</files>
+		</chunk>
+		<chunk id="Production\ENG_TowPlatform">
+			<tags>
+				<tag> Production\ENG_TowPlatform </tag>
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\ENG_TowPlatform" />
+			</folders>
+			<files>
+				<file id="Data\UI\Movies\cutscene_45.usm" />
+				</files>
+		</chunk>
+		
+		<chunk id="Production\DLC\ChallengeMap16">
+			<tags>
+				<tag> Production\DLC\ChallengeMap16 </tag>
+			</tags>
+			<folders>
+				<folder id="data\ENV\Production\DLC\ChallengeMap16" />
+				<folder id="data\ENV\Production\DLC\BSPNostromo_Ripley_PATCH" />
+				<folder id="data\ENV\Production\DLC\BSPNostromo_TwoTeams_PATCH" />
+			</folders>
+			<files>
+				<file id="Data\UI\Movies\LS_Intro.usm" />
+				<file id="Data\UI\Movies\LS_Outro.usm" />
+			</files>
+		</chunk>
+		<chunk id="Alignment">
+			<files>
+				</files>
+		</chunk>
+	</chunks>
+
+	
+	<remap_list />
+
+	
+	 
+
+	<game_data>
+	
+		
+		<marathon_enabled value="false" />
+
+		
+		<levels>
+			<level id="Production\Frontend" path="data\ENV\Production\Frontend" />
+			<level id="Production\BSP_Torens" path="data\ENV\Production\BSP_Torens" />
+			<level id="Production\DLC\ChallengeMap16" name="AI_UI_CH_TITLE_0" path="Data\ENV\Production\DLC\ChallengeMap16" />
+			
+		</levels>
+		
+		
+		<characters>
+			<character description="AI_UI_CHAR_DESC_1" icon="IconCharacter8" id="Character1" image="amanda.dds" name="AI_UI_CHAR_NAME_1" script_id="1" />
+		</characters>
+		
+		
+		<objectives>
+			<objective id="Objective0" name="AI_UI_CH_OBJECTIVE_0" script_id="0" />
+			<objective id="Objective1" name="AI_UI_CH_OBJECTIVE_1" script_id="1" />
+			<objective id="Objective2" name="AI_UI_CH_OBJECTIVE_2" script_id="2" />
+			<objective id="Objective3" name="AI_UI_CH_OBJECTIVE_3" script_id="3" />
+			<objective id="Objective4" name="AI_UI_CH_OBJECTIVE_4" script_id="4" />
+			<objective id="Objective5" name="AI_UI_CH_OBJECTIVE_5" script_id="5" />
+			<objective id="Objective6" name="AI_UI_CH_OBJECTIVE_6" script_id="6" />
+			<objective id="Objective7" name="AI_UI_CH_OBJECTIVE_7" script_id="7" />
+			<objective id="Objective8" name="AI_UI_CH_OBJECTIVE_8" script_id="8" />
+		</objectives>
+		
+		
+		<script_variable_values />
+
+		
+		<frontend>
+			
+		</frontend>
+		
+		
+		<playlists>
+		
+			
+			<playlist description="AI_UI_CH_DESC_0" icon="IconChallengeMap16" id="ChallengeMap16" image="pack0_demo.dds" movie="TechComms01.usm" name="AI_UI_CH_TITLE_0" script_id="1" type="single">
+				<levels>
+					<level id="Production\DLC\ChallengeMap16" />
+				</levels>
+				<characters>
+					<character id="Character1" />
+					<character id="Character3" />
+					<character id="Character4" />
+					<character id="Character7" />
+					<character id="Character8" />
+				</characters>
+				<objectives>
+					<objective id="Objective0" />
+					<objective id="Objective1" />
+					<objective id="Objective2" />
+				</objectives>
+			</playlist>
+			
+			
+			<playlist description="AI_UI_DLC_MARATHON_DESC" icon="IconTheme1" id="MARATHON_PLAYLIST" image="pack0_marathon.dds" movie="Shuttle_01.usm" name="AI_UI_DLC_MARATHON_NAME" script_id="0" type="marathon">
+				<characters>
+					<character id="Character1" />
+					<character id="Character2" />
+					<character id="Character6" />
+					<character id="Character8" />
+					<character id="Character9" />
+				</characters>
+			</playlist>
+			
+		</playlists>
+
+	</game_data>
+	
+</package>

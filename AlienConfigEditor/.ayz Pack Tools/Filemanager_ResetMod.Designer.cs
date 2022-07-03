@@ -45,6 +45,7 @@
             this.ResetViewconesets = new System.Windows.Forms.Button();
             this.ResetDifficulties = new System.Windows.Forms.Button();
             this.ResetChrInfo = new System.Windows.Forms.Button();
+            this.ResetPackages = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.HeaderImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,7 +97,7 @@
             this.HeaderText.ForeColor = System.Drawing.Color.White;
             this.HeaderText.Location = new System.Drawing.Point(12, -2);
             this.HeaderText.Name = "HeaderText";
-            this.HeaderText.Size = new System.Drawing.Size(361, 280);
+            this.HeaderText.Size = new System.Drawing.Size(360, 280);
             this.HeaderText.TabIndex = 35;
             this.HeaderText.Text = "RESET\r\nFILES";
             this.HeaderText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -214,17 +215,29 @@
             this.ResetChrInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ResetChrInfo.Location = new System.Drawing.Point(143, 742);
             this.ResetChrInfo.Name = "ResetChrInfo";
-            this.ResetChrInfo.Size = new System.Drawing.Size(249, 68);
+            this.ResetChrInfo.Size = new System.Drawing.Size(249, 47);
             this.ResetChrInfo.TabIndex = 54;
             this.ResetChrInfo.Text = "Character Attributes, Locomotion, Sense";
             this.ResetChrInfo.UseVisualStyleBackColor = true;
             this.ResetChrInfo.Click += new System.EventHandler(this.ResetChrInfo_Click);
+            // 
+            // ResetPackages
+            // 
+            this.ResetPackages.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ResetPackages.Location = new System.Drawing.Point(143, 795);
+            this.ResetPackages.Name = "ResetPackages";
+            this.ResetPackages.Size = new System.Drawing.Size(249, 47);
+            this.ResetPackages.TabIndex = 55;
+            this.ResetPackages.Text = "Packages";
+            this.ResetPackages.UseVisualStyleBackColor = true;
+            this.ResetPackages.Click += new System.EventHandler(this.ResetPackages_Click);
             // 
             // Filemanager_ResetMod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1205, 870);
+            this.Controls.Add(this.ResetPackages);
             this.Controls.Add(this.ResetChrInfo);
             this.Controls.Add(this.ResetGblItem);
             this.Controls.Add(this.ResetAmmo);
@@ -271,5 +284,6 @@
         private System.Windows.Forms.Button ResetViewconesets;
         private System.Windows.Forms.Button ResetDifficulties;
         private System.Windows.Forms.Button ResetChrInfo;
+        private System.Windows.Forms.Button ResetPackages;
     }
 }

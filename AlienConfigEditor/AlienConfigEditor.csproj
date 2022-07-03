@@ -105,6 +105,12 @@
       <DependentUpon>LocalisationEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="Attribute Editors\Misc\LocalisationHandler.cs" />
+    <Compile Include="Attribute Editors\PACKAGES\PackagesEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attribute Editors\PACKAGES\PackagesEditor.Designer.cs">
+      <DependentUpon>PackagesEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="BML Scripts\AlienConverter.cs" />
     <Compile Include="BML Scripts\AlienString.cs" />
     <Compile Include="Attribute Editors\AYZ_AttributeEditors.cs" />
@@ -288,6 +294,9 @@
     <EmbeddedResource Include="Attribute Editors\CHR_INFO\LocomotionEditor.resx">
       <DependentUpon>LocomotionEditor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Attribute Editors\PACKAGES\PackagesEditor.resx">
+      <DependentUpon>PackagesEditor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Landing.resx">
       <DependentUpon>Landing.cs</DependentUpon>
     </EmbeddedResource>
@@ -401,6 +410,7 @@
     <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\SHOTGUN_SLUG.BML" />
     <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\SMG_DUM_DUM.BML" />
     <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\SMG_NORMAL.BML" />
+    <EmbeddedResource Include="Reset Files\PACKAGES\MAIN.PKG" />
     <None Include="SharedAssets\.git" />
     <EmbeddedResource Include="SharedAssets\Fonts\Isolation_Isolation.ttf" />
     <EmbeddedResource Include="SharedAssets\Fonts\JixellationBold_Jixellation.ttf" />

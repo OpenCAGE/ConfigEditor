@@ -55,6 +55,7 @@
             this.checkBox10 = new System.Windows.Forms.CheckBox();
             this.checkBox11 = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.HeaderImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +63,7 @@
             // 
             this.SaveMod.Location = new System.Drawing.Point(151, 810);
             this.SaveMod.Name = "SaveMod";
-            this.SaveMod.Size = new System.Drawing.Size(920, 36);
+            this.SaveMod.Size = new System.Drawing.Size(696, 36);
             this.SaveMod.TabIndex = 5;
             this.SaveMod.Text = "SAVE";
             this.SaveMod.UseVisualStyleBackColor = true;
@@ -84,7 +85,7 @@
             this.HeaderText.ForeColor = System.Drawing.Color.White;
             this.HeaderText.Location = new System.Drawing.Point(710, -1);
             this.HeaderText.Name = "HeaderText";
-            this.HeaderText.Size = new System.Drawing.Size(524, 280);
+            this.HeaderText.Size = new System.Drawing.Size(523, 280);
             this.HeaderText.TabIndex = 5;
             this.HeaderText.Text = "EXPORT\r\nCHANGES";
             this.HeaderText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -340,11 +341,24 @@
             this.label3.TabIndex = 30;
             this.label3.Text = "Mod Contents";
             // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Checked = true;
+            this.checkBox4.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox4.Location = new System.Drawing.Point(886, 800);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(102, 17);
+            this.checkBox4.TabIndex = 31;
+            this.checkBox4.Text = "Package Config";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
             // Filemanager_ExportMod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1214, 866);
+            this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.checkBox11);
             this.Controls.Add(this.checkBox10);
@@ -412,5 +426,6 @@
         private System.Windows.Forms.CheckBox checkBox10;
         private System.Windows.Forms.CheckBox checkBox11;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox checkBox4;
     }
 }

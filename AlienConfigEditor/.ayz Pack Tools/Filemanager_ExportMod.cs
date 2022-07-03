@@ -39,19 +39,19 @@ namespace AlienConfigEditor
                 File.Exists(ModLogo.Text) &&
                 WarnOnNoCheckboxSelected())
             {
-                string CheckedCheckboxes = "";
-                if (checkBox1.Checked) { CheckedCheckboxes += "ENGINE_SETTINGS,"; }
-                if (checkBox2.Checked) { CheckedCheckboxes += "GBL_ITEMS,"; }
-                if (checkBox3.Checked) { CheckedCheckboxes += "LIGHTING,"; }
-                if (checkBox6.Checked) { CheckedCheckboxes += "ALIENCONFIGS,"; }
-                if (checkBox8.Checked) { CheckedCheckboxes += "CHR_INFO,"; }
-                if (checkBox9.Checked) { CheckedCheckboxes += "DIFFICULTYSETTINGS,"; }
-                if (checkBox10.Checked) { CheckedCheckboxes += "VIEW_CONE_SETS,"; }
-                if (checkBox11.Checked) { CheckedCheckboxes += "WEAPON_INFO,"; }
-                string[] CheckboxArray = CheckedCheckboxes.Substring(0,CheckedCheckboxes.Length - 1).Split(',');
+                List<string> CheckedCheckboxes = new List<string>();
+                if (checkBox1.Checked) CheckedCheckboxes.Add("ENGINE_SETTINGS");
+                if (checkBox2.Checked) CheckedCheckboxes.Add("GBL_ITEMS");
+                if (checkBox3.Checked) CheckedCheckboxes.Add("LIGHTING");
+                if (checkBox6.Checked) CheckedCheckboxes.Add("ALIENCONFIGS");
+                if (checkBox8.Checked) CheckedCheckboxes.Add("CHR_INFO");
+                if (checkBox9.Checked) CheckedCheckboxes.Add("DIFFICULTYSETTINGS");
+                if (checkBox10.Checked) CheckedCheckboxes.Add("VIEW_CONE_SETS");
+                if (checkBox11.Checked) CheckedCheckboxes.Add("WEAPON_INFO");
+                if (checkBox4.Checked) CheckedCheckboxes.Add("PACKAGES");
 
                 AlienModPack AlienPacker = new AlienModPack();
-                if (AlienPacker.SaveModPack(ModNameInput.Text, ModDescInput.Text, ModAuthorInput.Text, ModLogo.Text, CheckboxArray))
+                if (AlienPacker.SaveModPack(ModNameInput.Text, ModDescInput.Text, ModAuthorInput.Text, ModLogo.Text, CheckedCheckboxes.ToArray<string>()))
                 {
                     MessageBox.Show("Successfully saved mod!", "Operation completed.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Process.Start(SharedData.pathToModsFolder); //Open mods folder.

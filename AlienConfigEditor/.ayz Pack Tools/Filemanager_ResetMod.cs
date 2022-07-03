@@ -79,5 +79,9 @@ namespace AlienConfigEditor
         {
             AlienPacker.ResetFiles("CHR_INFO", false);
         }
+        private void ResetPackages_Click(object sender, EventArgs e)
+        {
+            AlienPacker.ResetFiles("PACKAGES", false);
+        }
     }
 }

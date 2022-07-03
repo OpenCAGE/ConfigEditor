@@ -19,7 +19,7 @@ namespace AlienConfigEditor.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -434,7 +434,8 @@ namespace AlienConfigEditor.Properties {
         ///					&lt;WindowsExperienceIndex type=&quot;GPU&quot; value=&quot;5.0&quot;/&gt;
         ///				&lt;/DefaultRequirements&gt;
         ///			&lt;/Quality&gt;
-        ///			&lt;Quality name=&quot;Off&quot; 		bool=&quot;0&quot;		preced [rest of string was truncated]&quot;;.
+        ///			&lt;Quality name=&quot;Off&quot; 		bool=&quot;0&quot;		precedence=&quot;2&quot;/&gt;
+        ///		 [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string ENGINE_SETTINGS {
             get {
@@ -509,7 +510,7 @@ namespace AlienConfigEditor.Properties {
         ///    &lt;slot name=&quot;PISTOL_WEAPON_SLOT&quot; x=&quot;3&quot; y=&quot;0&quot; width=&quot;2&quot; height=&quot;1&quot; /&gt;
         ///    &lt;slot name=&quot;MELEE_WEAPON&quot; x=&quot;3&quot; y=&quot;1&quot; width=&quot;2&quot; height=&quot;1&quot; /&gt;
         ///	&lt;slot name=&quot;CATTLEPROD_SLOT&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;3&quot; height=&quot;1&quot; /&gt;
-        ///    &lt;slot name=&quot;FLAME_THROWER_WEAPON_SLOT&quot; x=&quot;0&quot;  [rest of string was truncated]&quot;;.
+        ///    &lt;slot name=&quot;FLAME_THROWER_WEAPON_SLOT&quot; x=&quot;0&quot; y=&quot;0&quot;  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string GBL_ITEM1 {
             get {
@@ -639,7 +640,7 @@ namespace AlienConfigEditor.Properties {
         ///sub_strand_frequency=17.26
         ///sub_strand_spec_shift=0.055
         ///softening_length=0.0109
-        ///so [rest of string was truncated]&quot;;.
+        ///softening_normal_bias=0 [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string HAIR_SHADING_SETTINGS {
             get {
@@ -744,6 +745,16 @@ namespace AlienConfigEditor.Properties {
             get {
                 object obj = ResourceManager.GetObject("loading_content", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] MAIN {
+            get {
+                object obj = ResourceManager.GetObject("MAIN", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         

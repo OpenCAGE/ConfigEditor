@@ -147,6 +147,13 @@ namespace AlienConfigEditor
             openLocalisationEditor.Show();
         }
 
+        //Open packages editor
+        private void openPackageEditor_Click(object sender, EventArgs e)
+        {
+            PackagesEditor openPackagesEditor = new PackagesEditor();
+            openPackagesEditor.Show();
+        }
+
         //Close
         bool closedManually = false;
         private void CloseButton_Click(object sender, EventArgs e)

@@ -364,3 +364,7 @@ FodyWeavers.xsd
 
 CathodeEditorGUI.exe.config
 CathodeEditorGUI.pdb
+!AlienConfigEditor/Reset Files/PACKAGES/MAIN.PKG
+!AlienConfigEditor/Attribute Editors/PACKAGES/PackagesEditor.cs
+!AlienConfigEditor/Attribute Editors/PACKAGES/PackagesEditor.Designer.cs
+!AlienConfigEditor/Attribute Editors/PACKAGES/PackagesEditor.resx

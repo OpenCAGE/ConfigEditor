@@ -40,7 +40,10 @@ namespace AlienConfigEditor
                                    ModAuthor + Environment.NewLine;
 
                 //Read in ENGINE_SETTINGS
-                if (CheckboxArray.Contains("ENGINE_SETTINGS")) { AddToPack(SharedData.pathToAI + "/DATA/ENGINE_SETTINGS.XML"); }
+                if (CheckboxArray.Contains("ENGINE_SETTINGS")) AddToPack(SharedData.pathToAI + "/DATA/ENGINE_SETTINGS.XML");
+
+                //Read in PACKAGES (only MAIN.PKG)
+                if (CheckboxArray.Contains("PACKAGES")) AddToPack(SharedData.pathToAI + "/DATA/PACKAGES/MAIN.PKG");
 
                 //Read in GBL_ITEM files
                 if (CheckboxArray.Contains("GBL_ITEMS"))
@@ -320,6 +323,11 @@ namespace AlienConfigEditor
                     if (toReset == "GRAPHICS" || toReset == "ALL")
                     {
                         ResetFile("ENGINE_SETTINGS.XML");
+                    }
+
+                    if (toReset == "PACKAGES" || toReset == "ALL")
+                    {
+                        ResetFile("PACKAGES/MAIN.PKG");
                     }
 
                     if (toReset == "LIGHTING" || toReset == "ALL")

@@ -50,6 +50,7 @@
             this.Title4 = new System.Windows.Forms.Label();
             this.openMaterialPropEditor = new System.Windows.Forms.Button();
             this.openLocalisationEditor = new System.Windows.Forms.Button();
+            this.openPackageEditor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.HeaderImage)).BeginInit();
             this.SuspendLayout();
             // 
@@ -227,7 +228,7 @@
             this.HeaderText.ForeColor = System.Drawing.Color.White;
             this.HeaderText.Location = new System.Drawing.Point(30, 6);
             this.HeaderText.Name = "HeaderText";
-            this.HeaderText.Size = new System.Drawing.Size(465, 280);
+            this.HeaderText.Size = new System.Drawing.Size(464, 280);
             this.HeaderText.TabIndex = 32;
             this.HeaderText.Text = "CONFIG\r\nEDITORS";
             this.HeaderText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -278,7 +279,7 @@
             this.openMaterialPropEditor.Enabled = false;
             this.openMaterialPropEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.openMaterialPropEditor.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.openMaterialPropEditor.Location = new System.Drawing.Point(864, 665);
+            this.openMaterialPropEditor.Location = new System.Drawing.Point(864, 720);
             this.openMaterialPropEditor.Name = "openMaterialPropEditor";
             this.openMaterialPropEditor.Size = new System.Drawing.Size(229, 50);
             this.openMaterialPropEditor.TabIndex = 50;
@@ -298,11 +299,24 @@
             this.openLocalisationEditor.UseVisualStyleBackColor = true;
             this.openLocalisationEditor.Click += new System.EventHandler(this.openLocalisationEditor_Click);
             // 
+            // openPackageEditor
+            // 
+            this.openPackageEditor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.openPackageEditor.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.openPackageEditor.Location = new System.Drawing.Point(864, 664);
+            this.openPackageEditor.Name = "openPackageEditor";
+            this.openPackageEditor.Size = new System.Drawing.Size(229, 50);
+            this.openPackageEditor.TabIndex = 52;
+            this.openPackageEditor.Text = "Level List Editor";
+            this.openPackageEditor.UseVisualStyleBackColor = true;
+            this.openPackageEditor.Click += new System.EventHandler(this.openPackageEditor_Click);
+            // 
             // ConfigEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1189, 875);
+            this.Controls.Add(this.openPackageEditor);
             this.Controls.Add(this.openLocalisationEditor);
             this.Controls.Add(this.openMaterialPropEditor);
             this.Controls.Add(this.openGraphicsSettings);
@@ -360,5 +374,6 @@
         private System.Windows.Forms.Label Title4;
         private System.Windows.Forms.Button openMaterialPropEditor;
         private System.Windows.Forms.Button openLocalisationEditor;
+        private System.Windows.Forms.Button openPackageEditor;
     }
 }

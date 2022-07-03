@@ -418,4 +418,7 @@
   <data name="NostromoBoldCond_Nostromo_Cond" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\sharedassets\fonts\nostromoboldcond_nostromo cond.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="MAIN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\reset files\packages\main.pkg;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
