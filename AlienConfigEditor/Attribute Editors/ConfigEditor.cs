@@ -146,33 +146,5 @@ namespace AlienConfigEditor
             LocalisationEditor openLocalisationEditor = new LocalisationEditor();
             openLocalisationEditor.Show();
         }
-
-        //Close
-        bool closedManually = false;
-        private void CloseButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Directory.Delete(SharedData.pathToWorkingFiles, true);
-                Directory.CreateDirectory(SharedData.pathToWorkingFiles);
-            }
-            catch { }
-            try { GC.Collect(); GC.WaitForPendingFinalizers(); } catch { }
-            closedManually = true;
-            Landing LandingForm = new Landing();
-            LandingForm.Show();
-            this.Close();
-        }
-
-        //When closing, check to see if we were manually closed
-        //If not, halt the whole process to avoid lingering in background
-        private void FormClosingEvent(object sender, FormClosingEventArgs e)
-        {
-            if (!closedManually)
-            {
-                Application.Exit();
-                Environment.Exit(0);
-            }
-        }
     }
 }

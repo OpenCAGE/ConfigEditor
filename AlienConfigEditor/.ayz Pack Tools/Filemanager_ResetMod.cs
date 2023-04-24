@@ -18,28 +18,6 @@ namespace AlienConfigEditor
             Title2.Font = FontManager.GetFont(0, 20);
         }
 
-        //Close form
-        bool closedManually = false;
-        private void CloseButton_Click(object sender, EventArgs e)
-        {
-            try { GC.Collect(); GC.WaitForPendingFinalizers(); } catch { }
-            closedManually = true;
-            Landing LandingForm = new Landing();
-            LandingForm.Show();
-            this.Close();
-        }
-
-        //When closing, check to see if we were manually closed
-        //If not, halt the whole process to avoid lingering in background
-        private void FormClosingEvent(object sender, FormClosingEventArgs e)
-        {
-            if (!closedManually)
-            {
-                Application.Exit();
-                Environment.Exit(0);
-            }
-        }
-
         //reset all
         private void SelectMod_Click(object sender, EventArgs e)
         {

@@ -41,7 +41,6 @@
             this.Title5 = new System.Windows.Forms.Label();
             this.ModAuthorInput = new System.Windows.Forms.TextBox();
             this.HeaderImage = new System.Windows.Forms.PictureBox();
-            this.CloseButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.ModLogo = new System.Windows.Forms.TextBox();
@@ -84,7 +83,7 @@
             this.HeaderText.ForeColor = System.Drawing.Color.White;
             this.HeaderText.Location = new System.Drawing.Point(710, -1);
             this.HeaderText.Name = "HeaderText";
-            this.HeaderText.Size = new System.Drawing.Size(524, 280);
+            this.HeaderText.Size = new System.Drawing.Size(523, 280);
             this.HeaderText.TabIndex = 5;
             this.HeaderText.Text = "EXPORT\r\nCHANGES";
             this.HeaderText.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -177,16 +176,6 @@
             this.HeaderImage.Size = new System.Drawing.Size(1223, 498);
             this.HeaderImage.TabIndex = 4;
             this.HeaderImage.TabStop = false;
-            // 
-            // CloseButton
-            // 
-            this.CloseButton.Location = new System.Drawing.Point(1138, 800);
-            this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(64, 56);
-            this.CloseButton.TabIndex = 6;
-            this.CloseButton.Text = "CLOSE";
-            this.CloseButton.UseVisualStyleBackColor = true;
-            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
             // label1
             // 
@@ -358,7 +347,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ModLogo);
-            this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.Title6);
             this.Controls.Add(this.Title5);
             this.Controls.Add(this.ModAuthorInput);
@@ -371,13 +359,12 @@
             this.Controls.Add(this.HeaderImage);
             this.Controls.Add(this.ModNameInput);
             this.Controls.Add(this.SaveMod);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Filemanager_ExportMod";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "OpenCAGE - Save Mod";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormClosingEvent);
+            this.Text = "OpenCAGE Save Edited Configurations";
             ((System.ComponentModel.ISupportInitialize)(this.HeaderImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -398,7 +385,6 @@
         private System.Windows.Forms.Label Title6;
         private System.Windows.Forms.Label Title5;
         private System.Windows.Forms.TextBox ModAuthorInput;
-        private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox ModLogo;

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Filemanager_ResetMod));
             this.label1 = new System.Windows.Forms.Label();
-            this.CloseButton = new System.Windows.Forms.Button();
             this.Title1 = new System.Windows.Forms.Label();
             this.ResetAll = new System.Windows.Forms.Button();
             this.HeaderText = new System.Windows.Forms.Label();
@@ -56,16 +55,6 @@
             this.label1.Size = new System.Drawing.Size(367, 13);
             this.label1.TabIndex = 40;
             this.label1.Text = "This will uninstall any mods and reset any changes from the mod tool creator.";
-            // 
-            // CloseButton
-            // 
-            this.CloseButton.Location = new System.Drawing.Point(1124, 799);
-            this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(64, 56);
-            this.CloseButton.TabIndex = 39;
-            this.CloseButton.Text = "CLOSE";
-            this.CloseButton.UseVisualStyleBackColor = true;
-            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
             // Title1
             // 
@@ -96,7 +85,7 @@
             this.HeaderText.ForeColor = System.Drawing.Color.White;
             this.HeaderText.Location = new System.Drawing.Point(12, -2);
             this.HeaderText.Name = "HeaderText";
-            this.HeaderText.Size = new System.Drawing.Size(361, 280);
+            this.HeaderText.Size = new System.Drawing.Size(360, 280);
             this.HeaderText.TabIndex = 35;
             this.HeaderText.Text = "RESET\r\nFILES";
             this.HeaderText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -236,18 +225,16 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Title2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.Title1);
             this.Controls.Add(this.ResetAll);
             this.Controls.Add(this.HeaderText);
             this.Controls.Add(this.HeaderImage);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Filemanager_ResetMod";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "OpenCAGE - Reset Files";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormClosingEvent);
+            this.Text = "OpenCAGE Reset Configurations";
             ((System.ComponentModel.ISupportInitialize)(this.HeaderImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -256,7 +243,6 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.Label Title1;
         private System.Windows.Forms.Button ResetAll;
         private System.Windows.Forms.Label HeaderText;
