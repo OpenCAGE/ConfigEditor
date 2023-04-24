@@ -12,69 +12,47 @@ namespace AlienConfigEditor
 
         private void Landing_ConfigTools_Load(object sender, EventArgs e)
         {
-            //Set fonts & parents
-            HeaderText.Font = FontManager.GetFont(1, 80);
-            HeaderText.Parent = HeaderImage;
-            EditConfigs.Font = FontManager.GetFont(0, 40);
-            ResetConfigs.Font = FontManager.GetFont(0, 40);
-            LoadPrevious.Font = FontManager.GetFont(0, 40);
-            ExportChanges.Font = FontManager.GetFont(0, 40);
+            LandingWPF wpf = (LandingWPF)elementHost1.Child;
+            wpf.SetVersionInfo(ProductVersion);
+            wpf.OnButtonPress += OnButtonPress;
         }
 
-        bool closedManually = false;
-        private void CloseButton_Click(object sender, EventArgs e)
+        private void OnButtonPress(ConfigEditorForm formType)
         {
-            closedManually = true;
-            this.Close();
-            Application.Exit();
-            Environment.Exit(0);
-        }
-
-        //When closing, check to see if we were manually closed
-        //If not, halt the whole process to avoid lingering in background
-        private void FormClosingEvent(object sender, FormClosingEventArgs e)
-        {
-            if (!closedManually)
+            Form form = null;
+            switch (formType)
             {
-                Application.Exit();
-                Environment.Exit(0);
+                case ConfigEditorForm.EDIT_CONFIGS:
+                    form = new ConfigEditor();
+                    break;
+                case ConfigEditorForm.RESET_CONFIGS:
+                    form = new Filemanager_ResetMod();
+                    break;
+                case ConfigEditorForm.LOAD_CONFIGS:
+                    form = new Filemanager_ImportMod();
+                    break;
+                case ConfigEditorForm.EXPORT_CONFIGS:
+                    form = new Filemanager_ExportMod();
+                    break;
             }
+            form.Show();
+            form.FormClosing += Form_FormClosing;
+            this.Hide();
         }
 
-        //EDIT CONFIGS
-        private void EditConfigs_Click(object sender, EventArgs e)
+        private void Form_FormClosing(object sender, FormClosingEventArgs e)
         {
-            closedManually = true;
-            ConfigEditor editConfigs = new ConfigEditor();
-            editConfigs.Show();
-            this.Close();
+            this.Show();
+            this.BringToFront();
+            this.Focus();
         }
+    }
 
-        //RESET CONFIGS
-        private void ResetConfigs_Click(object sender, EventArgs e)
-        {
-            closedManually = true;
-            Filemanager_ResetMod resetFiles = new Filemanager_ResetMod();
-            resetFiles.Show();
-            this.Close();
-        }
-
-        //LOAD PREVIOUS CONFIGS
-        private void LoadPrevious_Click(object sender, EventArgs e)
-        {
-            closedManually = true;
-            Filemanager_ImportMod importPrevious = new Filemanager_ImportMod();
-            importPrevious.Show();
-            this.Close();
-        }
-
-        //EXPORT CURRENT CONFIGS
-        private void ExportChanges_Click(object sender, EventArgs e)
-        {
-            closedManually = true;
-            Filemanager_ExportMod exportChanges = new Filemanager_ExportMod();
-            exportChanges.Show();
-            this.Close();
-        }
+    public enum ConfigEditorForm
+    {
+        EDIT_CONFIGS,
+        RESET_CONFIGS,
+        LOAD_CONFIGS,
+        EXPORT_CONFIGS,
     }
 }

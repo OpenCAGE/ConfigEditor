@@ -34,7 +34,6 @@
             this.InstalledMods = new System.Windows.Forms.ListBox();
             this.SelectMod = new System.Windows.Forms.Button();
             this.Title1 = new System.Windows.Forms.Label();
-            this.CloseButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SELECTED_MOD_TITLE = new System.Windows.Forms.Label();
             this.MOD_PREVIEW = new System.Windows.Forms.PictureBox();
@@ -51,7 +50,7 @@
             this.HeaderText.ForeColor = System.Drawing.Color.White;
             this.HeaderText.Location = new System.Drawing.Point(21, 0);
             this.HeaderText.Name = "HeaderText";
-            this.HeaderText.Size = new System.Drawing.Size(317, 280);
+            this.HeaderText.Size = new System.Drawing.Size(316, 280);
             this.HeaderText.TabIndex = 17;
             this.HeaderText.Text = "LOAD\r\nMOD";
             this.HeaderText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -100,16 +99,6 @@
             this.Title1.Size = new System.Drawing.Size(232, 33);
             this.Title1.TabIndex = 28;
             this.Title1.Text = "MOD_LIST_TITLE";
-            // 
-            // CloseButton
-            // 
-            this.CloseButton.Location = new System.Drawing.Point(1115, 799);
-            this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(64, 56);
-            this.CloseButton.TabIndex = 29;
-            this.CloseButton.Text = "CLOSE";
-            this.CloseButton.UseVisualStyleBackColor = true;
-            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
             // 
             // label1
             // 
@@ -161,19 +150,17 @@
             this.Controls.Add(this.MOD_PREVIEW);
             this.Controls.Add(this.SELECTED_MOD_TITLE);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.Title1);
             this.Controls.Add(this.SelectMod);
             this.Controls.Add(this.InstalledMods);
             this.Controls.Add(this.HeaderText);
             this.Controls.Add(this.HeaderImage);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormClosingEvent);
             this.MaximizeBox = false;
             this.Name = "Filemanager_ImportMod";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "OpenCAGE - Load Mod";
+            this.Text = "OpenCAGE Load Saved Configurations";
             this.Load += new System.EventHandler(this.Filemanager_ImportMod_Load);
             ((System.ComponentModel.ISupportInitialize)(this.HeaderImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MOD_PREVIEW)).EndInit();
@@ -188,7 +175,6 @@
         private System.Windows.Forms.ListBox InstalledMods;
         private System.Windows.Forms.Button SelectMod;
         private System.Windows.Forms.Label Title1;
-        private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label SELECTED_MOD_TITLE;
         private System.Windows.Forms.PictureBox MOD_PREVIEW;

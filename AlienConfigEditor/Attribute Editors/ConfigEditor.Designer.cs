@@ -42,7 +42,6 @@
             this.openLoadscreenEditor = new System.Windows.Forms.Button();
             this.openBlueprintEditor = new System.Windows.Forms.Button();
             this.openLootInvSettings = new System.Windows.Forms.Button();
-            this.CloseButton = new System.Windows.Forms.Button();
             this.HeaderText = new System.Windows.Forms.Label();
             this.HeaderImage = new System.Windows.Forms.PictureBox();
             this.Title3 = new System.Windows.Forms.Label();
@@ -209,16 +208,6 @@
             this.openLootInvSettings.UseVisualStyleBackColor = true;
             this.openLootInvSettings.Click += new System.EventHandler(this.openLootInvSettings_Click);
             // 
-            // CloseButton
-            // 
-            this.CloseButton.Location = new System.Drawing.Point(1113, 806);
-            this.CloseButton.Name = "CloseButton";
-            this.CloseButton.Size = new System.Drawing.Size(64, 56);
-            this.CloseButton.TabIndex = 30;
-            this.CloseButton.Text = "CLOSE";
-            this.CloseButton.UseVisualStyleBackColor = true;
-            this.CloseButton.Click += new System.EventHandler(this.CloseButton_Click);
-            // 
             // HeaderText
             // 
             this.HeaderText.AutoSize = true;
@@ -227,7 +216,7 @@
             this.HeaderText.ForeColor = System.Drawing.Color.White;
             this.HeaderText.Location = new System.Drawing.Point(30, 6);
             this.HeaderText.Name = "HeaderText";
-            this.HeaderText.Size = new System.Drawing.Size(465, 280);
+            this.HeaderText.Size = new System.Drawing.Size(464, 280);
             this.HeaderText.TabIndex = 32;
             this.HeaderText.Text = "CONFIG\r\nEDITORS";
             this.HeaderText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -322,15 +311,13 @@
             this.Controls.Add(this.openAlienConfig);
             this.Controls.Add(this.HeaderText);
             this.Controls.Add(this.openCharEd);
-            this.Controls.Add(this.CloseButton);
             this.Controls.Add(this.HeaderImage);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "ConfigEditor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "OpenCAGE - Config Editors";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormClosingEvent);
+            this.Text = "OpenCAGE Configuration Editor";
             this.Load += new System.EventHandler(this.Landing_Load);
             ((System.ComponentModel.ISupportInitialize)(this.HeaderImage)).EndInit();
             this.ResumeLayout(false);
@@ -352,7 +339,6 @@
         private System.Windows.Forms.Button openRadiosityEditor;
         private System.Windows.Forms.Button openGraphicsSettings;
         private System.Windows.Forms.Button openLocomotionEditor;
-        private System.Windows.Forms.Button CloseButton;
         private System.Windows.Forms.Label HeaderText;
         private System.Windows.Forms.PictureBox HeaderImage;
         private System.Windows.Forms.Label Title3;
