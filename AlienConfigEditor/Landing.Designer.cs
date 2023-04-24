@@ -57,6 +57,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OpenCAGE Configuration Editor";
             this.Load += new System.EventHandler(this.Landing_ConfigTools_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormClosingEvent);
             this.ResumeLayout(false);
 
         }

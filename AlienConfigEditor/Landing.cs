@@ -46,6 +46,12 @@ namespace AlienConfigEditor
             this.BringToFront();
             this.Focus();
         }
+
+        private void FormClosingEvent(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+            Environment.Exit(0);
+        }
     }
 
     public enum ConfigEditorForm
