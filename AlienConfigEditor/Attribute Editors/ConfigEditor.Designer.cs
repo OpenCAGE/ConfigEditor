@@ -156,7 +156,7 @@
             this.openRadiosityEditor.Name = "openRadiosityEditor";
             this.openRadiosityEditor.Size = new System.Drawing.Size(229, 50);
             this.openRadiosityEditor.TabIndex = 11;
-            this.openRadiosityEditor.Text = "Lighting and Character Shading Settings";
+            this.openRadiosityEditor.Text = "Radiosity Settings";
             this.openRadiosityEditor.UseVisualStyleBackColor = true;
             this.openRadiosityEditor.Click += new System.EventHandler(this.openRadiosityEditor_Click);
             // 
