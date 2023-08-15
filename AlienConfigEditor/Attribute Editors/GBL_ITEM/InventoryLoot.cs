@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
+using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
@@ -17,40 +18,18 @@ namespace AlienConfigEditor
 {
     public partial class InventoryLoot : Form
     {
-        //Common file paths
-        string pathToWorkingBML;
-        string pathToGameBML;
-        string pathToGameXML;
-        string pathToWorkingXML;
-
-        //Load type
         string loadedType = "";
+
+        CATHODE.BML globalItem;
+        XDocument globalItemXML;
 
         public InventoryLoot()
         {
             InitializeComponent();
 
-            this.WindowState = FormWindowState.Minimized;
-            this.Show();
-            this.WindowState = FormWindowState.Normal;
-
-            //Update cursor and begin
-            Cursor.Current = Cursors.WaitCursor;
-
-            //Set common file paths
-            pathToWorkingBML = SharedData.pathToWorkingFiles + "GBL_ITEM.BML";
-            pathToGameBML = SharedData.pathToAI + @"\DATA\GBL_ITEM.BML";
-            pathToGameXML = SharedData.pathToAI + @"\DATA\GBL_ITEM.XML";
-            pathToWorkingXML = SharedData.pathToWorkingFiles + "GBL_ITEM.xml";
-
-            //Copy correct XML to working directory and fix bug
-            StreamWriter updateXmlContents = new StreamWriter(pathToWorkingXML);
-            updateXmlContents.WriteLine(File.ReadAllText(pathToGameXML).Replace(" xmlns=\"http://www.w3schools.com\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.w3schools.com gbl_item.xsd\"", ""));
-            updateXmlContents.Close();
-
-
             //Load-in XML data
-            var ChrAttributeXML = XDocument.Load(pathToWorkingXML);
+            globalItem = new CATHODE.BML(SharedData.pathToAI + @"\DATA\GBL_ITEM.BML");
+            globalItemXML = XDocument.Parse(globalItem.Content.OuterXml.Replace(" xmlns=\"http://www.w3schools.com\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.w3schools.com gbl_item.xsd\"", ""));
 
             //Update object lists
             Inv_Ammo.Items.Clear();
@@ -58,7 +37,7 @@ namespace AlienConfigEditor
             target_weapon.Items.Clear();
             thrown_object_name.Items.Clear();
             held_object_name.Items.Clear();
-            IEnumerable<XElement> ammos = ChrAttributeXML.XPathSelectElements("//item_database/objects/ammo");
+            IEnumerable<XElement> ammos = globalItemXML.XPathSelectElements("//item_database/objects/ammo");
             foreach (XElement el in ammos)
             {
                 Inv_Ammo.Items.Add(el.Attribute("name").Value.ToString());
@@ -67,7 +46,7 @@ namespace AlienConfigEditor
                 try { thrown_object_name.Items.Add(el.Attribute("thrown_object_name").Value.ToString()); } catch { }
             }
             Inv_IED.Items.Clear();
-            IEnumerable<XElement> ieds = ChrAttributeXML.XPathSelectElements("//item_database/objects/ied");
+            IEnumerable<XElement> ieds = globalItemXML.XPathSelectElements("//item_database/objects/ied");
             foreach (XElement el in ieds)
             {
                 Inv_IED.Items.Add(el.Attribute("name").Value.ToString());
@@ -76,7 +55,7 @@ namespace AlienConfigEditor
                 try { thrown_object_name.Items.Add(el.Attribute("thrown_object_name").Value.ToString()); } catch { }
             }
             Inv_Lights.Items.Clear();
-            IEnumerable<XElement> lights = ChrAttributeXML.XPathSelectElements("//item_database/objects/light");
+            IEnumerable<XElement> lights = globalItemXML.XPathSelectElements("//item_database/objects/light");
             foreach (XElement el in lights)
             {
                 Inv_Lights.Items.Add(el.Attribute("name").Value.ToString());
@@ -85,7 +64,7 @@ namespace AlienConfigEditor
                 try { thrown_object_name.Items.Add(el.Attribute("thrown_object_name").Value.ToString()); } catch { }
             }
             Inv_MedKit.Items.Clear();
-            IEnumerable<XElement> medkits = ChrAttributeXML.XPathSelectElements("//item_database/objects/medikit");
+            IEnumerable<XElement> medkits = globalItemXML.XPathSelectElements("//item_database/objects/medikit");
             foreach (XElement el in medkits)
             {
                 Inv_MedKit.Items.Add(el.Attribute("name").Value.ToString());
@@ -94,7 +73,7 @@ namespace AlienConfigEditor
                 try { thrown_object_name.Items.Add(el.Attribute("thrown_object_name").Value.ToString()); } catch { }
             }
             Inv_Objects.Items.Clear();
-            IEnumerable<XElement> objects = ChrAttributeXML.XPathSelectElements("//item_database/objects/object");
+            IEnumerable<XElement> objects = globalItemXML.XPathSelectElements("//item_database/objects/object");
             foreach (XElement el in objects)
             {
                 Inv_Objects.Items.Add(el.Attribute("name").Value.ToString());
@@ -103,7 +82,7 @@ namespace AlienConfigEditor
                 try { thrown_object_name.Items.Add(el.Attribute("thrown_object_name").Value.ToString()); } catch { }
             }
             Inv_Weapons.Items.Clear();
-            IEnumerable<XElement> weapons = ChrAttributeXML.XPathSelectElements("//item_database/objects/weapon");
+            IEnumerable<XElement> weapons = globalItemXML.XPathSelectElements("//item_database/objects/weapon");
             foreach (XElement el in weapons)
             {
                 Inv_Weapons.Items.Add(el.Attribute("name").Value.ToString());
@@ -113,14 +92,11 @@ namespace AlienConfigEditor
                 try { thrown_object_name.Items.Add(el.Attribute("thrown_object_name").Value.ToString()); } catch { }
             }
             special_slot.Items.Clear();
-            IEnumerable<XElement> slots = ChrAttributeXML.XPathSelectElements("//item_database/special_slots/slot");
+            IEnumerable<XElement> slots = globalItemXML.XPathSelectElements("//item_database/special_slots/slot");
             foreach (XElement el in slots)
             {
                 special_slot.Items.Add(el.Attribute("name").Value.ToString());
             }
-
-            //Update cursor and finish
-            Cursor.Current = Cursors.Default;
         }
 
         private void edit_objects_Click(object sender, EventArgs e)
@@ -156,14 +132,11 @@ namespace AlienConfigEditor
         //load selected item
         private void loadItem(ListBox listbox, string loadedObject)
         {
-            //Load-in XML data
-            var ChrAttributeXML = XDocument.Load(pathToWorkingXML);
-
             //Let everyone know
             loadedType = loadedObject;
 
             //Get selected item
-            IEnumerable<XElement> objects = ChrAttributeXML.XPathSelectElements("//item_database/objects/"+loadedObject);
+            IEnumerable<XElement> objects = globalItemXML.XPathSelectElements("//item_database/objects/"+loadedObject);
             foreach (XElement el in objects)
             {
                 if (el.Attribute("name").Value.ToString() == listbox.GetItemText(listbox.SelectedItem))
@@ -245,11 +218,8 @@ namespace AlienConfigEditor
             }
             else
             {
-                //Load-in XML data
-                var ChrAttributeXML = XDocument.Load(pathToWorkingXML);
-
                 //Get all data from type
-                IEnumerable<XElement> elements = ChrAttributeXML.XPathSelectElements("//item_database/objects/"+loadedType);
+                IEnumerable<XElement> elements = globalItemXML.XPathSelectElements("//item_database/objects/"+loadedType);
                 foreach (XElement el in elements)
                 {
                     if (el.Attribute("name").Value.ToString() == name.Text)
@@ -280,18 +250,8 @@ namespace AlienConfigEditor
                 }
 
                 //Save all to XML
-                ChrAttributeXML.Save(pathToWorkingXML);
-
-                //Convert XML to BML
-                new AlienConverter(pathToWorkingXML, pathToWorkingBML).Run();
-
-                //Copy new BML to game directory & remove working files
-                File.Delete(pathToGameBML);
-                File.Copy(pathToWorkingBML, pathToGameBML);
-                File.Delete(pathToGameXML);
-                File.Copy(pathToWorkingXML, pathToGameXML);
-                File.Delete(pathToWorkingBML);
-                //File.Delete(pathToWorkingXML);
+                globalItem.Content.LoadXml(globalItemXML.ToString());
+                globalItem.Save();
 
                 //Done
                 MessageBox.Show("Saved new inventory item configuration.");
