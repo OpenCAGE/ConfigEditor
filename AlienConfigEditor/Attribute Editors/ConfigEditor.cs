@@ -17,6 +17,10 @@ namespace AlienConfigEditor
         public ConfigEditor()
         {
             InitializeComponent();
+
+#if DEBUG
+            openMaterialPropEditor.Enabled = true;
+#endif
         }
 
         //On Load
@@ -30,16 +34,12 @@ namespace AlienConfigEditor
             Title4.Font = FontManager.GetFont(0, 20);
         }
 
-        //Open BehaviourPacker
-        private void openBehaviourTreePackager_Click(object sender, EventArgs e)
-        {
-        }
-
         //Open CharEd
         private void button2_Click(object sender, EventArgs e)
         {
             CharEd attributeForm = new CharEd();
             attributeForm.Show();
+            attributeForm.FormClosed += OnFormClosed;
         }
 
         //Open AlienConfigEditor
@@ -47,6 +47,7 @@ namespace AlienConfigEditor
         {
             AlienConfigEditor alienConfigForm = new AlienConfigEditor();
             alienConfigForm.Show();
+            alienConfigForm.FormClosed += OnFormClosed;
         }
 
         //Open DifficultyEditor
@@ -54,6 +55,7 @@ namespace AlienConfigEditor
         {
             DifficultyEditor diffEditorForm = new DifficultyEditor();
             diffEditorForm.Show();
+            diffEditorForm.FormClosed += OnFormClosed;
         }
 
         //Open ViewconeEditor (global)
@@ -61,6 +63,7 @@ namespace AlienConfigEditor
         {
             ViewconeEditor viewconeSetEditor = new ViewconeEditor();
             viewconeSetEditor.Show();
+            viewconeSetEditor.FormClosed += OnFormClosed;
         }
 
         //Open ViewconeEditor (character)
@@ -68,6 +71,7 @@ namespace AlienConfigEditor
         {
             CharViewconeEditor viewconeCharSetEditor = new CharViewconeEditor();
             viewconeCharSetEditor.Show();
+            viewconeCharSetEditor.FormClosed += OnFormClosed;
         }
 
         //Open WeaponEditor
@@ -75,6 +79,7 @@ namespace AlienConfigEditor
         {
             WeaponEditor weaponEditorForm = new WeaponEditor();
             weaponEditorForm.Show();
+            weaponEditorForm.FormClosed += OnFormClosed;
         }
 
         //Open radiosity editor
@@ -82,6 +87,7 @@ namespace AlienConfigEditor
         {
             RadiosityEditor radEdFormc = new RadiosityEditor();
             radEdFormc.Show();
+            radEdFormc.FormClosed += OnFormClosed;
         }
 
         //open loot inventory settings
@@ -89,6 +95,7 @@ namespace AlienConfigEditor
         {
             InventoryLoot openInvEditor = new InventoryLoot();
             openInvEditor.Show();
+            openInvEditor.FormClosed += OnFormClosed;
         }
 
         //open loadscreen movie playlist editor
@@ -96,6 +103,7 @@ namespace AlienConfigEditor
         {
             LoadMovieEditor openLoadscreenEditor = new LoadMovieEditor();
             openLoadscreenEditor.Show();
+            openLoadscreenEditor.FormClosed += OnFormClosed;
         }
 
         //open blueprint editor
@@ -103,6 +111,7 @@ namespace AlienConfigEditor
         {
             BlueprintEditor openBPEditor = new BlueprintEditor();
             openBPEditor.Show();
+            openBPEditor.FormClosed += OnFormClosed;
         }
 
         //open hack tool editor
@@ -110,6 +119,7 @@ namespace AlienConfigEditor
         {
             HackingEditor openHackEditor = new HackingEditor();
             openHackEditor.Show();
+            openHackEditor.FormClosed += OnFormClosed;
         }
 
         //open locomotion editor
@@ -117,20 +127,15 @@ namespace AlienConfigEditor
         {
             LocomotionEditor openLocomotionEditor = new LocomotionEditor();
             openLocomotionEditor.Show();
+            openLocomotionEditor.FormClosed += OnFormClosed;
         }
 
         //open material property editor
         private void openMaterialPropEditor_Click(object sender, EventArgs e)
         {
             MaterialEditor openMaterialPropertyEditor = new MaterialEditor();
-            openMaterialPropEditor.Show();
-        }
-
-        //open game
-        private void startGame_Click(object sender, EventArgs e)
-        {
-            //Process.Start(gameDirectory + @"\AI.exe");
-            Process.Start("steam://rungameid/214490");
+            openMaterialPropertyEditor.Show();
+            openMaterialPropertyEditor.FormClosed += OnFormClosed;
         }
 
         //Open graphics settings editor
@@ -138,6 +143,7 @@ namespace AlienConfigEditor
         {
             GraphicsEditor openGraphicsEditor = new GraphicsEditor();
             openGraphicsEditor.Show();
+            openGraphicsEditor.FormClosed += OnFormClosed;
         }
 
         //Open localisation editor
@@ -145,6 +151,13 @@ namespace AlienConfigEditor
         {
             LocalisationEditor openLocalisationEditor = new LocalisationEditor();
             openLocalisationEditor.Show();
+            openLocalisationEditor.FormClosed += OnFormClosed;
+        }
+
+        private void OnFormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.BringToFront();
+            this.Focus();
         }
     }
 }
