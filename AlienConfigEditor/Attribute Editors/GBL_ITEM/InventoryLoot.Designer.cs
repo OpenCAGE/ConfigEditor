@@ -29,27 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Objects", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Weapons", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("Ammo Types", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("Medikits", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("Explosives", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("Light Emitters", System.Windows.Forms.HorizontalAlignment.Left);
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InventoryLoot));
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.edit_light = new System.Windows.Forms.Button();
-            this.Inv_Lights = new System.Windows.Forms.ListBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.edit_ied = new System.Windows.Forms.Button();
-            this.Inv_IED = new System.Windows.Forms.ListBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.edit_medikit = new System.Windows.Forms.Button();
-            this.Inv_MedKit = new System.Windows.Forms.ListBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.edit_ammo = new System.Windows.Forms.Button();
-            this.Inv_Ammo = new System.Windows.Forms.ListBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.edit_weapons = new System.Windows.Forms.Button();
-            this.Inv_Weapons = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.edit_objects = new System.Windows.Forms.Button();
-            this.Inv_Objects = new System.Windows.Forms.ListBox();
-            this.label78 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label27 = new System.Windows.Forms.Label();
             this.cancellable_duration_in_seconds = new System.Windows.Forms.TextBox();
@@ -99,220 +85,10 @@
             this.label29 = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.groupBox3.SuspendLayout();
+            this.listView = new System.Windows.Forms.ListView();
+            this.ItemName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.edit_light);
-            this.groupBox3.Controls.Add(this.Inv_Lights);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.edit_ied);
-            this.groupBox3.Controls.Add(this.Inv_IED);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.edit_medikit);
-            this.groupBox3.Controls.Add(this.Inv_MedKit);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.edit_ammo);
-            this.groupBox3.Controls.Add(this.Inv_Ammo);
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.edit_weapons);
-            this.groupBox3.Controls.Add(this.Inv_Weapons);
-            this.groupBox3.Controls.Add(this.label1);
-            this.groupBox3.Controls.Add(this.edit_objects);
-            this.groupBox3.Controls.Add(this.Inv_Objects);
-            this.groupBox3.Location = new System.Drawing.Point(12, 41);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(519, 393);
-            this.groupBox3.TabIndex = 353;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Inventory Items";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(348, 208);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 13);
-            this.label6.TabIndex = 377;
-            this.label6.Text = "Light Emitters";
-            // 
-            // edit_light
-            // 
-            this.edit_light.Location = new System.Drawing.Point(348, 364);
-            this.edit_light.Name = "edit_light";
-            this.edit_light.Size = new System.Drawing.Size(165, 23);
-            this.edit_light.TabIndex = 376;
-            this.edit_light.Text = "Edit Selected";
-            this.toolTip1.SetToolTip(this.edit_light, "Edit selected item in the above list.");
-            this.edit_light.UseVisualStyleBackColor = true;
-            this.edit_light.Click += new System.EventHandler(this.edit_light_Click);
-            // 
-            // Inv_Lights
-            // 
-            this.Inv_Lights.FormattingEnabled = true;
-            this.Inv_Lights.Location = new System.Drawing.Point(348, 224);
-            this.Inv_Lights.Name = "Inv_Lights";
-            this.Inv_Lights.Size = new System.Drawing.Size(165, 134);
-            this.Inv_Lights.TabIndex = 375;
-            this.toolTip1.SetToolTip(this.Inv_Lights, "All light emitters in the inventory.");
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(177, 208);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
-            this.label5.TabIndex = 374;
-            this.label5.Text = "Explosives";
-            // 
-            // edit_ied
-            // 
-            this.edit_ied.Location = new System.Drawing.Point(177, 364);
-            this.edit_ied.Name = "edit_ied";
-            this.edit_ied.Size = new System.Drawing.Size(165, 23);
-            this.edit_ied.TabIndex = 373;
-            this.edit_ied.Text = "Edit Selected";
-            this.toolTip1.SetToolTip(this.edit_ied, "Edit selected item in the above list.");
-            this.edit_ied.UseVisualStyleBackColor = true;
-            this.edit_ied.Click += new System.EventHandler(this.edit_ied_Click);
-            // 
-            // Inv_IED
-            // 
-            this.Inv_IED.FormattingEnabled = true;
-            this.Inv_IED.Location = new System.Drawing.Point(177, 224);
-            this.Inv_IED.Name = "Inv_IED";
-            this.Inv_IED.Size = new System.Drawing.Size(165, 134);
-            this.Inv_IED.TabIndex = 372;
-            this.toolTip1.SetToolTip(this.Inv_IED, "All explosives in the inventory.");
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 208);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 13);
-            this.label4.TabIndex = 371;
-            this.label4.Text = "Medikits";
-            // 
-            // edit_medikit
-            // 
-            this.edit_medikit.Location = new System.Drawing.Point(6, 364);
-            this.edit_medikit.Name = "edit_medikit";
-            this.edit_medikit.Size = new System.Drawing.Size(165, 23);
-            this.edit_medikit.TabIndex = 370;
-            this.edit_medikit.Text = "Edit Selected";
-            this.toolTip1.SetToolTip(this.edit_medikit, "Edit selected item in the above list.");
-            this.edit_medikit.UseVisualStyleBackColor = true;
-            this.edit_medikit.Click += new System.EventHandler(this.edit_medikit_Click);
-            // 
-            // Inv_MedKit
-            // 
-            this.Inv_MedKit.FormattingEnabled = true;
-            this.Inv_MedKit.Location = new System.Drawing.Point(6, 224);
-            this.Inv_MedKit.Name = "Inv_MedKit";
-            this.Inv_MedKit.Size = new System.Drawing.Size(165, 134);
-            this.Inv_MedKit.TabIndex = 369;
-            this.toolTip1.SetToolTip(this.Inv_MedKit, "All medikits in the inventory.");
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(348, 21);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 13);
-            this.label3.TabIndex = 368;
-            this.label3.Text = "Ammo Types";
-            // 
-            // edit_ammo
-            // 
-            this.edit_ammo.Location = new System.Drawing.Point(348, 177);
-            this.edit_ammo.Name = "edit_ammo";
-            this.edit_ammo.Size = new System.Drawing.Size(165, 23);
-            this.edit_ammo.TabIndex = 367;
-            this.edit_ammo.Text = "Edit Selected";
-            this.toolTip1.SetToolTip(this.edit_ammo, "Edit selected item in the above list.");
-            this.edit_ammo.UseVisualStyleBackColor = true;
-            this.edit_ammo.Click += new System.EventHandler(this.edit_ammo_Click);
-            // 
-            // Inv_Ammo
-            // 
-            this.Inv_Ammo.FormattingEnabled = true;
-            this.Inv_Ammo.Location = new System.Drawing.Point(348, 37);
-            this.Inv_Ammo.Name = "Inv_Ammo";
-            this.Inv_Ammo.Size = new System.Drawing.Size(165, 134);
-            this.Inv_Ammo.TabIndex = 366;
-            this.toolTip1.SetToolTip(this.Inv_Ammo, "All ammo types in the inventory.");
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(177, 21);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 13);
-            this.label2.TabIndex = 365;
-            this.label2.Text = "Weapons";
-            // 
-            // edit_weapons
-            // 
-            this.edit_weapons.Location = new System.Drawing.Point(177, 177);
-            this.edit_weapons.Name = "edit_weapons";
-            this.edit_weapons.Size = new System.Drawing.Size(165, 23);
-            this.edit_weapons.TabIndex = 364;
-            this.edit_weapons.Text = "Edit Selected";
-            this.toolTip1.SetToolTip(this.edit_weapons, "Edit selected item in the above list.");
-            this.edit_weapons.UseVisualStyleBackColor = true;
-            this.edit_weapons.Click += new System.EventHandler(this.edit_weapons_Click);
-            // 
-            // Inv_Weapons
-            // 
-            this.Inv_Weapons.FormattingEnabled = true;
-            this.Inv_Weapons.Location = new System.Drawing.Point(177, 37);
-            this.Inv_Weapons.Name = "Inv_Weapons";
-            this.Inv_Weapons.Size = new System.Drawing.Size(165, 134);
-            this.Inv_Weapons.TabIndex = 363;
-            this.toolTip1.SetToolTip(this.Inv_Weapons, "All weapons in the inventory.");
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 362;
-            this.label1.Text = "Objects";
-            // 
-            // edit_objects
-            // 
-            this.edit_objects.Location = new System.Drawing.Point(6, 177);
-            this.edit_objects.Name = "edit_objects";
-            this.edit_objects.Size = new System.Drawing.Size(165, 23);
-            this.edit_objects.TabIndex = 356;
-            this.edit_objects.Text = "Edit Selected";
-            this.toolTip1.SetToolTip(this.edit_objects, "Edit selected item in the above list.");
-            this.edit_objects.UseVisualStyleBackColor = true;
-            this.edit_objects.Click += new System.EventHandler(this.edit_objects_Click);
-            // 
-            // Inv_Objects
-            // 
-            this.Inv_Objects.FormattingEnabled = true;
-            this.Inv_Objects.Location = new System.Drawing.Point(6, 37);
-            this.Inv_Objects.Name = "Inv_Objects";
-            this.Inv_Objects.Size = new System.Drawing.Size(165, 134);
-            this.Inv_Objects.TabIndex = 348;
-            this.toolTip1.SetToolTip(this.Inv_Objects, "All \"objects\" in the inventory.");
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(49, 9);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(439, 29);
-            this.label78.TabIndex = 351;
-            this.label78.Text = "Alien: Isolation Item and Inventory Editor";
             // 
             // groupBox1
             // 
@@ -363,7 +139,7 @@
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label29);
             this.groupBox1.Controls.Add(this.name);
-            this.groupBox1.Location = new System.Drawing.Point(12, 440);
+            this.groupBox1.Location = new System.Drawing.Point(276, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(519, 330);
             this.groupBox1.TabIndex = 352;
@@ -532,8 +308,6 @@
             this.keyframe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.keyframe.Enabled = false;
             this.keyframe.FormattingEnabled = true;
-            this.keyframe.Items.AddRange(new object[] {
-            "PLACEHOLDER"});
             this.keyframe.Location = new System.Drawing.Point(14, 230);
             this.keyframe.Name = "keyframe";
             this.keyframe.Size = new System.Drawing.Size(114, 21);
@@ -567,8 +341,6 @@
             this.held_object_name.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.held_object_name.Enabled = false;
             this.held_object_name.FormattingEnabled = true;
-            this.held_object_name.Items.AddRange(new object[] {
-            "PLACEHOLDER"});
             this.held_object_name.Location = new System.Drawing.Point(396, 231);
             this.held_object_name.Name = "held_object_name";
             this.held_object_name.Size = new System.Drawing.Size(114, 21);
@@ -603,8 +375,6 @@
             this.thrown_object_name.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.thrown_object_name.Enabled = false;
             this.thrown_object_name.FormattingEnabled = true;
-            this.thrown_object_name.Items.AddRange(new object[] {
-            "PLACEHOLDER"});
             this.thrown_object_name.Location = new System.Drawing.Point(265, 231);
             this.thrown_object_name.Name = "thrown_object_name";
             this.thrown_object_name.Size = new System.Drawing.Size(114, 21);
@@ -765,9 +535,9 @@
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(262, 20);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(107, 13);
+            this.label16.Size = new System.Drawing.Size(56, 13);
             this.label16.TabIndex = 383;
-            this.label16.Text = "Dropped Item Spawn";
+            this.label16.Text = "Composite";
             // 
             // composite
             // 
@@ -860,51 +630,71 @@
             this.name.TabIndex = 362;
             this.toolTip1.SetToolTip(this.name, "The inventory item codename.");
             // 
+            // listView
+            // 
+            this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ItemName});
+            this.listView.FullRowSelect = true;
+            listViewGroup1.Header = "Objects";
+            listViewGroup1.Name = "object";
+            listViewGroup1.Tag = "object";
+            listViewGroup2.Header = "Weapons";
+            listViewGroup2.Name = "weapon";
+            listViewGroup2.Tag = "weapon";
+            listViewGroup3.Header = "Ammo Types";
+            listViewGroup3.Name = "ammo";
+            listViewGroup3.Tag = "ammo";
+            listViewGroup4.Header = "Medikits";
+            listViewGroup4.Name = "medikit";
+            listViewGroup4.Tag = "medikit";
+            listViewGroup5.Header = "Explosives";
+            listViewGroup5.Name = "ied";
+            listViewGroup5.Tag = "ied";
+            listViewGroup6.Header = "Light Emitters";
+            listViewGroup6.Name = "light";
+            listViewGroup6.Tag = "light";
+            this.listView.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
+            listViewGroup1,
+            listViewGroup2,
+            listViewGroup3,
+            listViewGroup4,
+            listViewGroup5,
+            listViewGroup6});
+            this.listView.HideSelection = false;
+            this.listView.Location = new System.Drawing.Point(12, 12);
+            this.listView.MultiSelect = false;
+            this.listView.Name = "listView";
+            this.listView.Size = new System.Drawing.Size(258, 330);
+            this.listView.TabIndex = 354;
+            this.listView.UseCompatibleStateImageBehavior = false;
+            this.listView.View = System.Windows.Forms.View.Details;
+            this.listView.SelectedIndexChanged += new System.EventHandler(this.listView_SelectedIndexChanged);
+            // 
+            // ItemName
+            // 
+            this.ItemName.Text = "Item Name";
+            this.ItemName.Width = 239;
+            // 
             // InventoryLoot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(541, 778);
-            this.Controls.Add(this.groupBox3);
+            this.ClientSize = new System.Drawing.Size(809, 354);
+            this.Controls.Add(this.listView);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label78);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "InventoryLoot";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alien: Isolation Item and Inventory Editor";
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.Text = "OpenCAGE Item and Inventory Editor";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button edit_light;
-        private System.Windows.Forms.ListBox Inv_Lights;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button edit_ied;
-        private System.Windows.Forms.ListBox Inv_IED;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button edit_medikit;
-        private System.Windows.Forms.ListBox Inv_MedKit;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button edit_ammo;
-        private System.Windows.Forms.ListBox Inv_Ammo;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button edit_weapons;
-        private System.Windows.Forms.ListBox Inv_Weapons;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button edit_objects;
-        private System.Windows.Forms.ListBox Inv_Objects;
-        private System.Windows.Forms.Label label78;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label29;
@@ -954,5 +744,7 @@
         private System.Windows.Forms.TextBox upgraded_health_increase_percentage;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox health_increase_percentage;
+        private System.Windows.Forms.ListView listView;
+        private System.Windows.Forms.ColumnHeader ItemName;
     }
 }
