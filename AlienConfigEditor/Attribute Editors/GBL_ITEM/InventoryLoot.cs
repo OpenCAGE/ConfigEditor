@@ -104,33 +104,35 @@ namespace AlienConfigEditor
                 return;
             }
 
-            setAttributeString("name", name, null);
-            setAttributeString("thrown_object_name", null, thrown_object_name);
-            setAttributeString("target_weapon", null, target_weapon);
-            setAttributeString("ammo_type", ammo_type, null);
-            setAttributeString("held_object_name", null, held_object_name);
-            setAttributeString("keyframe", null, keyframe);
-            setAttributeString("default_quantity", default_quantity, null);
-            setAttributeString("stack_limit", stack_limit, null);
-            setAttributeString("consume_when", null, consume_when);
-            setAttributeString("composite", composite, null);
-            setAttributeString("droppable_when_held", null, droppable_when_held);
-            setAttributeString("special_slot", null, special_slot);
-            setAttributeString("display_ammo_as_percentage", null, display_ammo_as_percentage);
-            setAttributeString("vanish_when_collected", null, vanish_when_collected);
-            setAttributeString("display_quantity", null, display_quantity);
-            setAttributeString("radial_menu_order_index", radial_menu_order_index, null);
-            setAttributeString("crafting_resource", null, crafting_resource);
-            setAttributeString("localisation_tag", localisation_tag, null);
-            setAttributeString("activated_by", null, activated_by);
-            setAttributeString("health_increase_percentage", health_increase_percentage, null);
-            setAttributeString("upgraded_health_increase_percentage", upgraded_health_increase_percentage, null);
-            setAttributeString("drop_when_consume", null, drop_when_consume);
-            setAttributeString("cancellable_duration_in_seconds", cancellable_duration_in_seconds, null);
+            //TODO: handle default values here...
+
+            SetAttributeString("name", name, null);
+            SetAttributeString("thrown_object_name", null, thrown_object_name);
+            SetAttributeString("target_weapon", null, target_weapon);
+            SetAttributeString("ammo_type", ammo_type, null);
+            SetAttributeString("held_object_name", null, held_object_name);
+            SetAttributeString("keyframe", null, keyframe);
+            SetAttributeString("default_quantity", default_quantity, null);
+            SetAttributeString("stack_limit", stack_limit, null);
+            SetAttributeString("consume_when", null, consume_when);
+            SetAttributeString("composite", composite, null);
+            SetAttributeString("droppable_when_held", null, droppable_when_held);
+            SetAttributeString("special_slot", null, special_slot);
+            SetAttributeString("display_ammo_as_percentage", null, display_ammo_as_percentage);
+            SetAttributeString("vanish_when_collected", null, vanish_when_collected);
+            SetAttributeString("display_quantity", null, display_quantity);
+            SetAttributeString("radial_menu_order_index", radial_menu_order_index, null);
+            SetAttributeString("crafting_resource", null, crafting_resource);
+            SetAttributeString("localisation_tag", localisation_tag, null);
+            SetAttributeString("activated_by", null, activated_by);
+            SetAttributeString("health_increase_percentage", health_increase_percentage, null);
+            SetAttributeString("upgraded_health_increase_percentage", upgraded_health_increase_percentage, null);
+            SetAttributeString("drop_when_consume", null, drop_when_consume);
+            SetAttributeString("cancellable_duration_in_seconds", cancellable_duration_in_seconds, null);
         }
 
         //return attribute as string (and handle nulls)
-        private void setAttributeString(string attributeName, TextBox textbox, ComboBox combobox)
+        private void SetAttributeString(string attributeName, TextBox textbox, ComboBox combobox)
         {
             if (textbox == null)
             {
