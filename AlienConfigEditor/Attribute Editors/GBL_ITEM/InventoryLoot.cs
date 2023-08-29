@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
@@ -21,9 +22,14 @@ namespace AlienConfigEditor
             InitializeComponent();
 
             _gblItem = new CATHODE.BML(SharedData.pathToAI + @"\DATA\GBL_ITEM.BML");
-            _gblItemXML = XDocument.Parse(_gblItem.Content.OuterXml.Replace(" xmlns=\"http://www.w3schools.com\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.w3schools.com gbl_item.xsd\"", ""));
+            _gblItemXML = XDocument.Load(_gblItem.Content.CreateNavigator().ReadSubtree());
 
             ReloadUI();
+        }
+
+        private IEnumerable<XElement> GetElements(string parent, string child)
+        {
+            return _gblItemXML.Elements().Elements().FirstOrDefault(o => o.Name.LocalName == parent).Elements().Where(o => o.Name.LocalName == child);
         }
 
         private void ReloadUI()
@@ -45,7 +51,7 @@ namespace AlienConfigEditor
             //Parse all item configs
             Action<string> parseItems = delegate (string groupName)
             {
-                IEnumerable<XElement> items = _gblItemXML.XPathSelectElements("//item_database/objects/" + groupName);
+                IEnumerable<XElement> items = GetElements("objects", groupName);
                 foreach (XElement item in items)
                 {
                     string itemName = item.Attribute("name").Value.ToString();
@@ -67,7 +73,7 @@ namespace AlienConfigEditor
             parseItems("light");
 
             //Add all available item slots to UI
-            IEnumerable<XElement> slots = _gblItemXML.XPathSelectElements("//item_database/special_slots/slot");
+            IEnumerable<XElement> slots = GetElements("special_slots", "slot");
             foreach (XElement slot in slots)
                 special_slot.Items.Add(slot.Attribute("name").Value.ToString());
 
@@ -80,15 +86,18 @@ namespace AlienConfigEditor
 
             //If an element was previously selected, re-select it
             if (_selectedElement != null)
+            {
                 listView.Items[_selectedElement.Attribute("name").Value.ToString()].Selected = true;
+                listView_SelectedIndexChanged(null, null);
+            }
         }
 
         private void listView_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (listView.SelectedItems.Count != 1) return;
+            if (listView.SelectedItems.Count != 1 || listView.SelectedItems[0].Group == null) return;
             _selectedElement = null;
 
-            IEnumerable<XElement> objects = _gblItemXML.XPathSelectElements("//item_database/objects/" + listView.SelectedItems[0].Group.Tag);
+            IEnumerable<XElement> objects = GetElements("objects", listView.SelectedItems[0].Group.Tag.ToString());
             foreach (XElement el in objects)
             {
                 if (el.Attribute("name").Value.ToString() == listView.SelectedItems[0].Text)
@@ -195,7 +204,11 @@ namespace AlienConfigEditor
             try { _selectedElement.Attribute("drop_when_consume").Value = drop_when_consume.Text; } catch { }
             try { _selectedElement.Attribute("cancellable_duration_in_seconds").Value = cancellable_duration_in_seconds.Text; } catch { }
 
-            _gblItem.Content.LoadXml(_gblItemXML.ToString());
+            {
+                XmlDocument content = new XmlDocument();
+                content.LoadXml(_gblItemXML.ToString());
+                _gblItem.Content = content;
+            }
             _gblItem.Save();
 
             ReloadUI();
