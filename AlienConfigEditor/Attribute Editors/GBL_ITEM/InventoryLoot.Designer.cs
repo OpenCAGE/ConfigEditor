@@ -139,7 +139,7 @@
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label29);
             this.groupBox1.Controls.Add(this.name);
-            this.groupBox1.Location = new System.Drawing.Point(276, 12);
+            this.groupBox1.Location = new System.Drawing.Point(401, 210);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(519, 330);
             this.groupBox1.TabIndex = 352;
@@ -664,7 +664,7 @@
             this.listView.Location = new System.Drawing.Point(12, 12);
             this.listView.MultiSelect = false;
             this.listView.Name = "listView";
-            this.listView.Size = new System.Drawing.Size(258, 330);
+            this.listView.Size = new System.Drawing.Size(316, 707);
             this.listView.TabIndex = 354;
             this.listView.UseCompatibleStateImageBehavior = false;
             this.listView.View = System.Windows.Forms.View.Details;
@@ -679,15 +679,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(809, 354);
+            this.ClientSize = new System.Drawing.Size(994, 731);
             this.Controls.Add(this.listView);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "InventoryLoot";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "OpenCAGE Item and Inventory Editor";
+            this.Text = "Item and Inventory Editor";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

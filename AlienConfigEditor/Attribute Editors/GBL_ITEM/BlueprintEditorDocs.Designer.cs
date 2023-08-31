@@ -183,7 +183,7 @@
             this.MaximizeBox = false;
             this.Name = "BlueprintEditorDocs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alien: Isolation Item Documentation";
+            this.Text = "Item Documentation";
             this.ResumeLayout(false);
             this.PerformLayout();
 

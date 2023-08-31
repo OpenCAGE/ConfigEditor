@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AlienConfigEditor));
-            this.label78 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.decrease_sweep_duration = new System.Windows.Forms.TextBox();
@@ -105,29 +104,19 @@
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(12, 9);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(375, 29);
-            this.label78.TabIndex = 304;
-            this.label78.Text = "Alien: Isolation Alien Config Editor";
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(288, 267);
+            this.label22.Location = new System.Drawing.Point(405, 375);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(0, 13);
             this.label22.TabIndex = 194;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(490, 437);
+            this.btnSave.Location = new System.Drawing.Point(720, 684);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(241, 35);
+            this.btnSave.Size = new System.Drawing.Size(262, 35);
             this.btnSave.TabIndex = 185;
             this.btnSave.Text = "Save Alien Configuration";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -196,16 +185,16 @@
             "BACKSTAGEHOLD_MILD",
             "CANTEEN",
             "CREWEXPENDABLE_VENT"});
-            this.classSelection.Location = new System.Drawing.Point(393, 14);
+            this.classSelection.Location = new System.Drawing.Point(12, 13);
             this.classSelection.Name = "classSelection";
-            this.classSelection.Size = new System.Drawing.Size(258, 21);
+            this.classSelection.Size = new System.Drawing.Size(849, 21);
             this.classSelection.TabIndex = 162;
             // 
             // btnSelectClass
             // 
-            this.btnSelectClass.Location = new System.Drawing.Point(655, 13);
+            this.btnSelectClass.Location = new System.Drawing.Point(867, 12);
             this.btnSelectClass.Name = "btnSelectClass";
-            this.btnSelectClass.Size = new System.Drawing.Size(75, 23);
+            this.btnSelectClass.Size = new System.Drawing.Size(115, 23);
             this.btnSelectClass.TabIndex = 161;
             this.btnSelectClass.Text = "Load Config";
             this.infoPopup.SetToolTip(this.btnSelectClass, "Load selected alien configuration.");
@@ -697,7 +686,7 @@
             this.groupBox1.Controls.Add(this.sweep_box_half_width);
             this.groupBox1.Controls.Add(this.label34);
             this.groupBox1.Controls.Add(this.sweep_box_min_half_length);
-            this.groupBox1.Location = new System.Drawing.Point(12, 54);
+            this.groupBox1.Location = new System.Drawing.Point(129, 162);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(456, 418);
             this.groupBox1.TabIndex = 395;
@@ -724,7 +713,7 @@
             this.groupBox2.Controls.Add(this.label46);
             this.groupBox2.Controls.Add(this.min_distance);
             this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Location = new System.Drawing.Point(490, 54);
+            this.groupBox2.Location = new System.Drawing.Point(607, 162);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(241, 306);
             this.groupBox2.TabIndex = 396;
@@ -824,7 +813,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(487, 378);
+            this.label25.Location = new System.Drawing.Point(604, 486);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(239, 39);
             this.label25.TabIndex = 407;
@@ -835,21 +824,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(741, 481);
+            this.ClientSize = new System.Drawing.Size(994, 731);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.label78);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.classSelection);
             this.Controls.Add(this.btnSelectClass);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "AlienConfigEditor";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alien: Isolation Alien Configuration Editor";
+            this.Text = "Alien Configuration Editor";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -860,8 +845,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox decrease_sweep_duration;

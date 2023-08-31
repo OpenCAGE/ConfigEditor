@@ -34,7 +34,6 @@
             this.labelToChange = new System.Windows.Forms.Label();
             this.QUANTITY_NEW = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.openItemDocs = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -46,7 +45,7 @@
             this.groupBox1.Controls.Add(this.labelToChange);
             this.groupBox1.Controls.Add(this.QUANTITY_NEW);
             this.groupBox1.Controls.Add(this.label40);
-            this.groupBox1.Location = new System.Drawing.Point(5, 41);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(439, 84);
             this.groupBox1.TabIndex = 328;
@@ -89,20 +88,9 @@
             this.label40.TabIndex = 243;
             this.label40.Text = "Quantity";
             // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(14, 9);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(424, 29);
-            this.label78.TabIndex = 327;
-            this.label78.Text = "Alien: Isolation Blueprint Recipe Editor";
-            this.label78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(263, 131);
+            this.btnSave.Location = new System.Drawing.Point(270, 102);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(181, 30);
             this.btnSave.TabIndex = 326;
@@ -112,7 +100,7 @@
             // 
             // openItemDocs
             // 
-            this.openItemDocs.Location = new System.Drawing.Point(5, 140);
+            this.openItemDocs.Location = new System.Drawing.Point(12, 111);
             this.openItemDocs.Name = "openItemDocs";
             this.openItemDocs.Size = new System.Drawing.Size(129, 21);
             this.openItemDocs.TabIndex = 329;
@@ -124,21 +112,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 168);
+            this.ClientSize = new System.Drawing.Size(462, 142);
             this.Controls.Add(this.openItemDocs);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label78);
             this.Controls.Add(this.btnSave);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "BlueprintEditorPopup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alien: Isolation Blueprint Recipe Editor";
+            this.Text = "Blueprint Recipe Editor";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -148,7 +134,6 @@
         private System.Windows.Forms.Label labelToChange;
         private System.Windows.Forms.TextBox QUANTITY_NEW;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ComboBox RESOURCES_NEW;
         private System.Windows.Forms.Button openItemDocs;

@@ -12,10 +12,11 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
+using WeifenLuo.WinFormsUI.Docking;
 
 namespace AlienConfigEditor
 {
-    public partial class LoadMovieEditor : Form
+    public partial class LoadMovieEditor : DockContent
     {
         //Common file paths
         string pathToWorkingBML;
@@ -26,10 +27,6 @@ namespace AlienConfigEditor
         public LoadMovieEditor()
         {
             InitializeComponent();
-
-            this.WindowState = FormWindowState.Minimized;
-            this.Show();
-            this.WindowState = FormWindowState.Normal;
 
             //Update cursor and begin
             Cursor.Current = Cursors.WaitCursor;

@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using WeifenLuo.WinFormsUI.Docking;
 
 namespace AlienConfigEditor
 {
-    public partial class LocalisationEditor : Form
+    public partial class LocalisationEditor : DockContent
     {
         LocalisationHandler localisationUtility = new LocalisationHandler();
         LocalisedText currentString = new LocalisedText();

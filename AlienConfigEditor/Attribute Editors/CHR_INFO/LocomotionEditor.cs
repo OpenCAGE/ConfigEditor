@@ -8,10 +8,11 @@
 using System;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using WeifenLuo.WinFormsUI.Docking;
 
 namespace AlienConfigEditor
 {
-    public partial class LocomotionEditor : Form
+    public partial class LocomotionEditor : DockContent
     {
         //Load shared scripts
         AYZ_AttributeEditors AlienAttribute = new AYZ_AttributeEditors();
@@ -23,10 +24,6 @@ namespace AlienConfigEditor
         public LocomotionEditor()
         {
             InitializeComponent();
-
-            this.WindowState = FormWindowState.Minimized;
-            this.Show();
-            this.WindowState = FormWindowState.Normal;
         }
 
         //load character data

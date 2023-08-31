@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DifficultyEditor));
-            this.label78 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.classSelection = new System.Windows.Forms.ComboBox();
             this.btnSelectClass = new System.Windows.Forms.Button();
@@ -157,21 +156,11 @@
             this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(280, 9);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(334, 29);
-            this.label78.TabIndex = 412;
-            this.label78.Text = "Alien: Isolation Difficulty Editor";
-            // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(637, 714);
+            this.btnSave.Location = new System.Drawing.Point(720, 684);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(241, 35);
+            this.btnSave.Size = new System.Drawing.Size(262, 35);
             this.btnSave.TabIndex = 410;
             this.btnSave.Text = "Save Difficulty Configuration";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -187,16 +176,16 @@
             "EASY",
             "NOVICE",
             "IRON"});
-            this.classSelection.Location = new System.Drawing.Point(15, 42);
+            this.classSelection.Location = new System.Drawing.Point(12, 13);
             this.classSelection.Name = "classSelection";
-            this.classSelection.Size = new System.Drawing.Size(763, 21);
+            this.classSelection.Size = new System.Drawing.Size(849, 21);
             this.classSelection.TabIndex = 409;
             // 
             // btnSelectClass
             // 
-            this.btnSelectClass.Location = new System.Drawing.Point(784, 41);
+            this.btnSelectClass.Location = new System.Drawing.Point(867, 12);
             this.btnSelectClass.Name = "btnSelectClass";
-            this.btnSelectClass.Size = new System.Drawing.Size(94, 23);
+            this.btnSelectClass.Size = new System.Drawing.Size(115, 23);
             this.btnSelectClass.TabIndex = 408;
             this.btnSelectClass.Text = "Load Difficulty";
             this.btnSelectClass.UseVisualStyleBackColor = true;
@@ -220,17 +209,18 @@
             "MELEE_HUMAN",
             "INNOCENT",
             "CUTSCENE_ANDROID"});
-            this.characterTypes.Location = new System.Drawing.Point(15, 364);
+            this.characterTypes.Location = new System.Drawing.Point(12, 332);
             this.characterTypes.Name = "characterTypes";
-            this.characterTypes.Size = new System.Drawing.Size(722, 21);
+            this.characterTypes.Size = new System.Drawing.Size(849, 21);
             this.characterTypes.TabIndex = 415;
             // 
             // loadNPC
             // 
             this.loadNPC.Enabled = false;
-            this.loadNPC.Location = new System.Drawing.Point(743, 363);
+            this.loadNPC.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loadNPC.Location = new System.Drawing.Point(867, 332);
             this.loadNPC.Name = "loadNPC";
-            this.loadNPC.Size = new System.Drawing.Size(135, 23);
+            this.loadNPC.Size = new System.Drawing.Size(115, 23);
             this.loadNPC.TabIndex = 414;
             this.loadNPC.Text = "Load Character Type";
             this.loadNPC.UseVisualStyleBackColor = true;
@@ -247,7 +237,7 @@
             "VIEWCONESET_HUMAN",
             "VIEWCONESET_SLEEPING",
             "VIEWCONESET_ANDROID"});
-            this.viewconeSet.Location = new System.Drawing.Point(448, 588);
+            this.viewconeSet.Location = new System.Drawing.Point(498, 556);
             this.viewconeSet.Name = "viewconeSet";
             this.viewconeSet.Size = new System.Drawing.Size(289, 21);
             this.viewconeSet.TabIndex = 417;
@@ -255,7 +245,7 @@
             // loadViewconeSet
             // 
             this.loadViewconeSet.Enabled = false;
-            this.loadViewconeSet.Location = new System.Drawing.Point(743, 587);
+            this.loadViewconeSet.Location = new System.Drawing.Point(793, 555);
             this.loadViewconeSet.Name = "loadViewconeSet";
             this.loadViewconeSet.Size = new System.Drawing.Size(135, 23);
             this.loadViewconeSet.TabIndex = 416;
@@ -273,7 +263,7 @@
             "Close",
             "Normal",
             "Peripheral"});
-            this.viewconeType.Location = new System.Drawing.Point(448, 615);
+            this.viewconeType.Location = new System.Drawing.Point(498, 583);
             this.viewconeType.Name = "viewconeType";
             this.viewconeType.Size = new System.Drawing.Size(289, 21);
             this.viewconeType.TabIndex = 419;
@@ -281,7 +271,7 @@
             // loadViewconeType
             // 
             this.loadViewconeType.Enabled = false;
-            this.loadViewconeType.Location = new System.Drawing.Point(743, 614);
+            this.loadViewconeType.Location = new System.Drawing.Point(793, 582);
             this.loadViewconeType.Name = "loadViewconeType";
             this.loadViewconeType.Size = new System.Drawing.Size(135, 23);
             this.loadViewconeType.TabIndex = 418;
@@ -314,7 +304,7 @@
             this.groupBox1.Controls.Add(this.weapon_sound_sense_activation_modifier);
             this.groupBox1.Controls.Add(this.visual_combined_sense_activation_modifier);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Location = new System.Drawing.Point(15, 392);
+            this.groupBox1.Location = new System.Drawing.Point(65, 360);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(427, 318);
             this.groupBox1.TabIndex = 414;
@@ -542,7 +532,7 @@
             this.groupBox3.Controls.Add(this.damage_received_scalar);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.damage_dealt_scalar);
-            this.groupBox3.Location = new System.Drawing.Point(448, 392);
+            this.groupBox3.Location = new System.Drawing.Point(498, 360);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(430, 189);
             this.groupBox3.TabIndex = 415;
@@ -695,7 +685,7 @@
             this.groupBox4.Controls.Add(this.visual_sense_exposure_effect_lower_modifier);
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Controls.Add(this.visual_sense_exposure_effect_upper_modifier);
-            this.groupBox4.Location = new System.Drawing.Point(448, 642);
+            this.groupBox4.Location = new System.Drawing.Point(498, 610);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(430, 66);
             this.groupBox4.TabIndex = 416;
@@ -788,7 +778,7 @@
             this.groupBox5.Controls.Add(this.backstage_area_sweep_max_distance_modifier);
             this.groupBox5.Controls.Add(this.backstage_area_sweep_min_distance_modifier);
             this.groupBox5.Controls.Add(this.label31);
-            this.groupBox5.Location = new System.Drawing.Point(656, 73);
+            this.groupBox5.Location = new System.Drawing.Point(706, 41);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(222, 285);
             this.groupBox5.TabIndex = 421;
@@ -977,7 +967,7 @@
             this.groupBox6.Controls.Add(this.sweep_box_half_width_modifier);
             this.groupBox6.Controls.Add(this.label61);
             this.groupBox6.Controls.Add(this.sweep_box_half_length_modifier);
-            this.groupBox6.Location = new System.Drawing.Point(15, 107);
+            this.groupBox6.Location = new System.Drawing.Point(65, 75);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(635, 251);
             this.groupBox6.TabIndex = 420;
@@ -1341,7 +1331,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(557, 70);
+            this.label40.Location = new System.Drawing.Point(607, 38);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(94, 13);
             this.label40.TabIndex = 338;
@@ -1358,7 +1348,7 @@
             "EASY",
             "NOVICE",
             "IRON"});
-            this.Template_Name.Location = new System.Drawing.Point(463, 86);
+            this.Template_Name.Location = new System.Drawing.Point(513, 54);
             this.Template_Name.Name = "Template_Name";
             this.Template_Name.Size = new System.Drawing.Size(187, 21);
             this.Template_Name.TabIndex = 339;
@@ -1367,7 +1357,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(892, 755);
+            this.ClientSize = new System.Drawing.Size(994, 731);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox4);
@@ -1381,16 +1371,12 @@
             this.Controls.Add(this.label40);
             this.Controls.Add(this.loadNPC);
             this.Controls.Add(this.Template_Name);
-            this.Controls.Add(this.label78);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.classSelection);
             this.Controls.Add(this.btnSelectClass);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "DifficultyEditor";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alien: Isolation Diffculty Editor";
+            this.Text = "Diffculty Editor";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -1407,7 +1393,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ComboBox classSelection;
         private System.Windows.Forms.Button btnSelectClass;

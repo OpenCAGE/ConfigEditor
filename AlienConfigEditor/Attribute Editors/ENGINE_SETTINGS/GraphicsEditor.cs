@@ -4,10 +4,11 @@ using System.IO;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using System.Xml.XPath;
+using WeifenLuo.WinFormsUI.Docking;
 
 namespace AlienConfigEditor
 {
-    public partial class GraphicsEditor : Form
+    public partial class GraphicsEditor : DockContent
     {
         //Common file paths
         string pathToGameXML;
@@ -16,10 +17,6 @@ namespace AlienConfigEditor
         public GraphicsEditor()
         {
             InitializeComponent();
-
-            this.WindowState = FormWindowState.Minimized;
-            this.Show();
-            this.WindowState = FormWindowState.Normal;
 
             //Update cursor and begin
             Cursor.Current = Cursors.WaitCursor;

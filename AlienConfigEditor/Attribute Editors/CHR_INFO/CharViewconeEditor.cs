@@ -10,10 +10,11 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using System.Xml.XPath;
+using WeifenLuo.WinFormsUI.Docking;
 
 namespace AlienConfigEditor
 {
-    public partial class CharViewconeEditor : Form
+    public partial class CharViewconeEditor : DockContent
     {
         //Load shared scripts
         AYZ_AttributeEditors AlienAttribute = new AYZ_AttributeEditors();
@@ -33,10 +34,6 @@ namespace AlienConfigEditor
         public CharViewconeEditor()
         {
             InitializeComponent();
-
-            this.WindowState = FormWindowState.Minimized;
-            this.Show();
-            this.WindowState = FormWindowState.Normal;
         }
 
         //Load character

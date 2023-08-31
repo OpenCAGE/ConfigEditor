@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WeaponEditor));
-            this.label78 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.classSelection = new System.Windows.Forms.ComboBox();
@@ -133,29 +132,19 @@
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(12, 9);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(314, 29);
-            this.label78.TabIndex = 412;
-            this.label78.Text = "Alien: Isolation Ammo Editor";
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(288, 267);
+            this.label22.Location = new System.Drawing.Point(421, 287);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(0, 13);
             this.label22.TabIndex = 411;
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(482, 634);
+            this.btnSave.Location = new System.Drawing.Point(720, 684);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(209, 35);
+            this.btnSave.Size = new System.Drawing.Size(262, 35);
             this.btnSave.TabIndex = 410;
             this.btnSave.Text = "Save Ammo Configuration";
             this.toolTip1.SetToolTip(this.btnSave, "Save the ammo configuration - make sure to save your range data first.");
@@ -206,17 +195,17 @@
             "GRENADE_STUN_TIER2",
             "GRENADE_STUN_TIER3",
             "ENVIRONMENT_FLAME"});
-            this.classSelection.Location = new System.Drawing.Point(332, 12);
+            this.classSelection.Location = new System.Drawing.Point(12, 13);
             this.classSelection.Name = "classSelection";
-            this.classSelection.Size = new System.Drawing.Size(279, 21);
+            this.classSelection.Size = new System.Drawing.Size(849, 21);
             this.classSelection.TabIndex = 409;
             this.toolTip1.SetToolTip(this.classSelection, "All ammo types.");
             // 
             // btnSelectClass
             // 
-            this.btnSelectClass.Location = new System.Drawing.Point(615, 11);
+            this.btnSelectClass.Location = new System.Drawing.Point(867, 12);
             this.btnSelectClass.Name = "btnSelectClass";
-            this.btnSelectClass.Size = new System.Drawing.Size(75, 23);
+            this.btnSelectClass.Size = new System.Drawing.Size(115, 23);
             this.btnSelectClass.TabIndex = 408;
             this.btnSelectClass.Text = "Load Ammo";
             this.toolTip1.SetToolTip(this.btnSelectClass, "Load selected ammo type into the editor.");
@@ -258,7 +247,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Location = new System.Drawing.Point(232, 52);
+            this.groupBox1.Location = new System.Drawing.Point(365, 72);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(459, 405);
             this.groupBox1.TabIndex = 413;
@@ -612,7 +601,7 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.min_distance);
             this.groupBox2.Controls.Add(this.label26);
-            this.groupBox2.Location = new System.Drawing.Point(12, 300);
+            this.groupBox2.Location = new System.Drawing.Point(145, 320);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(214, 157);
             this.groupBox2.TabIndex = 414;
@@ -693,7 +682,7 @@
             this.groupBox3.Controls.Add(this.impulse_at_centre_of_blast);
             this.groupBox3.Controls.Add(this.impulse_radius);
             this.groupBox3.Controls.Add(this.label33);
-            this.groupBox3.Location = new System.Drawing.Point(12, 52);
+            this.groupBox3.Location = new System.Drawing.Point(145, 72);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(214, 243);
             this.groupBox3.TabIndex = 415;
@@ -844,7 +833,7 @@
             this.groupBox4.Controls.Add(this.saveRange);
             this.groupBox4.Controls.Add(this.label6);
             this.groupBox4.Controls.Add(this.vs_NPC);
-            this.groupBox4.Location = new System.Drawing.Point(12, 465);
+            this.groupBox4.Location = new System.Drawing.Point(145, 485);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(679, 163);
             this.groupBox4.TabIndex = 430;
@@ -1237,22 +1226,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(701, 679);
+            this.ClientSize = new System.Drawing.Size(994, 731);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.label78);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.classSelection);
             this.Controls.Add(this.btnSelectClass);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSave);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "WeaponEditor";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alien: Isolation Weapon Ammo Editor";
+            this.Text = "Weapon Ammo Editor";
             this.Load += new System.EventHandler(this.WeaponEditor_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -1268,7 +1253,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ComboBox classSelection;

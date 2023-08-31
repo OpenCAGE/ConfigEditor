@@ -8,11 +8,12 @@
 using System;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using WeifenLuo.WinFormsUI.Docking;
 
 namespace AlienConfigEditor
 {
     //Main Form
-    public partial class CharEd : Form
+    public partial class CharEd : DockContent
     {
         //Load shared scripts
         AYZ_AttributeEditors AlienAttribute = new AYZ_AttributeEditors();
@@ -25,10 +26,6 @@ namespace AlienConfigEditor
         public CharEd()
         {
             InitializeComponent();
-
-            this.WindowState = FormWindowState.Minimized;
-            this.Show();
-            this.WindowState = FormWindowState.Normal;
         }
 
         //Load Class

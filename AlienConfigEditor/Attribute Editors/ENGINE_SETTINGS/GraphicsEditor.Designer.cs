@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GraphicsEditor));
-            this.label78 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.fieldofview_val = new System.Windows.Forms.ListBox();
@@ -83,21 +82,11 @@
             this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(620, 10);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(184, 78);
-            this.label78.TabIndex = 351;
-            this.label78.Text = "Alien: Isolation\r\nGraphics Settings\r\nEditor";
-            // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(652, 490);
+            this.btnSave.Location = new System.Drawing.Point(720, 684);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(150, 35);
+            this.btnSave.Size = new System.Drawing.Size(262, 35);
             this.btnSave.TabIndex = 354;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -111,7 +100,7 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.fieldofview_name);
-            this.groupBox2.Location = new System.Drawing.Point(357, 10);
+            this.groupBox2.Location = new System.Drawing.Point(437, 113);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(257, 295);
             this.groupBox2.TabIndex = 359;
@@ -182,7 +171,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.windowedres_name);
-            this.groupBox1.Location = new System.Drawing.Point(12, 10);
+            this.groupBox1.Location = new System.Drawing.Point(92, 113);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(339, 295);
             this.groupBox1.TabIndex = 358;
@@ -268,7 +257,7 @@
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.shadowmap_name);
-            this.groupBox3.Location = new System.Drawing.Point(12, 311);
+            this.groupBox3.Location = new System.Drawing.Point(92, 414);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(257, 173);
             this.groupBox3.TabIndex = 361;
@@ -337,7 +326,7 @@
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.label10);
             this.groupBox4.Controls.Add(this.shadowfilter_name);
-            this.groupBox4.Location = new System.Drawing.Point(278, 311);
+            this.groupBox4.Location = new System.Drawing.Point(358, 414);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(257, 173);
             this.groupBox4.TabIndex = 362;
@@ -406,7 +395,7 @@
             this.groupBox5.Controls.Add(this.label11);
             this.groupBox5.Controls.Add(this.label12);
             this.groupBox5.Controls.Add(this.lod_name);
-            this.groupBox5.Location = new System.Drawing.Point(545, 311);
+            this.groupBox5.Location = new System.Drawing.Point(625, 414);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(257, 173);
             this.groupBox5.TabIndex = 363;
@@ -470,7 +459,7 @@
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.checkHighGloss);
-            this.groupBox6.Location = new System.Drawing.Point(620, 104);
+            this.groupBox6.Location = new System.Drawing.Point(700, 113);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(182, 53);
             this.groupBox6.TabIndex = 360;
@@ -492,7 +481,7 @@
             this.groupBox8.Controls.Add(this.checkAnaglph);
             this.groupBox8.Controls.Add(this.check3D);
             this.groupBox8.Controls.Add(this.checkRift);
-            this.groupBox8.Location = new System.Drawing.Point(620, 173);
+            this.groupBox8.Location = new System.Drawing.Point(700, 182);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(182, 116);
             this.groupBox8.TabIndex = 361;
@@ -533,22 +522,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(811, 534);
+            this.ClientSize = new System.Drawing.Size(994, 731);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.label78);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSave);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "GraphicsEditor";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alien: Isolation Graphics Settings Editor";
+            this.Text = "Graphics Settings Editor";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -564,12 +549,10 @@
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ListBox fieldofview_val;

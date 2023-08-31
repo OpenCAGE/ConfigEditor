@@ -7,10 +7,11 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
+using WeifenLuo.WinFormsUI.Docking;
 
 namespace AlienConfigEditor
 {
-    public partial class InventoryLoot : Form
+    public partial class InventoryLoot : DockContent
     {
         CATHODE.BML _gblItem;
         XDocument _gblItemXML;

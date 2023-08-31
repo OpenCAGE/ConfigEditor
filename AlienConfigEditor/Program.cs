@@ -63,15 +63,10 @@ namespace AlienConfigEditor
             if (!Directory.Exists(SharedData.pathToModsFolder)) 
                 Directory.CreateDirectory(SharedData.pathToModsFolder);
 
-            //Add font resources for use
-            FontManager.AddFont(Properties.Resources.Isolation_Isolation);
-            FontManager.AddFont(Properties.Resources.JixellationBold_Jixellation);
-            FontManager.AddFont(Properties.Resources.NostromoBoldCond_Nostromo_Cond);
-
             //Run app
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(true);
-            Application.Run(new Landing());
+            Application.Run(new ConfigEditor());
         }
 
         public static string GetArgument(string name)
