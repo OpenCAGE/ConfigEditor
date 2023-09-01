@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="packages\Costura.Fody.4.1.0\build\Costura.Fody.props" Condition="Exists('packages\Costura.Fody.4.1.0\build\Costura.Fody.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -52,6 +52,7 @@
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -64,11 +65,16 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="UIAutomationProvider" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>packages\DockPanelSuite.3.1.0\lib\net40\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2015, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>packages\DockPanelSuite.ThemeVS2015.3.1.0\lib\net40\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include=".ayz Pack Tools\AlienModPack.cs" />
     <Compile Include="Attribute Editors\ALIENCONFIGS\AlienConfigEditor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,24 +158,6 @@
     <Compile Include="Attribute Editors\DIFFICULTYSETTINGS\DifficultyEditor.Designer.cs">
       <DependentUpon>DifficultyEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include=".ayz Pack Tools\Filemanager_ExportMod.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include=".ayz Pack Tools\Filemanager_ExportMod.Designer.cs">
-      <DependentUpon>Filemanager_ExportMod.cs</DependentUpon>
-    </Compile>
-    <Compile Include=".ayz Pack Tools\Filemanager_ImportMod.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include=".ayz Pack Tools\Filemanager_ImportMod.Designer.cs">
-      <DependentUpon>Filemanager_ImportMod.cs</DependentUpon>
-    </Compile>
-    <Compile Include=".ayz Pack Tools\Filemanager_ResetMod.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include=".ayz Pack Tools\Filemanager_ResetMod.Designer.cs">
-      <DependentUpon>Filemanager_ResetMod.cs</DependentUpon>
-    </Compile>
     <Compile Include="Attribute Editors\GBL_ITEM\HackingEditor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,10 +170,10 @@
     <Compile Include="Attribute Editors\GBL_ITEM\InventoryLoot.Designer.cs">
       <DependentUpon>InventoryLoot.cs</DependentUpon>
     </Compile>
-    <Compile Include="Attribute Editors\ConfigEditor.cs">
+    <Compile Include="ConfigEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Attribute Editors\ConfigEditor.Designer.cs">
+    <Compile Include="ConfigEditor.Designer.cs">
       <DependentUpon>ConfigEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="Attribute Editors\GBL_ITEM\LoadMovieEditor.cs">
@@ -199,15 +187,6 @@
     </Compile>
     <Compile Include="Attribute Editors\CHR_INFO\LocomotionEditor.Designer.cs">
       <DependentUpon>LocomotionEditor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Landing.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Landing.Designer.cs">
-      <DependentUpon>Landing.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LandingWPF.xaml.cs">
-      <DependentUpon>LandingWPF.xaml</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -229,21 +208,6 @@
     <Compile Include="Attribute Editors\WEAPON_INFO\WeaponEditor.Designer.cs">
       <DependentUpon>WeaponEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="SharedAssets\Fonts\FontManager.cs" />
-    <EmbeddedResource Include=".ayz Pack Tools\Filemanager_ExportMod.resx">
-      <DependentUpon>Filemanager_ExportMod.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include=".ayz Pack Tools\Filemanager_ImportMod.resx">
-      <DependentUpon>Filemanager_ImportMod.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include=".ayz Pack Tools\Filemanager_ResetMod.resx">
-      <DependentUpon>Filemanager_ResetMod.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Attribute Editors\ALIENCONFIGS\AlienConfigEditor.resx">
       <DependentUpon>AlienConfigEditor.cs</DependentUpon>
     </EmbeddedResource>
@@ -289,7 +253,7 @@
     <EmbeddedResource Include="Attribute Editors\GBL_ITEM\InventoryLoot.resx">
       <DependentUpon>InventoryLoot.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Attribute Editors\ConfigEditor.resx">
+    <EmbeddedResource Include="ConfigEditor.resx">
       <DependentUpon>ConfigEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Attribute Editors\GBL_ITEM\LoadMovieEditor.resx">
@@ -297,9 +261,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Attribute Editors\CHR_INFO\LocomotionEditor.resx">
       <DependentUpon>LocomotionEditor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Landing.resx">
-      <DependentUpon>Landing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -318,132 +279,27 @@
     <None Include="app.manifest">
       <SubType>Designer</SubType>
     </None>
-    <Resource Include="Fonts\Isolation_Isolation.ttf" />
-    <Resource Include="Fonts\JixellationBold_Jixellation.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Reset Files\ALIENCONFIGS\ALIENCONFIGS.BML" />
-    <EmbeddedResource Include="Reset Files\ALIENCONFIGS\BACKSTAGEALERT.BML" />
-    <EmbeddedResource Include="Reset Files\ALIENCONFIGS\BACKSTAGEHOLD.BML" />
-    <EmbeddedResource Include="Reset Files\ALIENCONFIGS\BACKSTAGEHOLD_MILD.BML" />
-    <EmbeddedResource Include="Reset Files\ALIENCONFIGS\BACKSTAGEHOLD_VCLOSE.BML" />
-    <EmbeddedResource Include="Reset Files\ALIENCONFIGS\BACSTAGEHOLD_CLOSE.BML" />
-    <EmbeddedResource Include="Reset Files\ALIENCONFIGS\CANTEEN.BML" />
-    <EmbeddedResource Include="Reset Files\ALIENCONFIGS\CREWEXPENDABLE_VENT.BML" />
-    <EmbeddedResource Include="Reset Files\ALIENCONFIGS\DEFAULT.BML" />
-    <EmbeddedResource Include="Reset Files\ALIENCONFIGS\INTENSE.BML" />
-    <EmbeddedResource Include="Reset Files\ALIENCONFIGS\MILD.BML" />
-    <EmbeddedResource Include="Reset Files\ALIENCONFIGS\MODERATE.BML" />
-    <EmbeddedResource Include="Reset Files\ALIENCONFIGS\MODERATELY_INTENSE.BML" />
-    <EmbeddedResource Include="Reset Files\CHR_INFO\ATTRIBUTES\ALIEN.BML" />
-    <EmbeddedResource Include="Reset Files\CHR_INFO\ATTRIBUTES\ANDROID.BML" />
-    <EmbeddedResource Include="Reset Files\CHR_INFO\ATTRIBUTES\ANDROID_HEAVY.BML" />
-    <EmbeddedResource Include="Reset Files\CHR_INFO\ATTRIBUTES\ATTRIBUTES.BML" />
-    <EmbeddedResource Include="Reset Files\CHR_INFO\ATTRIBUTES\BASE_HUMAN.BML" />
-    <EmbeddedResource Include="Reset Files\CHR_INFO\ATTRIBUTES\CIVILIAN.BML" />
-    <EmbeddedResource Include="Reset Files\CHR_INFO\ATTRIBUTES\CUTSCENE.BML" />
-    <EmbeddedResource Include="Reset Files\CHR_INFO\ATTRIBUTES\CUTSCENE_ANDROID.BML" />
-    <EmbeddedResource Include="Reset Files\CHR_INFO\ATTRIBUTES\DEFAULTS.BML" />
-    <EmbeddedResource Include="Reset Files\CHR_INFO\ATTRIBUTES\FACEHUGGER.BML" />
-    <EmbeddedResource Include="Reset Files\CHR_INFO\ATTRIBUTES\INNOCENT.BML" />
-    <EmbeddedResource Include="Reset Files\CHR_INFO\ATTRIBUTES\MELEE_HUMAN.BML" />
-    <EmbeddedResource Include="Reset Files\CHR_INFO\ATTRIBUTES\RIOT_GUARD.BML" />
-    <EmbeddedResource Include="Reset Files\CHR_INFO\ATTRIBUTES\SECURITY_GUARD.BML" />
-    <EmbeddedResource Include="Reset Files\CHR_INFO\ATTRIBUTES\SPACESUIT_NPC.BML" />
-    <EmbeddedResource Include="Reset Files\CHR_INFO\ATTRIBUTES\THE_PLAYER.BML" />
-    <EmbeddedResource Include="Reset Files\DIFFICULTYSETTINGS\DIFFICULTYSETTINGS.BML" />
-    <EmbeddedResource Include="Reset Files\DIFFICULTYSETTINGS\EASY.BML" />
-    <EmbeddedResource Include="Reset Files\DIFFICULTYSETTINGS\HARD.BML" />
-    <EmbeddedResource Include="Reset Files\DIFFICULTYSETTINGS\IRON.BML" />
-    <EmbeddedResource Include="Reset Files\DIFFICULTYSETTINGS\MEDIUM.BML" />
-    <EmbeddedResource Include="Reset Files\DIFFICULTYSETTINGS\NOVICE.BML" />
-    <EmbeddedResource Include="Reset Files\GBL_ITEM.BML" />
-    <EmbeddedResource Include="Reset Files\VIEW_CONE_SETS\VIEWCONESETS.BML" />
-    <EmbeddedResource Include="Reset Files\VIEW_CONE_SETS\VIEWCONESET_ANDROID.BML" />
-    <EmbeddedResource Include="Reset Files\VIEW_CONE_SETS\VIEWCONESET_HUMAN.BML" />
-    <EmbeddedResource Include="Reset Files\VIEW_CONE_SETS\VIEWCONESET_HUMAN_HEIGHTENED.BML" />
-    <EmbeddedResource Include="Reset Files\VIEW_CONE_SETS\VIEWCONESET_NONE.BML" />
-    <EmbeddedResource Include="Reset Files\VIEW_CONE_SETS\VIEWCONESET_SLEEPING.BML" />
-    <EmbeddedResource Include="Reset Files\VIEW_CONE_SETS\VIEWCONESET_STANDARD.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\ACID_BURST_LARGE.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\ACID_BURST_SMALL.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\AMMOTYPES.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\BOLTGUN_NORMAL.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\CATALYST_FIRE_LARGE.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\CATALYST_FIRE_SMALL.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\CATALYST_HE_LARGE.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\CATALYST_HE_SMALL.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\CATTLEPROD_POWERPACK.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\EMP_BURST_LARGE.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\EMP_BURST_LARGE_TIER2.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\EMP_BURST_LARGE_TIER3.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\EMP_BURST_SMALL.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\ENVIRONMENT_FLAME.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\FLAMETHROWER_AERATED.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\FLAMETHROWER_HIGH_DAMAGE.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\FLAMETHROWER_NORMAL.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\GRENADE_FIRE.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\GRENADE_FIRE_TIER2.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\GRENADE_FIRE_TIER3.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\GRENADE_HE.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\GRENADE_HE_TIER2.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\GRENADE_HE_TIER3.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\GRENADE_SMOKE.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\GRENADE_STUN.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\GRENADE_STUN_TIER2.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\GRENADE_STUN_TIER3.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\IMPACT.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\MELEE_CROW_AXE.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\PISTOL_DUM_DUM.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\PISTOL_NORMAL.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\PISTOL_NORMAL_NPC.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\PISTOL_TAZER.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\PUSH.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\SHOTGUN_INCENDIARY.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\SHOTGUN_NORMAL.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\SHOTGUN_NORMAL_NPC.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\SHOTGUN_SLUG.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\SMG_DUM_DUM.BML" />
-    <EmbeddedResource Include="Reset Files\WEAPON_INFO\AMMO\SMG_NORMAL.BML" />
-    <None Include="SharedAssets\.git" />
-    <EmbeddedResource Include="SharedAssets\Fonts\Isolation_Isolation.ttf" />
-    <EmbeddedResource Include="SharedAssets\Fonts\JixellationBold_Jixellation.ttf" />
-    <EmbeddedResource Include="SharedAssets\Fonts\NostromoBoldCond_Nostromo Cond.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />
-    <Resource Include="Images\nest-bg.jpg" />
-    <EmbeddedResource Include="SharedAssets\Images\ALIEN_DOORWAY-min.png" />
-    <EmbeddedResource Include="SharedAssets\Images\ANDROID_DOORWAY-min.png" />
-    <EmbeddedResource Include="SharedAssets\Images\CONNOR-min.png" />
-    <EmbeddedResource Include="SharedAssets\Images\KUHLMAN_DEATH-min.png" />
-    <EmbeddedResource Include="SharedAssets\Images\landing-min.png" />
-    <EmbeddedResource Include="SharedAssets\Images\loading_content.png" />
-    <EmbeddedResource Include="SharedAssets\Images\NPC_DOOR-min.png" />
-    <EmbeddedResource Include="SharedAssets\Images\SEEGSON_MAGAZINEMAN-min.png" />
-    <EmbeddedResource Include="SharedAssets\Images\TAYLOR-min.png" />
-    <EmbeddedResource Include="Reset Files\GBL_ITEM.XML" />
-    <EmbeddedResource Include="Reset Files\ENGINE_SETTINGS.XML" />
-    <EmbeddedResource Include="Reset Files\SKIN_SHADING_SETTINGS.TXT" />
-    <EmbeddedResource Include="Reset Files\RADIOSITY_SETTINGS.TXT" />
-    <EmbeddedResource Include="Reset Files\HAIR_SHADING_SETTINGS.TXT" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="LandingWPF.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CathodeLib\CathodeLib\CathodeLib.csproj">

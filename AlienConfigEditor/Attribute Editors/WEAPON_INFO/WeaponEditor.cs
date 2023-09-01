@@ -1,19 +1,13 @@
-﻿/*
- * 
- * Created by Matt Filer
- * www.mattfiler.co.uk
- * 
- */
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using System.Xml.XPath;
+using WeifenLuo.WinFormsUI.Docking;
 
 namespace AlienConfigEditor
 {
-    public partial class WeaponEditor : Form
+    public partial class WeaponEditor : DockContent
     {
         //Load shared scripts
         AYZ_AttributeEditors AlienAttribute = new AYZ_AttributeEditors();
@@ -26,10 +20,6 @@ namespace AlienConfigEditor
         public WeaponEditor()
         {
             InitializeComponent();
-
-            this.WindowState = FormWindowState.Minimized;
-            this.Show();
-            this.WindowState = FormWindowState.Normal;
         }
 
         //Load Ammo Type

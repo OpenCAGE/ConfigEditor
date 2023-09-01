@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CharEd));
             this.classSelection = new System.Windows.Forms.ComboBox();
             this.btnSelectClass = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Max_Health = new System.Windows.Forms.TextBox();
             this.Injured_State_1 = new System.Windows.Forms.TextBox();
@@ -46,14 +45,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.Mass = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.Behavior_Tree = new System.Windows.Forms.ComboBox();
             this.ATTACK_GROUP = new System.Windows.Forms.ComboBox();
@@ -115,7 +110,6 @@
             this.EMP_Stunned_Damage_Taken_Multiplier = new System.Windows.Forms.TextBox();
             this.Template_Name = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -141,16 +135,13 @@
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
@@ -158,25 +149,46 @@
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupBox13.SuspendLayout();
             this.SuspendLayout();
             // 
             // classSelection
@@ -198,36 +210,26 @@
             "MELEE_HUMAN",
             "INNOCENT",
             "CUTSCENE_ANDROID"});
-            this.classSelection.Location = new System.Drawing.Point(478, 17);
+            this.classSelection.Location = new System.Drawing.Point(12, 13);
             this.classSelection.Name = "classSelection";
-            this.classSelection.Size = new System.Drawing.Size(345, 21);
+            this.classSelection.Size = new System.Drawing.Size(849, 21);
             this.classSelection.TabIndex = 3;
             // 
             // btnSelectClass
             // 
-            this.btnSelectClass.Location = new System.Drawing.Point(827, 16);
+            this.btnSelectClass.Location = new System.Drawing.Point(867, 12);
             this.btnSelectClass.Name = "btnSelectClass";
-            this.btnSelectClass.Size = new System.Drawing.Size(75, 23);
+            this.btnSelectClass.Size = new System.Drawing.Size(115, 23);
             this.btnSelectClass.TabIndex = 2;
             this.btnSelectClass.Text = "Load Class";
             this.infoPopup.SetToolTip(this.btnSelectClass, "Load selected character class into CharEd.");
             this.btnSelectClass.UseVisualStyleBackColor = true;
             this.btnSelectClass.Click += new System.EventHandler(this.btnSelectClass_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 60);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 20);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Health Attributes";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 83);
+            this.label2.Location = new System.Drawing.Point(10, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 5;
@@ -236,7 +238,7 @@
             // Max_Health
             // 
             this.Max_Health.Enabled = false;
-            this.Max_Health.Location = new System.Drawing.Point(22, 99);
+            this.Max_Health.Location = new System.Drawing.Point(13, 37);
             this.Max_Health.Name = "Max_Health";
             this.Max_Health.Size = new System.Drawing.Size(187, 20);
             this.Max_Health.TabIndex = 6;
@@ -245,7 +247,7 @@
             // Injured_State_1
             // 
             this.Injured_State_1.Enabled = false;
-            this.Injured_State_1.Location = new System.Drawing.Point(22, 138);
+            this.Injured_State_1.Location = new System.Drawing.Point(13, 76);
             this.Injured_State_1.Name = "Injured_State_1";
             this.Injured_State_1.Size = new System.Drawing.Size(187, 20);
             this.Injured_State_1.TabIndex = 8;
@@ -254,7 +256,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 122);
+            this.label3.Location = new System.Drawing.Point(10, 60);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 13);
             this.label3.TabIndex = 7;
@@ -263,7 +265,7 @@
             // Injured_State_2
             // 
             this.Injured_State_2.Enabled = false;
-            this.Injured_State_2.Location = new System.Drawing.Point(22, 177);
+            this.Injured_State_2.Location = new System.Drawing.Point(13, 115);
             this.Injured_State_2.Name = "Injured_State_2";
             this.Injured_State_2.Size = new System.Drawing.Size(187, 20);
             this.Injured_State_2.TabIndex = 10;
@@ -272,7 +274,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 161);
+            this.label4.Location = new System.Drawing.Point(10, 99);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(82, 13);
             this.label4.TabIndex = 9;
@@ -281,7 +283,7 @@
             // Injured_State_3
             // 
             this.Injured_State_3.Enabled = false;
-            this.Injured_State_3.Location = new System.Drawing.Point(22, 216);
+            this.Injured_State_3.Location = new System.Drawing.Point(13, 154);
             this.Injured_State_3.Name = "Injured_State_3";
             this.Injured_State_3.Size = new System.Drawing.Size(187, 20);
             this.Injured_State_3.TabIndex = 12;
@@ -290,7 +292,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(19, 200);
+            this.label5.Location = new System.Drawing.Point(10, 138);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(82, 13);
             this.label5.TabIndex = 11;
@@ -299,7 +301,7 @@
             // Health_Regeneration_Rate
             // 
             this.Health_Regeneration_Rate.Enabled = false;
-            this.Health_Regeneration_Rate.Location = new System.Drawing.Point(22, 255);
+            this.Health_Regeneration_Rate.Location = new System.Drawing.Point(13, 193);
             this.Health_Regeneration_Rate.Name = "Health_Regeneration_Rate";
             this.Health_Regeneration_Rate.Size = new System.Drawing.Size(187, 20);
             this.Health_Regeneration_Rate.TabIndex = 14;
@@ -309,7 +311,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(19, 239);
+            this.label6.Location = new System.Drawing.Point(10, 177);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(131, 13);
             this.label6.TabIndex = 13;
@@ -318,7 +320,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(19, 350);
+            this.label7.Location = new System.Drawing.Point(10, 62);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(113, 13);
             this.label7.TabIndex = 18;
@@ -327,7 +329,7 @@
             // Mass
             // 
             this.Mass.Enabled = false;
-            this.Mass.Location = new System.Drawing.Point(22, 327);
+            this.Mass.Location = new System.Drawing.Point(13, 39);
             this.Mass.Name = "Mass";
             this.Mass.Size = new System.Drawing.Size(187, 20);
             this.Mass.TabIndex = 17;
@@ -336,26 +338,16 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(19, 311);
+            this.label8.Location = new System.Drawing.Point(10, 23);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(81, 13);
             this.label8.TabIndex = 16;
             this.label8.Text = "Character Mass";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(11, 288);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(139, 20);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Physical Attributes";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(252, 161);
+            this.label10.Location = new System.Drawing.Point(10, 99);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(89, 13);
             this.label10.TabIndex = 25;
@@ -364,7 +356,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(252, 122);
+            this.label11.Location = new System.Drawing.Point(10, 60);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(70, 13);
             this.label11.TabIndex = 23;
@@ -373,54 +365,24 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(252, 83);
+            this.label12.Location = new System.Drawing.Point(10, 21);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(80, 13);
             this.label12.TabIndex = 21;
             this.label12.Text = "Behaviour Tree";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(244, 60);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(153, 20);
-            this.label13.TabIndex = 20;
-            this.label13.Text = "Behaviour Attributes";
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(252, 249);
+            this.label14.Location = new System.Drawing.Point(10, 22);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(92, 13);
             this.label14.TabIndex = 28;
             this.label14.Text = "Character Sounds";
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(244, 226);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(129, 20);
-            this.label15.TabIndex = 27;
-            this.label15.Text = "Sound Attributes";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(244, 321);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(125, 20);
-            this.label17.TabIndex = 30;
-            this.label17.Text = "Melee Attributes";
-            // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(635, 689);
+            this.btnSave.Location = new System.Drawing.Point(720, 684);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(262, 35);
             this.btnSave.TabIndex = 33;
@@ -443,7 +405,7 @@
             "NPC_Human_behave",
             "NPC_innocent_behave",
             "PlayerBehaviour"});
-            this.Behavior_Tree.Location = new System.Drawing.Point(255, 99);
+            this.Behavior_Tree.Location = new System.Drawing.Point(13, 37);
             this.Behavior_Tree.Name = "Behavior_Tree";
             this.Behavior_Tree.Size = new System.Drawing.Size(187, 21);
             this.Behavior_Tree.TabIndex = 34;
@@ -461,7 +423,7 @@
             "AT_ANDROID",
             "AT_HUMAN",
             "AT_ALIEN"});
-            this.ATTACK_GROUP.Location = new System.Drawing.Point(255, 138);
+            this.ATTACK_GROUP.Location = new System.Drawing.Point(13, 76);
             this.ATTACK_GROUP.Name = "ATTACK_GROUP";
             this.ATTACK_GROUP.Size = new System.Drawing.Size(187, 21);
             this.ATTACK_GROUP.TabIndex = 35;
@@ -479,7 +441,7 @@
             "TM_ANDROID",
             "TM_HUMAN",
             "TM_PLAYER"});
-            this.TargetingSystem.Location = new System.Drawing.Point(255, 176);
+            this.TargetingSystem.Location = new System.Drawing.Point(13, 114);
             this.TargetingSystem.Name = "TargetingSystem";
             this.TargetingSystem.Size = new System.Drawing.Size(187, 21);
             this.TargetingSystem.TabIndex = 36;
@@ -495,7 +457,7 @@
             "ALIEN",
             "ANDROID",
             "CIVILIAN"});
-            this.Character_Sound.Location = new System.Drawing.Point(255, 265);
+            this.Character_Sound.Location = new System.Drawing.Point(13, 38);
             this.Character_Sound.Name = "Character_Sound";
             this.Character_Sound.Size = new System.Drawing.Size(187, 21);
             this.Character_Sound.TabIndex = 37;
@@ -513,7 +475,7 @@
             "AG_HUMAN_1",
             "AG_FRIEND",
             "AG_PLAYER"});
-            this.Default_Alliance_Group.Location = new System.Drawing.Point(22, 364);
+            this.Default_Alliance_Group.Location = new System.Drawing.Point(13, 76);
             this.Default_Alliance_Group.Name = "Default_Alliance_Group";
             this.Default_Alliance_Group.Size = new System.Drawing.Size(187, 21);
             this.Default_Alliance_Group.TabIndex = 38;
@@ -522,7 +484,7 @@
             // min_time_between_shots
             // 
             this.min_time_between_shots.Enabled = false;
-            this.min_time_between_shots.Location = new System.Drawing.Point(485, 98);
+            this.min_time_between_shots.Location = new System.Drawing.Point(13, 39);
             this.min_time_between_shots.Name = "min_time_between_shots";
             this.min_time_between_shots.Size = new System.Drawing.Size(49, 20);
             this.min_time_between_shots.TabIndex = 42;
@@ -531,7 +493,7 @@
             // Aiming_Accuracy_Radius_Multiplier
             // 
             this.Aiming_Accuracy_Radius_Multiplier.Enabled = false;
-            this.Aiming_Accuracy_Radius_Multiplier.Location = new System.Drawing.Point(485, 457);
+            this.Aiming_Accuracy_Radius_Multiplier.Location = new System.Drawing.Point(13, 398);
             this.Aiming_Accuracy_Radius_Multiplier.Name = "Aiming_Accuracy_Radius_Multiplier";
             this.Aiming_Accuracy_Radius_Multiplier.Size = new System.Drawing.Size(187, 20);
             this.Aiming_Accuracy_Radius_Multiplier.TabIndex = 56;
@@ -540,7 +502,7 @@
             // percentage_chance_of_shooting_over_cover_vs_side
             // 
             this.percentage_chance_of_shooting_over_cover_vs_side.Enabled = false;
-            this.percentage_chance_of_shooting_over_cover_vs_side.Location = new System.Drawing.Point(485, 418);
+            this.percentage_chance_of_shooting_over_cover_vs_side.Location = new System.Drawing.Point(13, 359);
             this.percentage_chance_of_shooting_over_cover_vs_side.Name = "percentage_chance_of_shooting_over_cover_vs_side";
             this.percentage_chance_of_shooting_over_cover_vs_side.Size = new System.Drawing.Size(187, 20);
             this.percentage_chance_of_shooting_over_cover_vs_side.TabIndex = 54;
@@ -550,7 +512,7 @@
             // stop_shooting_if_no_visual_after_time
             // 
             this.stop_shooting_if_no_visual_after_time.Enabled = false;
-            this.stop_shooting_if_no_visual_after_time.Location = new System.Drawing.Point(485, 377);
+            this.stop_shooting_if_no_visual_after_time.Location = new System.Drawing.Point(13, 318);
             this.stop_shooting_if_no_visual_after_time.Name = "stop_shooting_if_no_visual_after_time";
             this.stop_shooting_if_no_visual_after_time.Size = new System.Drawing.Size(187, 20);
             this.stop_shooting_if_no_visual_after_time.TabIndex = 50;
@@ -560,7 +522,7 @@
             // max_time_between_shots
             // 
             this.max_time_between_shots.Enabled = false;
-            this.max_time_between_shots.Location = new System.Drawing.Point(623, 98);
+            this.max_time_between_shots.Location = new System.Drawing.Point(151, 39);
             this.max_time_between_shots.Name = "max_time_between_shots";
             this.max_time_between_shots.Size = new System.Drawing.Size(49, 20);
             this.max_time_between_shots.TabIndex = 57;
@@ -569,7 +531,7 @@
             // Max_Non_Shooting_In_Cover_Interval_Time
             // 
             this.Max_Non_Shooting_In_Cover_Interval_Time.Enabled = false;
-            this.Max_Non_Shooting_In_Cover_Interval_Time.Location = new System.Drawing.Point(623, 178);
+            this.Max_Non_Shooting_In_Cover_Interval_Time.Location = new System.Drawing.Point(151, 119);
             this.Max_Non_Shooting_In_Cover_Interval_Time.Name = "Max_Non_Shooting_In_Cover_Interval_Time";
             this.Max_Non_Shooting_In_Cover_Interval_Time.Size = new System.Drawing.Size(49, 20);
             this.Max_Non_Shooting_In_Cover_Interval_Time.TabIndex = 61;
@@ -578,7 +540,7 @@
             // Min_Non_Shooting_In_Cover_Interval_Time
             // 
             this.Min_Non_Shooting_In_Cover_Interval_Time.Enabled = false;
-            this.Min_Non_Shooting_In_Cover_Interval_Time.Location = new System.Drawing.Point(485, 178);
+            this.Min_Non_Shooting_In_Cover_Interval_Time.Location = new System.Drawing.Point(13, 119);
             this.Min_Non_Shooting_In_Cover_Interval_Time.Name = "Min_Non_Shooting_In_Cover_Interval_Time";
             this.Min_Non_Shooting_In_Cover_Interval_Time.Size = new System.Drawing.Size(49, 20);
             this.Min_Non_Shooting_In_Cover_Interval_Time.TabIndex = 60;
@@ -587,7 +549,7 @@
             // Max_Shooting_Interval_Time
             // 
             this.Max_Shooting_Interval_Time.Enabled = false;
-            this.Max_Shooting_Interval_Time.Location = new System.Drawing.Point(624, 217);
+            this.Max_Shooting_Interval_Time.Location = new System.Drawing.Point(152, 158);
             this.Max_Shooting_Interval_Time.Name = "Max_Shooting_Interval_Time";
             this.Max_Shooting_Interval_Time.Size = new System.Drawing.Size(49, 20);
             this.Max_Shooting_Interval_Time.TabIndex = 65;
@@ -597,7 +559,7 @@
             // Min_Shooting_Interval_Time
             // 
             this.Min_Shooting_Interval_Time.Enabled = false;
-            this.Min_Shooting_Interval_Time.Location = new System.Drawing.Point(486, 217);
+            this.Min_Shooting_Interval_Time.Location = new System.Drawing.Point(14, 158);
             this.Min_Shooting_Interval_Time.Name = "Min_Shooting_Interval_Time";
             this.Min_Shooting_Interval_Time.Size = new System.Drawing.Size(49, 20);
             this.Min_Shooting_Interval_Time.TabIndex = 64;
@@ -607,7 +569,7 @@
             // Max_Aiming_Accuracy_Normalised_Value
             // 
             this.Max_Aiming_Accuracy_Normalised_Value.Enabled = false;
-            this.Max_Aiming_Accuracy_Normalised_Value.Location = new System.Drawing.Point(623, 298);
+            this.Max_Aiming_Accuracy_Normalised_Value.Location = new System.Drawing.Point(151, 239);
             this.Max_Aiming_Accuracy_Normalised_Value.Name = "Max_Aiming_Accuracy_Normalised_Value";
             this.Max_Aiming_Accuracy_Normalised_Value.Size = new System.Drawing.Size(49, 20);
             this.Max_Aiming_Accuracy_Normalised_Value.TabIndex = 69;
@@ -616,7 +578,7 @@
             // Min_Aiming_Accuracy_Normalised_Value
             // 
             this.Min_Aiming_Accuracy_Normalised_Value.Enabled = false;
-            this.Min_Aiming_Accuracy_Normalised_Value.Location = new System.Drawing.Point(485, 297);
+            this.Min_Aiming_Accuracy_Normalised_Value.Location = new System.Drawing.Point(13, 238);
             this.Min_Aiming_Accuracy_Normalised_Value.Name = "Min_Aiming_Accuracy_Normalised_Value";
             this.Min_Aiming_Accuracy_Normalised_Value.Size = new System.Drawing.Size(49, 20);
             this.Min_Aiming_Accuracy_Normalised_Value.TabIndex = 68;
@@ -625,7 +587,7 @@
             // max_delay_before_shooting
             // 
             this.max_delay_before_shooting.Enabled = false;
-            this.max_delay_before_shooting.Location = new System.Drawing.Point(623, 337);
+            this.max_delay_before_shooting.Location = new System.Drawing.Point(151, 278);
             this.max_delay_before_shooting.Name = "max_delay_before_shooting";
             this.max_delay_before_shooting.Size = new System.Drawing.Size(49, 20);
             this.max_delay_before_shooting.TabIndex = 73;
@@ -634,7 +596,7 @@
             // min_delay_before_shooting
             // 
             this.min_delay_before_shooting.Enabled = false;
-            this.min_delay_before_shooting.Location = new System.Drawing.Point(485, 338);
+            this.min_delay_before_shooting.Location = new System.Drawing.Point(13, 279);
             this.min_delay_before_shooting.Name = "min_delay_before_shooting";
             this.min_delay_before_shooting.Size = new System.Drawing.Size(49, 20);
             this.min_delay_before_shooting.TabIndex = 72;
@@ -643,7 +605,7 @@
             // Damage_From_Stealth_KO
             // 
             this.Damage_From_Stealth_KO.Enabled = false;
-            this.Damage_From_Stealth_KO.Location = new System.Drawing.Point(255, 438);
+            this.Damage_From_Stealth_KO.Location = new System.Drawing.Point(13, 116);
             this.Damage_From_Stealth_KO.Name = "Damage_From_Stealth_KO";
             this.Damage_From_Stealth_KO.Size = new System.Drawing.Size(187, 20);
             this.Damage_From_Stealth_KO.TabIndex = 80;
@@ -652,7 +614,7 @@
             // Damage_From_Grapple_Break
             // 
             this.Damage_From_Grapple_Break.Enabled = false;
-            this.Damage_From_Grapple_Break.Location = new System.Drawing.Point(255, 399);
+            this.Damage_From_Grapple_Break.Location = new System.Drawing.Point(13, 77);
             this.Damage_From_Grapple_Break.Name = "Damage_From_Grapple_Break";
             this.Damage_From_Grapple_Break.Size = new System.Drawing.Size(187, 20);
             this.Damage_From_Grapple_Break.TabIndex = 78;
@@ -661,7 +623,7 @@
             // Damage_From_Hit
             // 
             this.Damage_From_Hit.Enabled = false;
-            this.Damage_From_Hit.Location = new System.Drawing.Point(255, 360);
+            this.Damage_From_Hit.Location = new System.Drawing.Point(13, 38);
             this.Damage_From_Hit.Name = "Damage_From_Hit";
             this.Damage_From_Hit.Size = new System.Drawing.Size(187, 20);
             this.Damage_From_Hit.TabIndex = 76;
@@ -670,7 +632,7 @@
             // max_time_between_shots_for_shotgun
             // 
             this.max_time_between_shots_for_shotgun.Enabled = false;
-            this.max_time_between_shots_for_shotgun.Location = new System.Drawing.Point(623, 137);
+            this.max_time_between_shots_for_shotgun.Location = new System.Drawing.Point(151, 78);
             this.max_time_between_shots_for_shotgun.Name = "max_time_between_shots_for_shotgun";
             this.max_time_between_shots_for_shotgun.Size = new System.Drawing.Size(49, 20);
             this.max_time_between_shots_for_shotgun.TabIndex = 83;
@@ -679,7 +641,7 @@
             // min_time_between_shots_for_shotgun
             // 
             this.min_time_between_shots_for_shotgun.Enabled = false;
-            this.min_time_between_shots_for_shotgun.Location = new System.Drawing.Point(485, 137);
+            this.min_time_between_shots_for_shotgun.Location = new System.Drawing.Point(13, 78);
             this.min_time_between_shots_for_shotgun.Name = "min_time_between_shots_for_shotgun";
             this.min_time_between_shots_for_shotgun.Size = new System.Drawing.Size(49, 20);
             this.min_time_between_shots_for_shotgun.TabIndex = 82;
@@ -688,7 +650,7 @@
             // Max_Non_Shooting_Interval_Time
             // 
             this.Max_Non_Shooting_Interval_Time.Enabled = false;
-            this.Max_Non_Shooting_Interval_Time.Location = new System.Drawing.Point(624, 257);
+            this.Max_Non_Shooting_Interval_Time.Location = new System.Drawing.Point(152, 198);
             this.Max_Non_Shooting_Interval_Time.Name = "Max_Non_Shooting_Interval_Time";
             this.Max_Non_Shooting_Interval_Time.Size = new System.Drawing.Size(49, 20);
             this.Max_Non_Shooting_Interval_Time.TabIndex = 87;
@@ -698,7 +660,7 @@
             // Min_Non_Shooting_Interval_Time
             // 
             this.Min_Non_Shooting_Interval_Time.Enabled = false;
-            this.Min_Non_Shooting_Interval_Time.Location = new System.Drawing.Point(486, 257);
+            this.Min_Non_Shooting_Interval_Time.Location = new System.Drawing.Point(14, 198);
             this.Min_Non_Shooting_Interval_Time.Name = "Min_Non_Shooting_Interval_Time";
             this.Min_Non_Shooting_Interval_Time.Size = new System.Drawing.Size(49, 20);
             this.Min_Non_Shooting_Interval_Time.TabIndex = 86;
@@ -708,7 +670,7 @@
             // vertical_peek_exposed_threshold
             // 
             this.vertical_peek_exposed_threshold.Enabled = false;
-            this.vertical_peek_exposed_threshold.Location = new System.Drawing.Point(709, 254);
+            this.vertical_peek_exposed_threshold.Location = new System.Drawing.Point(14, 190);
             this.vertical_peek_exposed_threshold.Name = "vertical_peek_exposed_threshold";
             this.vertical_peek_exposed_threshold.Size = new System.Drawing.Size(187, 20);
             this.vertical_peek_exposed_threshold.TabIndex = 99;
@@ -718,7 +680,7 @@
             // max_auto_return_from_peek_velocity
             // 
             this.max_auto_return_from_peek_velocity.Enabled = false;
-            this.max_auto_return_from_peek_velocity.Location = new System.Drawing.Point(709, 215);
+            this.max_auto_return_from_peek_velocity.Location = new System.Drawing.Point(14, 151);
             this.max_auto_return_from_peek_velocity.Name = "max_auto_return_from_peek_velocity";
             this.max_auto_return_from_peek_velocity.Size = new System.Drawing.Size(187, 20);
             this.max_auto_return_from_peek_velocity.TabIndex = 97;
@@ -727,7 +689,7 @@
             // max_peek_control_velocity
             // 
             this.max_peek_control_velocity.Enabled = false;
-            this.max_peek_control_velocity.Location = new System.Drawing.Point(709, 176);
+            this.max_peek_control_velocity.Location = new System.Drawing.Point(14, 112);
             this.max_peek_control_velocity.Name = "max_peek_control_velocity";
             this.max_peek_control_velocity.Size = new System.Drawing.Size(187, 20);
             this.max_peek_control_velocity.TabIndex = 95;
@@ -736,7 +698,7 @@
             // max_horizontal_peek
             // 
             this.max_horizontal_peek.Enabled = false;
-            this.max_horizontal_peek.Location = new System.Drawing.Point(709, 137);
+            this.max_horizontal_peek.Location = new System.Drawing.Point(14, 73);
             this.max_horizontal_peek.Name = "max_horizontal_peek";
             this.max_horizontal_peek.Size = new System.Drawing.Size(187, 20);
             this.max_horizontal_peek.TabIndex = 93;
@@ -745,7 +707,7 @@
             // max_vertical_peek
             // 
             this.max_vertical_peek.Enabled = false;
-            this.max_vertical_peek.Location = new System.Drawing.Point(709, 98);
+            this.max_vertical_peek.Location = new System.Drawing.Point(14, 34);
             this.max_vertical_peek.Name = "max_vertical_peek";
             this.max_vertical_peek.Size = new System.Drawing.Size(187, 20);
             this.max_vertical_peek.TabIndex = 91;
@@ -754,7 +716,7 @@
             // grace_time_in_exposed_peek_region
             // 
             this.grace_time_in_exposed_peek_region.Enabled = false;
-            this.grace_time_in_exposed_peek_region.Location = new System.Drawing.Point(709, 332);
+            this.grace_time_in_exposed_peek_region.Location = new System.Drawing.Point(14, 268);
             this.grace_time_in_exposed_peek_region.Name = "grace_time_in_exposed_peek_region";
             this.grace_time_in_exposed_peek_region.Size = new System.Drawing.Size(187, 20);
             this.grace_time_in_exposed_peek_region.TabIndex = 103;
@@ -764,7 +726,7 @@
             // horizontal_peek_exposed_threshold
             // 
             this.horizontal_peek_exposed_threshold.Enabled = false;
-            this.horizontal_peek_exposed_threshold.Location = new System.Drawing.Point(709, 293);
+            this.horizontal_peek_exposed_threshold.Location = new System.Drawing.Point(14, 229);
             this.horizontal_peek_exposed_threshold.Name = "horizontal_peek_exposed_threshold";
             this.horizontal_peek_exposed_threshold.Size = new System.Drawing.Size(187, 20);
             this.horizontal_peek_exposed_threshold.TabIndex = 101;
@@ -773,7 +735,7 @@
             // peek_control_scaling
             // 
             this.peek_control_scaling.Enabled = false;
-            this.peek_control_scaling.Location = new System.Drawing.Point(709, 372);
+            this.peek_control_scaling.Location = new System.Drawing.Point(14, 308);
             this.peek_control_scaling.Name = "peek_control_scaling";
             this.peek_control_scaling.Size = new System.Drawing.Size(187, 20);
             this.peek_control_scaling.TabIndex = 105;
@@ -783,7 +745,7 @@
             // permittedLocomotionModulation
             // 
             this.permittedLocomotionModulation.Enabled = false;
-            this.permittedLocomotionModulation.Location = new System.Drawing.Point(255, 664);
+            this.permittedLocomotionModulation.Location = new System.Drawing.Point(13, 78);
             this.permittedLocomotionModulation.Name = "permittedLocomotionModulation";
             this.permittedLocomotionModulation.Size = new System.Drawing.Size(187, 20);
             this.permittedLocomotionModulation.TabIndex = 110;
@@ -792,7 +754,7 @@
             // capsuleRadius
             // 
             this.capsuleRadius.Enabled = false;
-            this.capsuleRadius.Location = new System.Drawing.Point(255, 625);
+            this.capsuleRadius.Location = new System.Drawing.Point(13, 39);
             this.capsuleRadius.Name = "capsuleRadius";
             this.capsuleRadius.Size = new System.Drawing.Size(187, 20);
             this.capsuleRadius.TabIndex = 108;
@@ -801,7 +763,7 @@
             // aggro_warning_rate
             // 
             this.aggro_warning_rate.Enabled = false;
-            this.aggro_warning_rate.Location = new System.Drawing.Point(485, 577);
+            this.aggro_warning_rate.Location = new System.Drawing.Point(13, 79);
             this.aggro_warning_rate.Name = "aggro_warning_rate";
             this.aggro_warning_rate.Size = new System.Drawing.Size(48, 20);
             this.aggro_warning_rate.TabIndex = 115;
@@ -810,7 +772,7 @@
             // aggro_gun_aimed_rate
             // 
             this.aggro_gun_aimed_rate.Enabled = false;
-            this.aggro_gun_aimed_rate.Location = new System.Drawing.Point(485, 538);
+            this.aggro_gun_aimed_rate.Location = new System.Drawing.Point(13, 40);
             this.aggro_gun_aimed_rate.Name = "aggro_gun_aimed_rate";
             this.aggro_gun_aimed_rate.Size = new System.Drawing.Size(48, 20);
             this.aggro_gun_aimed_rate.TabIndex = 113;
@@ -819,7 +781,7 @@
             // aggro_standdown_rate
             // 
             this.aggro_standdown_rate.Enabled = false;
-            this.aggro_standdown_rate.Location = new System.Drawing.Point(485, 657);
+            this.aggro_standdown_rate.Location = new System.Drawing.Point(13, 159);
             this.aggro_standdown_rate.Name = "aggro_standdown_rate";
             this.aggro_standdown_rate.Size = new System.Drawing.Size(48, 20);
             this.aggro_standdown_rate.TabIndex = 119;
@@ -828,7 +790,7 @@
             // aggro_interrogative_rate
             // 
             this.aggro_interrogative_rate.Enabled = false;
-            this.aggro_interrogative_rate.Location = new System.Drawing.Point(485, 618);
+            this.aggro_interrogative_rate.Location = new System.Drawing.Point(13, 120);
             this.aggro_interrogative_rate.Name = "aggro_interrogative_rate";
             this.aggro_interrogative_rate.Size = new System.Drawing.Size(48, 20);
             this.aggro_interrogative_rate.TabIndex = 117;
@@ -837,7 +799,7 @@
             // aggro_standdown_distance
             // 
             this.aggro_standdown_distance.Enabled = false;
-            this.aggro_standdown_distance.Location = new System.Drawing.Point(624, 657);
+            this.aggro_standdown_distance.Location = new System.Drawing.Point(152, 159);
             this.aggro_standdown_distance.Name = "aggro_standdown_distance";
             this.aggro_standdown_distance.Size = new System.Drawing.Size(48, 20);
             this.aggro_standdown_distance.TabIndex = 123;
@@ -846,7 +808,7 @@
             // aggro_interrogative_distance
             // 
             this.aggro_interrogative_distance.Enabled = false;
-            this.aggro_interrogative_distance.Location = new System.Drawing.Point(624, 618);
+            this.aggro_interrogative_distance.Location = new System.Drawing.Point(152, 120);
             this.aggro_interrogative_distance.Name = "aggro_interrogative_distance";
             this.aggro_interrogative_distance.Size = new System.Drawing.Size(48, 20);
             this.aggro_interrogative_distance.TabIndex = 122;
@@ -855,7 +817,7 @@
             // aggro_warning_distance
             // 
             this.aggro_warning_distance.Enabled = false;
-            this.aggro_warning_distance.Location = new System.Drawing.Point(624, 577);
+            this.aggro_warning_distance.Location = new System.Drawing.Point(152, 79);
             this.aggro_warning_distance.Name = "aggro_warning_distance";
             this.aggro_warning_distance.Size = new System.Drawing.Size(48, 20);
             this.aggro_warning_distance.TabIndex = 121;
@@ -864,7 +826,7 @@
             // aggro_aggressive_distance
             // 
             this.aggro_aggressive_distance.Enabled = false;
-            this.aggro_aggressive_distance.Location = new System.Drawing.Point(624, 538);
+            this.aggro_aggressive_distance.Location = new System.Drawing.Point(152, 40);
             this.aggro_aggressive_distance.Name = "aggro_aggressive_distance";
             this.aggro_aggressive_distance.Size = new System.Drawing.Size(48, 20);
             this.aggro_aggressive_distance.TabIndex = 120;
@@ -873,7 +835,7 @@
             // cover_job_minimum_distance_to_player
             // 
             this.cover_job_minimum_distance_to_player.Enabled = false;
-            this.cover_job_minimum_distance_to_player.Location = new System.Drawing.Point(255, 531);
+            this.cover_job_minimum_distance_to_player.Location = new System.Drawing.Point(13, 38);
             this.cover_job_minimum_distance_to_player.Name = "cover_job_minimum_distance_to_player";
             this.cover_job_minimum_distance_to_player.Size = new System.Drawing.Size(187, 20);
             this.cover_job_minimum_distance_to_player.TabIndex = 130;
@@ -882,7 +844,7 @@
             // hiding_hearing_range
             // 
             this.hiding_hearing_range.Enabled = false;
-            this.hiding_hearing_range.Location = new System.Drawing.Point(709, 535);
+            this.hiding_hearing_range.Location = new System.Drawing.Point(13, 115);
             this.hiding_hearing_range.Name = "hiding_hearing_range";
             this.hiding_hearing_range.Size = new System.Drawing.Size(187, 20);
             this.hiding_hearing_range.TabIndex = 137;
@@ -891,7 +853,7 @@
             // hiding_post_search_exclusion_radius
             // 
             this.hiding_post_search_exclusion_radius.Enabled = false;
-            this.hiding_post_search_exclusion_radius.Location = new System.Drawing.Point(709, 496);
+            this.hiding_post_search_exclusion_radius.Location = new System.Drawing.Point(13, 76);
             this.hiding_post_search_exclusion_radius.Name = "hiding_post_search_exclusion_radius";
             this.hiding_post_search_exclusion_radius.Size = new System.Drawing.Size(187, 20);
             this.hiding_post_search_exclusion_radius.TabIndex = 135;
@@ -901,7 +863,7 @@
             // hiding_search_radius
             // 
             this.hiding_search_radius.Enabled = false;
-            this.hiding_search_radius.Location = new System.Drawing.Point(709, 457);
+            this.hiding_search_radius.Location = new System.Drawing.Point(13, 37);
             this.hiding_search_radius.Name = "hiding_search_radius";
             this.hiding_search_radius.Size = new System.Drawing.Size(187, 20);
             this.hiding_search_radius.TabIndex = 133;
@@ -910,7 +872,7 @@
             // hiding_max_search_time
             // 
             this.hiding_max_search_time.Enabled = false;
-            this.hiding_max_search_time.Location = new System.Drawing.Point(709, 656);
+            this.hiding_max_search_time.Location = new System.Drawing.Point(13, 236);
             this.hiding_max_search_time.Name = "hiding_max_search_time";
             this.hiding_max_search_time.Size = new System.Drawing.Size(187, 20);
             this.hiding_max_search_time.TabIndex = 143;
@@ -920,7 +882,7 @@
             // chance_hiding_not_chosen
             // 
             this.chance_hiding_not_chosen.Enabled = false;
-            this.chance_hiding_not_chosen.Location = new System.Drawing.Point(709, 617);
+            this.chance_hiding_not_chosen.Location = new System.Drawing.Point(13, 197);
             this.chance_hiding_not_chosen.Name = "chance_hiding_not_chosen";
             this.chance_hiding_not_chosen.Size = new System.Drawing.Size(187, 20);
             this.chance_hiding_not_chosen.TabIndex = 141;
@@ -930,7 +892,7 @@
             // hiding_max_QTE_selection_weighting
             // 
             this.hiding_max_QTE_selection_weighting.Enabled = false;
-            this.hiding_max_QTE_selection_weighting.Location = new System.Drawing.Point(709, 577);
+            this.hiding_max_QTE_selection_weighting.Location = new System.Drawing.Point(13, 157);
             this.hiding_max_QTE_selection_weighting.Name = "hiding_max_QTE_selection_weighting";
             this.hiding_max_QTE_selection_weighting.Size = new System.Drawing.Size(187, 20);
             this.hiding_max_QTE_selection_weighting.TabIndex = 139;
@@ -940,7 +902,7 @@
             // min_time_between_idles_for_stalk
             // 
             this.min_time_between_idles_for_stalk.Enabled = false;
-            this.min_time_between_idles_for_stalk.Location = new System.Drawing.Point(22, 516);
+            this.min_time_between_idles_for_stalk.Location = new System.Drawing.Point(13, 117);
             this.min_time_between_idles_for_stalk.Name = "min_time_between_idles_for_stalk";
             this.min_time_between_idles_for_stalk.Size = new System.Drawing.Size(187, 20);
             this.min_time_between_idles_for_stalk.TabIndex = 150;
@@ -950,7 +912,7 @@
             // max_range_to_search_for_ESCALATION_jobs
             // 
             this.max_range_to_search_for_ESCALATION_jobs.Enabled = false;
-            this.max_range_to_search_for_ESCALATION_jobs.Location = new System.Drawing.Point(22, 477);
+            this.max_range_to_search_for_ESCALATION_jobs.Location = new System.Drawing.Point(13, 78);
             this.max_range_to_search_for_ESCALATION_jobs.Name = "max_range_to_search_for_ESCALATION_jobs";
             this.max_range_to_search_for_ESCALATION_jobs.Size = new System.Drawing.Size(187, 20);
             this.max_range_to_search_for_ESCALATION_jobs.TabIndex = 148;
@@ -960,7 +922,7 @@
             // max_range_to_search_for_IDLE_job
             // 
             this.max_range_to_search_for_IDLE_job.Enabled = false;
-            this.max_range_to_search_for_IDLE_job.Location = new System.Drawing.Point(22, 438);
+            this.max_range_to_search_for_IDLE_job.Location = new System.Drawing.Point(13, 39);
             this.max_range_to_search_for_IDLE_job.Name = "max_range_to_search_for_IDLE_job";
             this.max_range_to_search_for_IDLE_job.Size = new System.Drawing.Size(187, 20);
             this.max_range_to_search_for_IDLE_job.TabIndex = 146;
@@ -969,7 +931,7 @@
             // alien_stun_damage_guage_decrease_per_sec
             // 
             this.alien_stun_damage_guage_decrease_per_sec.Enabled = false;
-            this.alien_stun_damage_guage_decrease_per_sec.Location = new System.Drawing.Point(22, 665);
+            this.alien_stun_damage_guage_decrease_per_sec.Location = new System.Drawing.Point(13, 117);
             this.alien_stun_damage_guage_decrease_per_sec.Name = "alien_stun_damage_guage_decrease_per_sec";
             this.alien_stun_damage_guage_decrease_per_sec.Size = new System.Drawing.Size(187, 20);
             this.alien_stun_damage_guage_decrease_per_sec.TabIndex = 157;
@@ -979,7 +941,7 @@
             // defense_gauge_decay_delay
             // 
             this.defense_gauge_decay_delay.Enabled = false;
-            this.defense_gauge_decay_delay.Location = new System.Drawing.Point(22, 626);
+            this.defense_gauge_decay_delay.Location = new System.Drawing.Point(13, 78);
             this.defense_gauge_decay_delay.Name = "defense_gauge_decay_delay";
             this.defense_gauge_decay_delay.Size = new System.Drawing.Size(187, 20);
             this.defense_gauge_decay_delay.TabIndex = 155;
@@ -989,7 +951,7 @@
             // defense_gauge_decay_rate
             // 
             this.defense_gauge_decay_rate.Enabled = false;
-            this.defense_gauge_decay_rate.Location = new System.Drawing.Point(22, 587);
+            this.defense_gauge_decay_rate.Location = new System.Drawing.Point(13, 39);
             this.defense_gauge_decay_rate.Name = "defense_gauge_decay_rate";
             this.defense_gauge_decay_rate.Size = new System.Drawing.Size(187, 20);
             this.defense_gauge_decay_rate.TabIndex = 153;
@@ -998,7 +960,7 @@
             // EMP_Stunned_Damage_Taken_Multiplier
             // 
             this.EMP_Stunned_Damage_Taken_Multiplier.Enabled = false;
-            this.EMP_Stunned_Damage_Taken_Multiplier.Location = new System.Drawing.Point(22, 704);
+            this.EMP_Stunned_Damage_Taken_Multiplier.Location = new System.Drawing.Point(13, 156);
             this.EMP_Stunned_Damage_Taken_Multiplier.Name = "EMP_Stunned_Damage_Taken_Multiplier";
             this.EMP_Stunned_Damage_Taken_Multiplier.Size = new System.Drawing.Size(187, 20);
             this.EMP_Stunned_Damage_Taken_Multiplier.TabIndex = 159;
@@ -1015,7 +977,7 @@
             "ANDROID",
             "CIVILIAN",
             "SECURITY_GUARD"});
-            this.Template_Name.Location = new System.Drawing.Point(255, 703);
+            this.Template_Name.Location = new System.Drawing.Point(13, 117);
             this.Template_Name.Name = "Template_Name";
             this.Template_Name.Size = new System.Drawing.Size(187, 21);
             this.Template_Name.TabIndex = 163;
@@ -1026,26 +988,16 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(481, 82);
+            this.label19.Location = new System.Drawing.Point(9, 23);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(105, 13);
             this.label19.TabIndex = 41;
             this.label19.Text = "Time Between Shots";
             // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(474, 59);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(146, 20);
-            this.label20.TabIndex = 40;
-            this.label20.Text = "Shooting Attributes";
-            // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(481, 162);
+            this.label22.Location = new System.Drawing.Point(32, 103);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(0, 13);
             this.label22.TabIndex = 45;
@@ -1053,7 +1005,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(482, 441);
+            this.label23.Location = new System.Drawing.Point(10, 382);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(166, 13);
             this.label23.TabIndex = 55;
@@ -1062,7 +1014,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(481, 402);
+            this.label24.Location = new System.Drawing.Point(9, 343);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(158, 13);
             this.label24.TabIndex = 53;
@@ -1071,7 +1023,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(481, 361);
+            this.label26.Location = new System.Drawing.Point(9, 302);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(203, 13);
             this.label26.TabIndex = 49;
@@ -1080,7 +1032,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(540, 101);
+            this.label27.Location = new System.Drawing.Point(68, 42);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(77, 13);
             this.label27.TabIndex = 58;
@@ -1089,7 +1041,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(540, 180);
+            this.label18.Location = new System.Drawing.Point(68, 121);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(77, 13);
             this.label18.TabIndex = 62;
@@ -1098,7 +1050,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(481, 161);
+            this.label28.Location = new System.Drawing.Point(9, 102);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(163, 13);
             this.label28.TabIndex = 59;
@@ -1107,7 +1059,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(541, 219);
+            this.label21.Location = new System.Drawing.Point(69, 160);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(77, 13);
             this.label21.TabIndex = 66;
@@ -1116,7 +1068,7 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(482, 200);
+            this.label29.Location = new System.Drawing.Point(10, 141);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(120, 13);
             this.label29.TabIndex = 63;
@@ -1125,7 +1077,7 @@
             // label30
             // 
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(540, 299);
+            this.label30.Location = new System.Drawing.Point(68, 240);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(77, 13);
             this.label30.TabIndex = 70;
@@ -1134,7 +1086,7 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(481, 280);
+            this.label31.Location = new System.Drawing.Point(9, 221);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(86, 13);
             this.label31.TabIndex = 67;
@@ -1143,7 +1095,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(540, 340);
+            this.label25.Location = new System.Drawing.Point(68, 281);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(77, 13);
             this.label25.TabIndex = 74;
@@ -1152,7 +1104,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(481, 321);
+            this.label32.Location = new System.Drawing.Point(9, 262);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(113, 13);
             this.label32.TabIndex = 71;
@@ -1161,7 +1113,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(252, 422);
+            this.label33.Location = new System.Drawing.Point(10, 100);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(158, 13);
             this.label33.TabIndex = 79;
@@ -1170,7 +1122,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(252, 383);
+            this.label34.Location = new System.Drawing.Point(10, 61);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(144, 13);
             this.label34.TabIndex = 77;
@@ -1179,7 +1131,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(252, 344);
+            this.label35.Location = new System.Drawing.Point(10, 22);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(89, 13);
             this.label35.TabIndex = 75;
@@ -1188,7 +1140,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(540, 140);
+            this.label16.Location = new System.Drawing.Point(68, 81);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(77, 13);
             this.label16.TabIndex = 84;
@@ -1197,7 +1149,7 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(481, 121);
+            this.label36.Location = new System.Drawing.Point(9, 62);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(154, 13);
             this.label36.TabIndex = 81;
@@ -1206,7 +1158,7 @@
             // label37
             // 
             this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(541, 259);
+            this.label37.Location = new System.Drawing.Point(69, 200);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(77, 13);
             this.label37.TabIndex = 88;
@@ -1215,7 +1167,7 @@
             // label38
             // 
             this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(482, 240);
+            this.label38.Location = new System.Drawing.Point(10, 181);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(146, 13);
             this.label38.TabIndex = 85;
@@ -1224,7 +1176,7 @@
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(706, 238);
+            this.label39.Location = new System.Drawing.Point(11, 174);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(167, 13);
             this.label39.TabIndex = 98;
@@ -1233,7 +1185,7 @@
             // label40
             // 
             this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(706, 199);
+            this.label40.Location = new System.Drawing.Point(11, 135);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(130, 13);
             this.label40.TabIndex = 96;
@@ -1242,7 +1194,7 @@
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(706, 160);
+            this.label41.Location = new System.Drawing.Point(11, 96);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(127, 13);
             this.label41.TabIndex = 94;
@@ -1251,7 +1203,7 @@
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(706, 121);
+            this.label42.Location = new System.Drawing.Point(11, 57);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(137, 13);
             this.label42.TabIndex = 92;
@@ -1260,26 +1212,16 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(706, 82);
+            this.label43.Location = new System.Drawing.Point(11, 18);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(117, 13);
             this.label43.TabIndex = 90;
             this.label43.Text = "Maximum Vertical Peek";
             // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(698, 59);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(139, 20);
-            this.label44.TabIndex = 89;
-            this.label44.Text = "Peeking Attributes";
-            // 
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(706, 316);
+            this.label45.Location = new System.Drawing.Point(11, 252);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(190, 13);
             this.label45.TabIndex = 102;
@@ -1288,7 +1230,7 @@
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(706, 277);
+            this.label46.Location = new System.Drawing.Point(11, 213);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(179, 13);
             this.label46.TabIndex = 100;
@@ -1297,7 +1239,7 @@
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(706, 356);
+            this.label47.Location = new System.Drawing.Point(11, 292);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(98, 13);
             this.label47.TabIndex = 104;
@@ -1306,7 +1248,7 @@
             // label54
             // 
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(252, 648);
+            this.label54.Location = new System.Drawing.Point(10, 62);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(117, 13);
             this.label54.TabIndex = 109;
@@ -1315,26 +1257,16 @@
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(252, 609);
+            this.label55.Location = new System.Drawing.Point(10, 23);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(130, 13);
             this.label55.TabIndex = 107;
             this.label55.Text = "Character Capsule Radius";
             // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(244, 586);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(114, 20);
-            this.label56.TabIndex = 106;
-            this.label56.Text = "Misc Attributes";
-            // 
             // label48
             // 
             this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(482, 561);
+            this.label48.Location = new System.Drawing.Point(10, 63);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(82, 13);
             this.label48.TabIndex = 114;
@@ -1343,26 +1275,16 @@
             // label49
             // 
             this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(482, 522);
+            this.label49.Location = new System.Drawing.Point(10, 24);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(76, 13);
             this.label49.TabIndex = 112;
             this.label49.Text = "Getting Hostile";
             // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(474, 498);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(167, 20);
-            this.label50.TabIndex = 111;
-            this.label50.Text = "Aggravation Attributes";
-            // 
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(482, 641);
+            this.label51.Location = new System.Drawing.Point(10, 143);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(80, 13);
             this.label51.TabIndex = 118;
@@ -1371,7 +1293,7 @@
             // label52
             // 
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(482, 602);
+            this.label52.Location = new System.Drawing.Point(10, 104);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(98, 13);
             this.label52.TabIndex = 116;
@@ -1380,7 +1302,7 @@
             // label53
             // 
             this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(536, 540);
+            this.label53.Location = new System.Drawing.Point(64, 42);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(85, 13);
             this.label53.TabIndex = 124;
@@ -1389,7 +1311,7 @@
             // label57
             // 
             this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(536, 580);
+            this.label57.Location = new System.Drawing.Point(64, 82);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(85, 13);
             this.label57.TabIndex = 125;
@@ -1398,7 +1320,7 @@
             // label58
             // 
             this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(536, 621);
+            this.label58.Location = new System.Drawing.Point(64, 123);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(85, 13);
             this.label58.TabIndex = 126;
@@ -1407,7 +1329,7 @@
             // label59
             // 
             this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(536, 660);
+            this.label59.Location = new System.Drawing.Point(64, 163);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(85, 13);
             this.label59.TabIndex = 127;
@@ -1416,26 +1338,16 @@
             // label61
             // 
             this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(252, 515);
+            this.label61.Location = new System.Drawing.Point(10, 22);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(141, 13);
             this.label61.TabIndex = 129;
             this.label61.Text = "Minimum Distance To Player";
             // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.Location = new System.Drawing.Point(244, 492);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(123, 20);
-            this.label62.TabIndex = 128;
-            this.label62.Text = "Cover Attributes";
-            // 
             // label60
             // 
             this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(706, 519);
+            this.label60.Location = new System.Drawing.Point(10, 99);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(79, 13);
             this.label60.TabIndex = 136;
@@ -1444,7 +1356,7 @@
             // label63
             // 
             this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(706, 480);
+            this.label63.Location = new System.Drawing.Point(10, 60);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(88, 13);
             this.label63.TabIndex = 134;
@@ -1453,26 +1365,16 @@
             // label64
             // 
             this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(706, 441);
+            this.label64.Location = new System.Drawing.Point(10, 21);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(77, 13);
             this.label64.TabIndex = 132;
             this.label64.Text = "Search Radius";
             // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(698, 418);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(127, 20);
-            this.label65.TabIndex = 131;
-            this.label65.Text = "Hiding Attributes";
-            // 
             // label66
             // 
             this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(706, 639);
+            this.label66.Location = new System.Drawing.Point(10, 219);
             this.label66.Name = "label66";
             this.label66.Size = new System.Drawing.Size(79, 13);
             this.label66.TabIndex = 142;
@@ -1481,7 +1383,7 @@
             // label67
             // 
             this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(706, 601);
+            this.label67.Location = new System.Drawing.Point(10, 181);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(190, 13);
             this.label67.TabIndex = 140;
@@ -1490,7 +1392,7 @@
             // label68
             // 
             this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(706, 561);
+            this.label68.Location = new System.Drawing.Point(10, 141);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(128, 13);
             this.label68.TabIndex = 138;
@@ -1499,7 +1401,7 @@
             // label69
             // 
             this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(19, 500);
+            this.label69.Location = new System.Drawing.Point(10, 101);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(186, 13);
             this.label69.TabIndex = 149;
@@ -1508,7 +1410,7 @@
             // label70
             // 
             this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(19, 461);
+            this.label70.Location = new System.Drawing.Point(10, 62);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(180, 13);
             this.label70.TabIndex = 147;
@@ -1517,26 +1419,16 @@
             // label71
             // 
             this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(19, 422);
+            this.label71.Location = new System.Drawing.Point(10, 23);
             this.label71.Name = "label71";
             this.label71.Size = new System.Drawing.Size(118, 13);
             this.label71.TabIndex = 145;
             this.label71.Text = "Range To Find Idle Job";
             // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label72.Location = new System.Drawing.Point(11, 399);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(108, 20);
-            this.label72.TabIndex = 144;
-            this.label72.Text = "Job Attributes";
-            // 
             // label73
             // 
             this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(19, 649);
+            this.label73.Location = new System.Drawing.Point(10, 101);
             this.label73.Name = "label73";
             this.label73.Size = new System.Drawing.Size(186, 13);
             this.label73.TabIndex = 156;
@@ -1545,7 +1437,7 @@
             // label74
             // 
             this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(19, 610);
+            this.label74.Location = new System.Drawing.Point(10, 62);
             this.label74.Name = "label74";
             this.label74.Size = new System.Drawing.Size(112, 13);
             this.label74.TabIndex = 154;
@@ -1554,209 +1446,327 @@
             // label75
             // 
             this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(19, 571);
+            this.label75.Location = new System.Drawing.Point(10, 23);
             this.label75.Name = "label75";
             this.label75.Size = new System.Drawing.Size(108, 13);
             this.label75.TabIndex = 152;
             this.label75.Text = "Defence Decay Rate";
             // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label76.Location = new System.Drawing.Point(11, 548);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(143, 20);
-            this.label76.TabIndex = 151;
-            this.label76.Text = "Defence Attributes";
-            // 
             // label77
             // 
             this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(19, 688);
+            this.label77.Location = new System.Drawing.Point(10, 140);
             this.label77.Name = "label77";
             this.label77.Size = new System.Drawing.Size(142, 13);
             this.label77.TabIndex = 158;
             this.label77.Text = "EMP Stun Damage Multiplier";
             // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(10, 14);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(443, 29);
-            this.label78.TabIndex = 160;
-            this.label78.Text = "Alien: Isolation Character Attribute Editor";
-            // 
             // label79
             // 
             this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(252, 687);
+            this.label79.Location = new System.Drawing.Point(10, 101);
             this.label79.Name = "label79";
             this.label79.Size = new System.Drawing.Size(100, 13);
             this.label79.TabIndex = 162;
             this.label79.Text = "Character Template";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.Max_Health);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.Injured_State_1);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.Injured_State_2);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.Injured_State_3);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.Health_Regeneration_Rate);
+            this.groupBox1.Location = new System.Drawing.Point(52, 38);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(216, 228);
+            this.groupBox1.TabIndex = 164;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Health Attributes";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.Behavior_Tree);
+            this.groupBox2.Controls.Add(this.ATTACK_GROUP);
+            this.groupBox2.Controls.Add(this.TargetingSystem);
+            this.groupBox2.Location = new System.Drawing.Point(274, 38);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(216, 148);
+            this.groupBox2.TabIndex = 165;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Behaviour Attributes";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.Character_Sound);
+            this.groupBox3.Controls.Add(this.label14);
+            this.groupBox3.Location = new System.Drawing.Point(274, 187);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(216, 74);
+            this.groupBox3.TabIndex = 166;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Sound Attributes";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.label19);
+            this.groupBox4.Controls.Add(this.min_time_between_shots);
+            this.groupBox4.Controls.Add(this.label22);
+            this.groupBox4.Controls.Add(this.label26);
+            this.groupBox4.Controls.Add(this.stop_shooting_if_no_visual_after_time);
+            this.groupBox4.Controls.Add(this.label24);
+            this.groupBox4.Controls.Add(this.percentage_chance_of_shooting_over_cover_vs_side);
+            this.groupBox4.Controls.Add(this.label23);
+            this.groupBox4.Controls.Add(this.Aiming_Accuracy_Radius_Multiplier);
+            this.groupBox4.Controls.Add(this.max_time_between_shots);
+            this.groupBox4.Controls.Add(this.label27);
+            this.groupBox4.Controls.Add(this.label28);
+            this.groupBox4.Controls.Add(this.Min_Non_Shooting_In_Cover_Interval_Time);
+            this.groupBox4.Controls.Add(this.Max_Non_Shooting_In_Cover_Interval_Time);
+            this.groupBox4.Controls.Add(this.label18);
+            this.groupBox4.Controls.Add(this.label29);
+            this.groupBox4.Controls.Add(this.Min_Shooting_Interval_Time);
+            this.groupBox4.Controls.Add(this.Max_Shooting_Interval_Time);
+            this.groupBox4.Controls.Add(this.label21);
+            this.groupBox4.Controls.Add(this.label31);
+            this.groupBox4.Controls.Add(this.Min_Aiming_Accuracy_Normalised_Value);
+            this.groupBox4.Controls.Add(this.Max_Aiming_Accuracy_Normalised_Value);
+            this.groupBox4.Controls.Add(this.label30);
+            this.groupBox4.Controls.Add(this.label32);
+            this.groupBox4.Controls.Add(this.min_delay_before_shooting);
+            this.groupBox4.Controls.Add(this.max_delay_before_shooting);
+            this.groupBox4.Controls.Add(this.label25);
+            this.groupBox4.Controls.Add(this.label36);
+            this.groupBox4.Controls.Add(this.min_time_between_shots_for_shotgun);
+            this.groupBox4.Controls.Add(this.max_time_between_shots_for_shotgun);
+            this.groupBox4.Controls.Add(this.label16);
+            this.groupBox4.Controls.Add(this.label38);
+            this.groupBox4.Controls.Add(this.Min_Non_Shooting_Interval_Time);
+            this.groupBox4.Controls.Add(this.Max_Non_Shooting_Interval_Time);
+            this.groupBox4.Controls.Add(this.label37);
+            this.groupBox4.Location = new System.Drawing.Point(496, 38);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(216, 436);
+            this.groupBox4.TabIndex = 167;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Shooting Attributes";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.Damage_From_Hit);
+            this.groupBox5.Controls.Add(this.label35);
+            this.groupBox5.Controls.Add(this.label34);
+            this.groupBox5.Controls.Add(this.Damage_From_Grapple_Break);
+            this.groupBox5.Controls.Add(this.label33);
+            this.groupBox5.Controls.Add(this.Damage_From_Stealth_KO);
+            this.groupBox5.Location = new System.Drawing.Point(274, 263);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(216, 151);
+            this.groupBox5.TabIndex = 167;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Melee Attributes";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.cover_job_minimum_distance_to_player);
+            this.groupBox6.Controls.Add(this.label61);
+            this.groupBox6.Location = new System.Drawing.Point(274, 416);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(216, 74);
+            this.groupBox6.TabIndex = 167;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Cover Attributes";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.capsuleRadius);
+            this.groupBox7.Controls.Add(this.label55);
+            this.groupBox7.Controls.Add(this.label54);
+            this.groupBox7.Controls.Add(this.permittedLocomotionModulation);
+            this.groupBox7.Controls.Add(this.label79);
+            this.groupBox7.Controls.Add(this.Template_Name);
+            this.groupBox7.Location = new System.Drawing.Point(274, 492);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(216, 153);
+            this.groupBox7.TabIndex = 168;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Misc Attributes";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.Mass);
+            this.groupBox8.Controls.Add(this.label8);
+            this.groupBox8.Controls.Add(this.label7);
+            this.groupBox8.Controls.Add(this.Default_Alliance_Group);
+            this.groupBox8.Location = new System.Drawing.Point(52, 268);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(216, 112);
+            this.groupBox8.TabIndex = 169;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Physical Attributes";
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.min_time_between_idles_for_stalk);
+            this.groupBox9.Controls.Add(this.label71);
+            this.groupBox9.Controls.Add(this.max_range_to_search_for_IDLE_job);
+            this.groupBox9.Controls.Add(this.label70);
+            this.groupBox9.Controls.Add(this.max_range_to_search_for_ESCALATION_jobs);
+            this.groupBox9.Controls.Add(this.label69);
+            this.groupBox9.Location = new System.Drawing.Point(52, 382);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(216, 152);
+            this.groupBox9.TabIndex = 170;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Job Attributes";
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.defense_gauge_decay_rate);
+            this.groupBox10.Controls.Add(this.label75);
+            this.groupBox10.Controls.Add(this.label74);
+            this.groupBox10.Controls.Add(this.defense_gauge_decay_delay);
+            this.groupBox10.Controls.Add(this.label73);
+            this.groupBox10.Controls.Add(this.alien_stun_damage_guage_decrease_per_sec);
+            this.groupBox10.Controls.Add(this.label77);
+            this.groupBox10.Controls.Add(this.EMP_Stunned_Damage_Taken_Multiplier);
+            this.groupBox10.Location = new System.Drawing.Point(52, 537);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(216, 191);
+            this.groupBox10.TabIndex = 171;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Defence Attributes";
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.aggro_gun_aimed_rate);
+            this.groupBox11.Controls.Add(this.label49);
+            this.groupBox11.Controls.Add(this.label48);
+            this.groupBox11.Controls.Add(this.aggro_warning_rate);
+            this.groupBox11.Controls.Add(this.label52);
+            this.groupBox11.Controls.Add(this.aggro_interrogative_rate);
+            this.groupBox11.Controls.Add(this.label51);
+            this.groupBox11.Controls.Add(this.aggro_standdown_rate);
+            this.groupBox11.Controls.Add(this.aggro_aggressive_distance);
+            this.groupBox11.Controls.Add(this.aggro_warning_distance);
+            this.groupBox11.Controls.Add(this.aggro_interrogative_distance);
+            this.groupBox11.Controls.Add(this.aggro_standdown_distance);
+            this.groupBox11.Controls.Add(this.label53);
+            this.groupBox11.Controls.Add(this.label57);
+            this.groupBox11.Controls.Add(this.label58);
+            this.groupBox11.Controls.Add(this.label59);
+            this.groupBox11.Location = new System.Drawing.Point(496, 476);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(216, 191);
+            this.groupBox11.TabIndex = 169;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Aggravation Attributes";
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.max_vertical_peek);
+            this.groupBox12.Controls.Add(this.label43);
+            this.groupBox12.Controls.Add(this.label42);
+            this.groupBox12.Controls.Add(this.max_horizontal_peek);
+            this.groupBox12.Controls.Add(this.label41);
+            this.groupBox12.Controls.Add(this.max_peek_control_velocity);
+            this.groupBox12.Controls.Add(this.label40);
+            this.groupBox12.Controls.Add(this.max_auto_return_from_peek_velocity);
+            this.groupBox12.Controls.Add(this.label39);
+            this.groupBox12.Controls.Add(this.vertical_peek_exposed_threshold);
+            this.groupBox12.Controls.Add(this.label46);
+            this.groupBox12.Controls.Add(this.horizontal_peek_exposed_threshold);
+            this.groupBox12.Controls.Add(this.label45);
+            this.groupBox12.Controls.Add(this.grace_time_in_exposed_peek_region);
+            this.groupBox12.Controls.Add(this.label47);
+            this.groupBox12.Controls.Add(this.peek_control_scaling);
+            this.groupBox12.Location = new System.Drawing.Point(718, 38);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(216, 342);
+            this.groupBox12.TabIndex = 168;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "Peeking Attributes";
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.hiding_search_radius);
+            this.groupBox13.Controls.Add(this.label64);
+            this.groupBox13.Controls.Add(this.label63);
+            this.groupBox13.Controls.Add(this.hiding_post_search_exclusion_radius);
+            this.groupBox13.Controls.Add(this.label60);
+            this.groupBox13.Controls.Add(this.hiding_hearing_range);
+            this.groupBox13.Controls.Add(this.label68);
+            this.groupBox13.Controls.Add(this.hiding_max_QTE_selection_weighting);
+            this.groupBox13.Controls.Add(this.label67);
+            this.groupBox13.Controls.Add(this.chance_hiding_not_chosen);
+            this.groupBox13.Controls.Add(this.label66);
+            this.groupBox13.Controls.Add(this.hiding_max_search_time);
+            this.groupBox13.Location = new System.Drawing.Point(718, 382);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(216, 270);
+            this.groupBox13.TabIndex = 169;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "Hiding Attributes";
+            // 
             // CharEd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(914, 739);
-            this.Controls.Add(this.Template_Name);
-            this.Controls.Add(this.label79);
-            this.Controls.Add(this.label78);
-            this.Controls.Add(this.EMP_Stunned_Damage_Taken_Multiplier);
-            this.Controls.Add(this.label77);
-            this.Controls.Add(this.alien_stun_damage_guage_decrease_per_sec);
-            this.Controls.Add(this.label73);
-            this.Controls.Add(this.defense_gauge_decay_delay);
-            this.Controls.Add(this.label74);
-            this.Controls.Add(this.defense_gauge_decay_rate);
-            this.Controls.Add(this.label75);
-            this.Controls.Add(this.label76);
-            this.Controls.Add(this.min_time_between_idles_for_stalk);
-            this.Controls.Add(this.label69);
-            this.Controls.Add(this.max_range_to_search_for_ESCALATION_jobs);
-            this.Controls.Add(this.label70);
-            this.Controls.Add(this.max_range_to_search_for_IDLE_job);
-            this.Controls.Add(this.label71);
-            this.Controls.Add(this.label72);
-            this.Controls.Add(this.hiding_max_search_time);
-            this.Controls.Add(this.label66);
-            this.Controls.Add(this.chance_hiding_not_chosen);
-            this.Controls.Add(this.label67);
-            this.Controls.Add(this.hiding_max_QTE_selection_weighting);
-            this.Controls.Add(this.label68);
-            this.Controls.Add(this.hiding_hearing_range);
-            this.Controls.Add(this.label60);
-            this.Controls.Add(this.hiding_post_search_exclusion_radius);
-            this.Controls.Add(this.label63);
-            this.Controls.Add(this.hiding_search_radius);
-            this.Controls.Add(this.label64);
-            this.Controls.Add(this.label65);
-            this.Controls.Add(this.cover_job_minimum_distance_to_player);
-            this.Controls.Add(this.label61);
-            this.Controls.Add(this.label62);
-            this.Controls.Add(this.label59);
-            this.Controls.Add(this.label58);
-            this.Controls.Add(this.label57);
-            this.Controls.Add(this.label53);
-            this.Controls.Add(this.aggro_standdown_distance);
-            this.Controls.Add(this.aggro_interrogative_distance);
-            this.Controls.Add(this.aggro_warning_distance);
-            this.Controls.Add(this.aggro_aggressive_distance);
-            this.Controls.Add(this.aggro_standdown_rate);
-            this.Controls.Add(this.label51);
-            this.Controls.Add(this.aggro_interrogative_rate);
-            this.Controls.Add(this.label52);
-            this.Controls.Add(this.aggro_warning_rate);
-            this.Controls.Add(this.label48);
-            this.Controls.Add(this.aggro_gun_aimed_rate);
-            this.Controls.Add(this.label49);
-            this.Controls.Add(this.label50);
-            this.Controls.Add(this.permittedLocomotionModulation);
-            this.Controls.Add(this.label54);
-            this.Controls.Add(this.capsuleRadius);
-            this.Controls.Add(this.label55);
-            this.Controls.Add(this.label56);
-            this.Controls.Add(this.peek_control_scaling);
-            this.Controls.Add(this.label47);
-            this.Controls.Add(this.grace_time_in_exposed_peek_region);
-            this.Controls.Add(this.label45);
-            this.Controls.Add(this.horizontal_peek_exposed_threshold);
-            this.Controls.Add(this.label46);
-            this.Controls.Add(this.vertical_peek_exposed_threshold);
-            this.Controls.Add(this.label39);
-            this.Controls.Add(this.max_auto_return_from_peek_velocity);
-            this.Controls.Add(this.label40);
-            this.Controls.Add(this.max_peek_control_velocity);
-            this.Controls.Add(this.label41);
-            this.Controls.Add(this.max_horizontal_peek);
-            this.Controls.Add(this.label42);
-            this.Controls.Add(this.max_vertical_peek);
-            this.Controls.Add(this.label43);
-            this.Controls.Add(this.label44);
-            this.Controls.Add(this.label37);
-            this.Controls.Add(this.Max_Non_Shooting_Interval_Time);
-            this.Controls.Add(this.Min_Non_Shooting_Interval_Time);
-            this.Controls.Add(this.label38);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.max_time_between_shots_for_shotgun);
-            this.Controls.Add(this.min_time_between_shots_for_shotgun);
-            this.Controls.Add(this.label36);
-            this.Controls.Add(this.Damage_From_Stealth_KO);
-            this.Controls.Add(this.label33);
-            this.Controls.Add(this.Damage_From_Grapple_Break);
-            this.Controls.Add(this.label34);
-            this.Controls.Add(this.Damage_From_Hit);
-            this.Controls.Add(this.label35);
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.max_delay_before_shooting);
-            this.Controls.Add(this.min_delay_before_shooting);
-            this.Controls.Add(this.label32);
-            this.Controls.Add(this.label30);
-            this.Controls.Add(this.Max_Aiming_Accuracy_Normalised_Value);
-            this.Controls.Add(this.Min_Aiming_Accuracy_Normalised_Value);
-            this.Controls.Add(this.label31);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.Max_Shooting_Interval_Time);
-            this.Controls.Add(this.Min_Shooting_Interval_Time);
-            this.Controls.Add(this.label29);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.Max_Non_Shooting_In_Cover_Interval_Time);
-            this.Controls.Add(this.Min_Non_Shooting_In_Cover_Interval_Time);
-            this.Controls.Add(this.label28);
-            this.Controls.Add(this.label27);
-            this.Controls.Add(this.max_time_between_shots);
-            this.Controls.Add(this.Aiming_Accuracy_Radius_Multiplier);
-            this.Controls.Add(this.label23);
-            this.Controls.Add(this.percentage_chance_of_shooting_over_cover_vs_side);
-            this.Controls.Add(this.label24);
-            this.Controls.Add(this.stop_shooting_if_no_visual_after_time);
-            this.Controls.Add(this.label26);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.min_time_between_shots);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.Default_Alliance_Group);
-            this.Controls.Add(this.Character_Sound);
-            this.Controls.Add(this.TargetingSystem);
-            this.Controls.Add(this.ATTACK_GROUP);
-            this.Controls.Add(this.Behavior_Tree);
+            this.ClientSize = new System.Drawing.Size(994, 731);
+            this.Controls.Add(this.groupBox13);
+            this.Controls.Add(this.groupBox12);
+            this.Controls.Add(this.groupBox11);
+            this.Controls.Add(this.groupBox10);
+            this.Controls.Add(this.groupBox9);
+            this.Controls.Add(this.groupBox8);
+            this.Controls.Add(this.groupBox7);
+            this.Controls.Add(this.groupBox6);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.Mass);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.Health_Regeneration_Rate);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.Injured_State_3);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.Injured_State_2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.Injured_State_1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.Max_Health);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.classSelection);
             this.Controls.Add(this.btnSelectClass);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "CharEd";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alien: Isolation Character Attribute Editor";
+            this.Text = "Character Attribute Editor";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox10.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -1764,7 +1774,6 @@
 
         private System.Windows.Forms.ComboBox classSelection;
         private System.Windows.Forms.Button btnSelectClass;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox Max_Health;
         private System.Windows.Forms.TextBox Injured_State_1;
@@ -1778,14 +1787,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox Mass;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ComboBox Behavior_Tree;
         private System.Windows.Forms.ComboBox ATTACK_GROUP;
@@ -1795,7 +1800,6 @@
         private System.Windows.Forms.ToolTip infoPopup;
         private System.Windows.Forms.TextBox min_time_between_shots;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox Aiming_Accuracy_Radius_Multiplier;
         private System.Windows.Forms.Label label23;
@@ -1845,7 +1849,6 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.TextBox max_vertical_peek;
         private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
         private System.Windows.Forms.TextBox grace_time_in_exposed_peek_region;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.TextBox horizontal_peek_exposed_threshold;
@@ -1856,12 +1859,10 @@
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.TextBox capsuleRadius;
         private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label56;
         private System.Windows.Forms.TextBox aggro_warning_rate;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.TextBox aggro_gun_aimed_rate;
         private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
         private System.Windows.Forms.TextBox aggro_standdown_rate;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.TextBox aggro_interrogative_rate;
@@ -1876,14 +1877,12 @@
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.TextBox cover_job_minimum_distance_to_player;
         private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label label62;
         private System.Windows.Forms.TextBox hiding_hearing_range;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.TextBox hiding_post_search_exclusion_radius;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.TextBox hiding_search_radius;
         private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label65;
         private System.Windows.Forms.TextBox hiding_max_search_time;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.TextBox chance_hiding_not_chosen;
@@ -1896,18 +1895,28 @@
         private System.Windows.Forms.Label label70;
         private System.Windows.Forms.TextBox max_range_to_search_for_IDLE_job;
         private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Label label72;
         private System.Windows.Forms.TextBox alien_stun_damage_guage_decrease_per_sec;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.TextBox defense_gauge_decay_delay;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.TextBox defense_gauge_decay_rate;
         private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.Label label76;
         private System.Windows.Forms.TextBox EMP_Stunned_Damage_Taken_Multiplier;
         private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.Label label78;
         private System.Windows.Forms.ComboBox Template_Name;
         private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.GroupBox groupBox13;
     }
 }

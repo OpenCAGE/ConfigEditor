@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LocomotionEditor));
             this.characters = new System.Windows.Forms.ComboBox();
             this.loadChar = new System.Windows.Forms.Button();
-            this.label78 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -88,37 +87,27 @@
             "MELEE_HUMAN",
             "INNOCENT",
             "CUTSCENE_ANDROID"});
-            this.characters.Location = new System.Drawing.Point(12, 51);
+            this.characters.Location = new System.Drawing.Point(12, 13);
             this.characters.Name = "characters";
-            this.characters.Size = new System.Drawing.Size(291, 21);
+            this.characters.Size = new System.Drawing.Size(849, 21);
             this.characters.TabIndex = 523;
             this.toolTip1.SetToolTip(this.characters, "Select a character to load the data for.");
             // 
             // loadChar
             // 
-            this.loadChar.Location = new System.Drawing.Point(309, 50);
+            this.loadChar.Location = new System.Drawing.Point(867, 12);
             this.loadChar.Name = "loadChar";
-            this.loadChar.Size = new System.Drawing.Size(122, 23);
+            this.loadChar.Size = new System.Drawing.Size(115, 23);
             this.loadChar.TabIndex = 522;
             this.loadChar.Text = "Load Character";
             this.loadChar.UseVisualStyleBackColor = true;
             this.loadChar.Click += new System.EventHandler(this.loadChar_Click);
             // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(34, 11);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(371, 29);
-            this.label78.TabIndex = 519;
-            this.label78.Text = "Alien: Isolation Locomotion Editor";
-            // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(224, 489);
+            this.btnSave.Location = new System.Drawing.Point(720, 684);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(207, 35);
+            this.btnSave.Size = new System.Drawing.Size(262, 35);
             this.btnSave.TabIndex = 518;
             this.btnSave.Text = "Save Current Data";
             this.toolTip1.SetToolTip(this.btnSave, "Save all data currently loaded into the editor. Make sure to press this whenever " +
@@ -146,9 +135,9 @@
             this.groupBox1.Controls.Add(this.linearAcceleration1);
             this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.linearVelocity1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 254);
+            this.groupBox1.Location = new System.Drawing.Point(299, 349);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(419, 229);
+            this.groupBox1.Size = new System.Drawing.Size(413, 229);
             this.groupBox1.TabIndex = 527;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Steering Boundary Data";
@@ -323,9 +312,9 @@
             this.groupBox4.Controls.Add(this.capsuleRadius);
             this.groupBox4.Controls.Add(this.label36);
             this.groupBox4.Controls.Add(this.capsuleHeight);
-            this.groupBox4.Location = new System.Drawing.Point(12, 79);
+            this.groupBox4.Location = new System.Drawing.Point(204, 113);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(419, 115);
+            this.groupBox4.Size = new System.Drawing.Size(612, 78);
             this.groupBox4.TabIndex = 528;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Misc Locomotion Settings";
@@ -333,7 +322,7 @@
             // label34
             // 
             this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(13, 62);
+            this.label34.Location = new System.Drawing.Point(408, 23);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(117, 13);
             this.label34.TabIndex = 513;
@@ -342,7 +331,7 @@
             // permittedLocomotionModulation
             // 
             this.permittedLocomotionModulation.Enabled = false;
-            this.permittedLocomotionModulation.Location = new System.Drawing.Point(16, 78);
+            this.permittedLocomotionModulation.Location = new System.Drawing.Point(411, 39);
             this.permittedLocomotionModulation.Name = "permittedLocomotionModulation";
             this.permittedLocomotionModulation.Size = new System.Drawing.Size(187, 20);
             this.permittedLocomotionModulation.TabIndex = 514;
@@ -393,18 +382,18 @@
             "Normal",
             "Crouched",
             "Aimed"});
-            this.variantType.Location = new System.Drawing.Point(12, 201);
+            this.variantType.Location = new System.Drawing.Point(12, 275);
             this.variantType.Name = "variantType";
-            this.variantType.Size = new System.Drawing.Size(291, 21);
+            this.variantType.Size = new System.Drawing.Size(849, 21);
             this.variantType.TabIndex = 529;
             this.toolTip1.SetToolTip(this.variantType, "Select the variant to load the steering data for.");
             // 
             // swapVariant
             // 
             this.swapVariant.Enabled = false;
-            this.swapVariant.Location = new System.Drawing.Point(309, 200);
+            this.swapVariant.Location = new System.Drawing.Point(867, 273);
             this.swapVariant.Name = "swapVariant";
-            this.swapVariant.Size = new System.Drawing.Size(122, 23);
+            this.swapVariant.Size = new System.Drawing.Size(115, 23);
             this.swapVariant.TabIndex = 530;
             this.swapVariant.Text = "Load Variant";
             this.swapVariant.UseVisualStyleBackColor = true;
@@ -414,11 +403,11 @@
             // 
             this.setSlider.Enabled = false;
             this.setSlider.LargeChange = 1;
-            this.setSlider.Location = new System.Drawing.Point(11, 224);
+            this.setSlider.Location = new System.Drawing.Point(11, 298);
             this.setSlider.Maximum = 4;
             this.setSlider.Minimum = 1;
             this.setSlider.Name = "setSlider";
-            this.setSlider.Size = new System.Drawing.Size(420, 45);
+            this.setSlider.Size = new System.Drawing.Size(971, 45);
             this.setSlider.TabIndex = 531;
             this.toolTip1.SetToolTip(this.setSlider, "Load a set stage of this variant.");
             this.setSlider.Value = 1;
@@ -428,22 +417,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(441, 533);
+            this.ClientSize = new System.Drawing.Size(994, 731);
             this.Controls.Add(this.swapVariant);
             this.Controls.Add(this.variantType);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.characters);
             this.Controls.Add(this.loadChar);
-            this.Controls.Add(this.label78);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.setSlider);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "LocomotionEditor";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alien: Isolation Character Locomotion Editor";
+            this.Text = "Locomotion Editor";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -457,7 +442,6 @@
         #endregion
         private System.Windows.Forms.ComboBox characters;
         private System.Windows.Forms.Button loadChar;
-        private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label8;

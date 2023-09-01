@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoadMovieEditor));
-            this.label78 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.moviePlaylists = new System.Windows.Forms.ComboBox();
             this.btnSelectClass = new System.Windows.Forms.Button();
@@ -53,21 +52,11 @@
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(37, 9);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(392, 29);
-            this.label78.TabIndex = 327;
-            this.label78.Text = "Alien: Isolation Movie Playlist Editor";
-            // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(302, 437);
+            this.btnSave.Location = new System.Drawing.Point(720, 684);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(150, 35);
+            this.btnSave.Size = new System.Drawing.Size(262, 35);
             this.btnSave.TabIndex = 326;
             this.btnSave.Text = "Save";
             this.toolTip1.SetToolTip(this.btnSave, "Save playlist settings.");
@@ -94,18 +83,18 @@
             "MELEE_HUMAN",
             "INNOCENT",
             "CUTSCENE_ANDROID"});
-            this.moviePlaylists.Location = new System.Drawing.Point(12, 45);
+            this.moviePlaylists.Location = new System.Drawing.Point(12, 13);
             this.moviePlaylists.Name = "moviePlaylists";
-            this.moviePlaylists.Size = new System.Drawing.Size(327, 21);
+            this.moviePlaylists.Size = new System.Drawing.Size(849, 21);
             this.moviePlaylists.TabIndex = 325;
             this.toolTip1.SetToolTip(this.moviePlaylists, "All movie playlists.");
             // 
             // btnSelectClass
             // 
             this.btnSelectClass.Enabled = false;
-            this.btnSelectClass.Location = new System.Drawing.Point(345, 44);
+            this.btnSelectClass.Location = new System.Drawing.Point(867, 12);
             this.btnSelectClass.Name = "btnSelectClass";
-            this.btnSelectClass.Size = new System.Drawing.Size(106, 23);
+            this.btnSelectClass.Size = new System.Drawing.Size(115, 23);
             this.btnSelectClass.TabIndex = 324;
             this.btnSelectClass.Text = "Load Playlist";
             this.toolTip1.SetToolTip(this.btnSelectClass, "Load selected playlist.");
@@ -214,7 +203,7 @@
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.shuffle_playlist);
-            this.groupBox1.Location = new System.Drawing.Point(12, 73);
+            this.groupBox1.Location = new System.Drawing.Point(288, 190);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(439, 120);
             this.groupBox1.TabIndex = 330;
@@ -223,12 +212,12 @@
             // 
             // dev_comments
             // 
-            this.dev_comments.Location = new System.Drawing.Point(13, 437);
+            this.dev_comments.Location = new System.Drawing.Point(12, 684);
             this.dev_comments.Multiline = true;
             this.dev_comments.Name = "dev_comments";
             this.dev_comments.ReadOnly = true;
             this.dev_comments.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.dev_comments.Size = new System.Drawing.Size(283, 35);
+            this.dev_comments.Size = new System.Drawing.Size(702, 35);
             this.dev_comments.TabIndex = 347;
             this.toolTip1.SetToolTip(this.dev_comments, "Comments about this playlist from the developers.");
             // 
@@ -271,7 +260,7 @@
             this.groupBox3.Controls.Add(this.movieList);
             this.groupBox3.Controls.Add(this.removeMovie);
             this.groupBox3.Controls.Add(this.addMovie);
-            this.groupBox3.Location = new System.Drawing.Point(12, 199);
+            this.groupBox3.Location = new System.Drawing.Point(288, 316);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(439, 232);
             this.groupBox3.TabIndex = 347;
@@ -282,20 +271,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(462, 479);
+            this.ClientSize = new System.Drawing.Size(994, 731);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.dev_comments);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label78);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.moviePlaylists);
             this.Controls.Add(this.btnSelectClass);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "LoadMovieEditor";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alien: Isolation Movie Playlist Editor";
+            this.Text = "Loadscreen Playlist Editor";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -305,7 +290,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ComboBox moviePlaylists;
         private System.Windows.Forms.Button btnSelectClass;

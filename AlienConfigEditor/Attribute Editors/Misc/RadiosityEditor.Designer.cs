@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RadiosityEditor));
-            this.label22 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.gRadiosityEmissiveSurfaceScale = new System.Windows.Forms.TextBox();
@@ -55,19 +54,11 @@
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(283, 218);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(0, 13);
-            this.label22.TabIndex = 411;
-            // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(397, 211);
+            this.btnSave.Location = new System.Drawing.Point(720, 684);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(224, 35);
+            this.btnSave.Size = new System.Drawing.Size(262, 35);
             this.btnSave.TabIndex = 410;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -223,7 +214,7 @@
             this.groupBox2.Controls.Add(this.gRadiosityAlbedoSaturationAmount);
             this.groupBox2.Controls.Add(this.gRadiositySpecularGlossScale);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(12, 12);
+            this.groupBox2.Location = new System.Drawing.Point(196, 245);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(609, 117);
             this.groupBox2.TabIndex = 431;
@@ -236,7 +227,7 @@
             this.groupBox1.Controls.Add(this.gDeferredEmissiveSurfaceExponent);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.gDeferredEmissiveSurfaceScale);
-            this.groupBox1.Location = new System.Drawing.Point(12, 135);
+            this.groupBox1.Location = new System.Drawing.Point(196, 368);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(224, 111);
             this.groupBox1.TabIndex = 432;
@@ -247,16 +238,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(631, 256);
+            this.ClientSize = new System.Drawing.Size(994, 731);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.label22);
             this.Controls.Add(this.btnSave);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "RadiosityEditor";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Radiosity Editor";
             this.Load += new System.EventHandler(this.RadiosityEditor_Load);
             this.groupBox2.ResumeLayout(false);
@@ -264,12 +251,10 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox gRadiosityEmissiveSurfaceScale;

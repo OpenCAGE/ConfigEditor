@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CharViewconeEditor));
             this.loadType = new System.Windows.Forms.Button();
             this.senseType = new System.Windows.Forms.ComboBox();
-            this.label78 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.senseSets = new System.Windows.Forms.ComboBox();
             this.loadSet = new System.Windows.Forms.Button();
@@ -88,9 +87,9 @@
             // loadType
             // 
             this.loadType.Enabled = false;
-            this.loadType.Location = new System.Drawing.Point(311, 288);
+            this.loadType.Location = new System.Drawing.Point(867, 346);
             this.loadType.Name = "loadType";
-            this.loadType.Size = new System.Drawing.Size(125, 23);
+            this.loadType.Size = new System.Drawing.Size(115, 23);
             this.loadType.TabIndex = 475;
             this.loadType.Text = "Load Sense Type";
             this.loadType.UseVisualStyleBackColor = true;
@@ -103,26 +102,16 @@
             this.senseType.FormattingEnabled = true;
             this.senseType.Items.AddRange(new object[] {
             "PLACEHOLDER"});
-            this.senseType.Location = new System.Drawing.Point(17, 289);
+            this.senseType.Location = new System.Drawing.Point(12, 347);
             this.senseType.Name = "senseType";
-            this.senseType.Size = new System.Drawing.Size(288, 21);
+            this.senseType.Size = new System.Drawing.Size(849, 21);
             this.senseType.TabIndex = 474;
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(62, 9);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(314, 29);
-            this.label78.TabIndex = 473;
-            this.label78.Text = "Alien: Isolation Sense Editor";
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(229, 592);
+            this.btnSave.Location = new System.Drawing.Point(720, 684);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(207, 35);
+            this.btnSave.Size = new System.Drawing.Size(262, 35);
             this.btnSave.TabIndex = 472;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -135,17 +124,17 @@
             this.senseSets.FormattingEnabled = true;
             this.senseSets.Items.AddRange(new object[] {
             "PLACEHOLDER"});
-            this.senseSets.Location = new System.Drawing.Point(17, 147);
+            this.senseSets.Location = new System.Drawing.Point(12, 197);
             this.senseSets.Name = "senseSets";
-            this.senseSets.Size = new System.Drawing.Size(288, 21);
+            this.senseSets.Size = new System.Drawing.Size(849, 21);
             this.senseSets.TabIndex = 471;
             // 
             // loadSet
             // 
             this.loadSet.Enabled = false;
-            this.loadSet.Location = new System.Drawing.Point(311, 146);
+            this.loadSet.Location = new System.Drawing.Point(867, 196);
             this.loadSet.Name = "loadSet";
-            this.loadSet.Size = new System.Drawing.Size(125, 23);
+            this.loadSet.Size = new System.Drawing.Size(115, 23);
             this.loadSet.TabIndex = 470;
             this.loadSet.Text = "Load Sense Set";
             this.loadSet.UseVisualStyleBackColor = true;
@@ -170,16 +159,16 @@
             "MELEE_HUMAN",
             "INNOCENT",
             "CUTSCENE_ANDROID"});
-            this.characters.Location = new System.Drawing.Point(17, 44);
+            this.characters.Location = new System.Drawing.Point(12, 13);
             this.characters.Name = "characters";
-            this.characters.Size = new System.Drawing.Size(288, 21);
+            this.characters.Size = new System.Drawing.Size(849, 21);
             this.characters.TabIndex = 507;
             // 
             // loadChar
             // 
-            this.loadChar.Location = new System.Drawing.Point(311, 43);
+            this.loadChar.Location = new System.Drawing.Point(867, 12);
             this.loadChar.Name = "loadChar";
-            this.loadChar.Size = new System.Drawing.Size(125, 23);
+            this.loadChar.Size = new System.Drawing.Size(115, 23);
             this.loadChar.TabIndex = 506;
             this.loadChar.Text = "Load Character";
             this.loadChar.UseVisualStyleBackColor = true;
@@ -195,9 +184,9 @@
             this.groupBox2.Controls.Add(this.description_set_1_normal);
             this.groupBox2.Controls.Add(this.viewcone_set_set_1_normal);
             this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Location = new System.Drawing.Point(17, 174);
+            this.groupBox2.Location = new System.Drawing.Point(85, 224);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(419, 109);
+            this.groupBox2.Size = new System.Drawing.Size(823, 73);
             this.groupBox2.TabIndex = 508;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Generic Sense Set Settings";
@@ -205,7 +194,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(214, 62);
+            this.label20.Location = new System.Drawing.Point(618, 21);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(169, 13);
             this.label20.TabIndex = 513;
@@ -214,7 +203,7 @@
             // max_damage_distance_scale_to_set_1_normal
             // 
             this.max_damage_distance_scale_to_set_1_normal.Enabled = false;
-            this.max_damage_distance_scale_to_set_1_normal.Location = new System.Drawing.Point(217, 78);
+            this.max_damage_distance_scale_to_set_1_normal.Location = new System.Drawing.Point(621, 37);
             this.max_damage_distance_scale_to_set_1_normal.Name = "max_damage_distance_scale_to_set_1_normal";
             this.max_damage_distance_scale_to_set_1_normal.Size = new System.Drawing.Size(187, 20);
             this.max_damage_distance_scale_to_set_1_normal.TabIndex = 514;
@@ -222,7 +211,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(12, 62);
+            this.label19.Location = new System.Drawing.Point(416, 21);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(136, 13);
             this.label19.TabIndex = 511;
@@ -231,7 +220,7 @@
             // max_hearing_distance_set_1_normal
             // 
             this.max_hearing_distance_set_1_normal.Enabled = false;
-            this.max_hearing_distance_set_1_normal.Location = new System.Drawing.Point(15, 78);
+            this.max_hearing_distance_set_1_normal.Location = new System.Drawing.Point(419, 37);
             this.max_hearing_distance_set_1_normal.Name = "max_hearing_distance_set_1_normal";
             this.max_hearing_distance_set_1_normal.Size = new System.Drawing.Size(187, 20);
             this.max_hearing_distance_set_1_normal.TabIndex = 512;
@@ -308,9 +297,9 @@
             this.senseBox.Controls.Add(this.min_raw_activation);
             this.senseBox.Controls.Add(this.max_raw_activation);
             this.senseBox.Controls.Add(this.label25);
-            this.senseBox.Location = new System.Drawing.Point(17, 317);
+            this.senseBox.Location = new System.Drawing.Point(298, 374);
             this.senseBox.Name = "senseBox";
-            this.senseBox.Size = new System.Drawing.Size(419, 269);
+            this.senseBox.Size = new System.Drawing.Size(417, 269);
             this.senseBox.TabIndex = 515;
             this.senseBox.TabStop = false;
             this.senseBox.Text = "Sense Settings";
@@ -559,7 +548,7 @@
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.squad_sense_activation_delay);
-            this.groupBox3.Location = new System.Drawing.Point(17, 71);
+            this.groupBox3.Location = new System.Drawing.Point(298, 71);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(419, 70);
             this.groupBox3.TabIndex = 515;
@@ -611,7 +600,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(452, 638);
+            this.ClientSize = new System.Drawing.Size(994, 731);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.senseBox);
             this.Controls.Add(this.groupBox2);
@@ -619,16 +608,12 @@
             this.Controls.Add(this.loadChar);
             this.Controls.Add(this.loadType);
             this.Controls.Add(this.senseType);
-            this.Controls.Add(this.label78);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.senseSets);
             this.Controls.Add(this.loadSet);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "CharViewconeEditor";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alien: Isolation Sense Editor";
+            this.Text = "Sense Editor";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.senseBox.ResumeLayout(false);
@@ -636,14 +621,12 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
         private System.Windows.Forms.Button loadType;
         private System.Windows.Forms.ComboBox senseType;
-        private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ComboBox senseSets;
         private System.Windows.Forms.Button loadSet;

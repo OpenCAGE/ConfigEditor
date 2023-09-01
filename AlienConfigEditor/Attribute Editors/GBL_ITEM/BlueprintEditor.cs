@@ -11,10 +11,11 @@ using System.IO;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using System.Xml.XPath;
+using WeifenLuo.WinFormsUI.Docking;
 
 namespace AlienConfigEditor
 {
-    public partial class BlueprintEditor : Form
+    public partial class BlueprintEditor : DockContent
     {
         //Common file paths
         string pathToWorkingBML;
@@ -25,10 +26,6 @@ namespace AlienConfigEditor
         public BlueprintEditor()
         {
             InitializeComponent();
-
-            this.WindowState = FormWindowState.Minimized;
-            this.Show();
-            this.WindowState = FormWindowState.Normal;
 
             //Update cursor and begin
             Cursor.Current = Cursors.WaitCursor;

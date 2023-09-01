@@ -2,10 +2,11 @@
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using WeifenLuo.WinFormsUI.Docking;
 
 namespace AlienConfigEditor
 {
-    public partial class RadiosityEditor : Form
+    public partial class RadiosityEditor : DockContent
     {
         string pathToLightingFile;
 
@@ -13,10 +14,6 @@ namespace AlienConfigEditor
         {
             InitializeComponent();
             pathToLightingFile = SharedData.pathToAI + @"\DATA\RADIOSITY_SETTINGS.TXT";
-
-            this.WindowState = FormWindowState.Minimized;
-            this.Show();
-            this.WindowState = FormWindowState.Normal;
         }
 
         private void btnSave_Click(object sender, EventArgs e)

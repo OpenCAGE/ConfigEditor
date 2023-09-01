@@ -43,7 +43,6 @@
             this.max_difficulty_2 = new System.Windows.Forms.TextBox();
             this.max_difficulty_3 = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.hackDifficulties = new System.Windows.Forms.ComboBox();
             this.btnSelectClass = new System.Windows.Forms.Button();
@@ -81,7 +80,7 @@
             this.groupBox1.Controls.Add(this.max_difficulty_2);
             this.groupBox1.Controls.Add(this.max_difficulty_3);
             this.groupBox1.Controls.Add(this.label40);
-            this.groupBox1.Location = new System.Drawing.Point(13, 41);
+            this.groupBox1.Location = new System.Drawing.Point(269, 159);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(439, 155);
             this.groupBox1.TabIndex = 322;
@@ -196,21 +195,11 @@
             this.label40.TabIndex = 243;
             this.label40.Text = "Max Difficulty For Tool Level 3";
             // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.Location = new System.Drawing.Point(48, 9);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(355, 29);
-            this.label78.TabIndex = 321;
-            this.label78.Text = "Alien: Isolation Hack Tool Editor";
-            // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(302, 428);
+            this.btnSave.Location = new System.Drawing.Point(720, 684);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(150, 35);
+            this.btnSave.Size = new System.Drawing.Size(262, 35);
             this.btnSave.TabIndex = 319;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -236,7 +225,7 @@
             "MELEE_HUMAN",
             "INNOCENT",
             "CUTSCENE_ANDROID"});
-            this.hackDifficulties.Location = new System.Drawing.Point(13, 202);
+            this.hackDifficulties.Location = new System.Drawing.Point(269, 320);
             this.hackDifficulties.Name = "hackDifficulties";
             this.hackDifficulties.Size = new System.Drawing.Size(327, 21);
             this.hackDifficulties.TabIndex = 318;
@@ -245,7 +234,7 @@
             // btnSelectClass
             // 
             this.btnSelectClass.Enabled = false;
-            this.btnSelectClass.Location = new System.Drawing.Point(346, 201);
+            this.btnSelectClass.Location = new System.Drawing.Point(602, 319);
             this.btnSelectClass.Name = "btnSelectClass";
             this.btnSelectClass.Size = new System.Drawing.Size(106, 23);
             this.btnSelectClass.TabIndex = 317;
@@ -270,7 +259,7 @@
             this.groupBox2.Controls.Add(this.selection_angle_increase_in_deg);
             this.groupBox2.Controls.Add(this.timer_countdown_seconds);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Location = new System.Drawing.Point(13, 230);
+            this.groupBox2.Location = new System.Drawing.Point(269, 348);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(439, 192);
             this.groupBox2.TabIndex = 323;
@@ -408,25 +397,20 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(461, 472);
+            this.ClientSize = new System.Drawing.Size(994, 731);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label78);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.hackDifficulties);
             this.Controls.Add(this.btnSelectClass);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
             this.Name = "HackingEditor";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Alien: Isolation Hack Tool Editor";
+            this.Text = "Hack Tool Editor";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -445,7 +429,6 @@
         private System.Windows.Forms.TextBox max_difficulty_2;
         private System.Windows.Forms.TextBox max_difficulty_3;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ComboBox hackDifficulties;
         private System.Windows.Forms.Button btnSelectClass;
