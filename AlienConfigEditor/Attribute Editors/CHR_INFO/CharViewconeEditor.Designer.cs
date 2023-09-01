@@ -184,9 +184,9 @@
             this.groupBox2.Controls.Add(this.description_set_1_normal);
             this.groupBox2.Controls.Add(this.viewcone_set_set_1_normal);
             this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Location = new System.Drawing.Point(12, 224);
+            this.groupBox2.Location = new System.Drawing.Point(85, 224);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(970, 73);
+            this.groupBox2.Size = new System.Drawing.Size(823, 73);
             this.groupBox2.TabIndex = 508;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Generic Sense Set Settings";
@@ -297,9 +297,9 @@
             this.senseBox.Controls.Add(this.min_raw_activation);
             this.senseBox.Controls.Add(this.max_raw_activation);
             this.senseBox.Controls.Add(this.label25);
-            this.senseBox.Location = new System.Drawing.Point(12, 374);
+            this.senseBox.Location = new System.Drawing.Point(298, 374);
             this.senseBox.Name = "senseBox";
-            this.senseBox.Size = new System.Drawing.Size(970, 269);
+            this.senseBox.Size = new System.Drawing.Size(417, 269);
             this.senseBox.TabIndex = 515;
             this.senseBox.TabStop = false;
             this.senseBox.Text = "Sense Settings";
@@ -548,9 +548,9 @@
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.squad_sense_activation_delay);
-            this.groupBox3.Location = new System.Drawing.Point(12, 73);
+            this.groupBox3.Location = new System.Drawing.Point(298, 71);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(970, 70);
+            this.groupBox3.Size = new System.Drawing.Size(419, 70);
             this.groupBox3.TabIndex = 515;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Generic Sense Set Settings";

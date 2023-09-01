@@ -135,9 +135,9 @@
             this.groupBox1.Controls.Add(this.linearAcceleration1);
             this.groupBox1.Controls.Add(this.label18);
             this.groupBox1.Controls.Add(this.linearVelocity1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 328);
+            this.groupBox1.Location = new System.Drawing.Point(299, 349);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(970, 229);
+            this.groupBox1.Size = new System.Drawing.Size(413, 229);
             this.groupBox1.TabIndex = 527;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Steering Boundary Data";
@@ -312,9 +312,9 @@
             this.groupBox4.Controls.Add(this.capsuleRadius);
             this.groupBox4.Controls.Add(this.label36);
             this.groupBox4.Controls.Add(this.capsuleHeight);
-            this.groupBox4.Location = new System.Drawing.Point(12, 114);
+            this.groupBox4.Location = new System.Drawing.Point(204, 113);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(970, 78);
+            this.groupBox4.Size = new System.Drawing.Size(612, 78);
             this.groupBox4.TabIndex = 528;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Misc Locomotion Settings";
