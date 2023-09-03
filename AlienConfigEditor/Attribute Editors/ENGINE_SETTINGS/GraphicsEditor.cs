@@ -19,6 +19,10 @@ namespace AlienConfigEditor
             InitializeComponent();
 
             _path = SharedData.pathToAI + @"\DATA\ENGINE_SETTINGS.XML";
+
+            //The GRAPHICS_SETTINGS.XML file commonly distributed in the community has a broken comment, so lets fix it.
+            File.WriteAllText(_path, File.ReadAllText(_path).Replace("<!– resolution in pixels. –>", " "));
+
             _xml = XDocument.Load(_path);
 
             //Get settings
