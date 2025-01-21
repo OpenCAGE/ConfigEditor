@@ -19,6 +19,10 @@ namespace AlienConfigEditor
             InitializeComponent();
 
             _path = SharedData.pathToAI + @"\DATA\ENGINE_SETTINGS.XML";
+
+            //The GRAPHICS_SETTINGS.XML file commonly distributed in the community has a broken comment, so lets fix it.
+            File.WriteAllText(_path, File.ReadAllText(_path).Replace("<!– resolution in pixels. –>", " "));
+
             _xml = XDocument.Load(_path);
 
             //Get settings
@@ -246,10 +250,10 @@ namespace AlienConfigEditor
             {
                 case "Resolution Size Name":
                     item.SubItems.Add(inputThree);
-                    windowedResolutionPresets.Items.Add(item);
+                    windowedResolutionPresets.Items.Insert(0, item);
                     break;
                 case "FOV Setting Name":
-                    fovPresets.Items.Add(item);
+                    fovPresets.Items.Insert(0, item);
                     break;
                 case "Shadowmap Quality Name":
                     shadowMapResolutionPresets.Items.Add(item);
@@ -258,7 +262,7 @@ namespace AlienConfigEditor
                     shadowMapFilterQualityPresets.Items.Add(item);
                     break;
                 case "LOD Setting Name":
-                    lodPresets.Items.Add(item);
+                    lodPresets.Items.Insert(0, item);
                     break;
             }
         }
@@ -311,7 +315,7 @@ namespace AlienConfigEditor
             IEnumerable<XElement> elements = _xml.XPathSelectElements("//Settings/Setting/Setting[18]");
             foreach (XElement el in elements)
             {
-                if (el.Attribute("name").Value.ToString() == "Field of View")
+                if (el.Attribute("name").Value.ToString() == "Field Of View")
                 {
                     el.RemoveNodes();
                     for (int i = 0; i < fovPresets.Items.Count; i++)
@@ -325,7 +329,7 @@ namespace AlienConfigEditor
                 {
                     el.RemoveNodes();
                     for (int i = 0; i < lodPresets.Items.Count; i++)
-                        el.Add(XElement.Parse("<Quality name=\"" + lodPresets.Items[i].SubItems[0].Text + "\" float=\"" + lodPresets.Items[i].SubItems[0].Text + "\" precedence=\"" + (lodPresets.Items.Count - i) + "\" />"));
+                        el.Add(XElement.Parse("<Quality name=\"" + lodPresets.Items[i].SubItems[0].Text + "\" float=\"" + lodPresets.Items[i].SubItems[1].Text + "\" precedence=\"" + (lodPresets.Items.Count - i) + "\" />"));
                 }
             }
             IEnumerable<XElement> elements3 = _xml.XPathSelectElements("//Settings/Setting/Setting[8]");
@@ -335,7 +339,7 @@ namespace AlienConfigEditor
                 {
                     el.RemoveNodes();
                     for (int i = 0; i < shadowMapResolutionPresets.Items.Count; i++)
-                        el.Add(XElement.Parse("<Quality name=\"" + shadowMapResolutionPresets.Items[i].SubItems[0].Text + "\" int=\"" + shadowMapResolutionPresets.Items[i].SubItems[0].Text + "\" precedence=\"" + (shadowMapResolutionPresets.Items.Count - i) + "\" />"));
+                        el.Add(XElement.Parse("<Quality name=\"" + shadowMapResolutionPresets.Items[i].SubItems[0].Text + "\" int=\"" + shadowMapResolutionPresets.Items[i].SubItems[1].Text + "\" precedence=\"" + (i+1) + "\" />"));
                 }
             }
             IEnumerable<XElement> elements4 = _xml.XPathSelectElements("//Settings/Setting/Setting[9]");
@@ -345,7 +349,7 @@ namespace AlienConfigEditor
                 {
                     el.RemoveNodes();
                     for (int i = 0; i < shadowMapFilterQualityPresets.Items.Count; i++)
-                        el.Add(XElement.Parse("<Quality name=\"" + shadowMapFilterQualityPresets.Items[i].SubItems[0].Text + "\" int=\"" + shadowMapFilterQualityPresets.Items[i].SubItems[0].Text + "\" precedence=\"" + (shadowMapFilterQualityPresets.Items.Count - i) + "\" />"));
+                        el.Add(XElement.Parse("<Quality name=\"" + shadowMapFilterQualityPresets.Items[i].SubItems[0].Text + "\" int=\"" + shadowMapFilterQualityPresets.Items[i].SubItems[1].Text + "\" precedence=\"" + (i+1) + "\" />"));
                 }
             }
 

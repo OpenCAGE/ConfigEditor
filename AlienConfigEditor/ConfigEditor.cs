@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Windows.Forms;
+using System.Windows.Media;
 using WeifenLuo.WinFormsUI.Docking;
 
 namespace AlienConfigEditor
@@ -14,6 +15,11 @@ namespace AlienConfigEditor
         public ConfigEditor()
         {
             InitializeComponent();
+
+#if !DEBUG
+            //Hide the text db editor for now, it's unfinished
+            treeView1.Nodes.Remove(treeView1.Nodes.Find("Node0", true)[0]);
+#endif
 
             treeView1.ExpandAll();
 
@@ -32,7 +38,7 @@ namespace AlienConfigEditor
             TreeNode node = treeView1.SelectedNode;
             if (node == null || node.Tag == null) return;
 
-            ShowTab((Tabs)node.Tag);
+            ShowTab((Tabs)Enum.Parse(typeof(Tabs), node.Tag.ToString()));
         }
 
         private void ShowTab(Tabs tab)
@@ -102,6 +108,9 @@ namespace AlienConfigEditor
                 case Tabs.LOCALISATION_EDITOR:
                     Content = new LocalisationEditor();
                     break;
+                case Tabs.LEVEL_TEXT_DB_EDITOR:
+                    Content = new LevelTextDBEditor();
+                    break;
             }
         }
     }
@@ -123,5 +132,6 @@ namespace AlienConfigEditor
         MATERIAL_EDITOR,
         GRAPHICS_SETTINGS_EDITOR,
         LOCALISATION_EDITOR,
+        LEVEL_TEXT_DB_EDITOR,
     }
 }
