@@ -16,6 +16,11 @@ namespace AlienConfigEditor
         {
             InitializeComponent();
 
+#if !DEBUG
+            //Hide the text db editor for now, it's unfinished
+            treeView1.Nodes.Remove(treeView1.Nodes.Find("Node0", true)[0]);
+#endif
+
             treeView1.ExpandAll();
 
 #if DEBUG
