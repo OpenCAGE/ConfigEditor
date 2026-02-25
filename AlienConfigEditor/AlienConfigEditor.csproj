@@ -51,7 +51,9 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml" />
@@ -105,6 +107,12 @@
     <Compile Include="Attribute Editors\MATERIAL_DATA\MaterialEditorPanel.Designer.cs">
       <DependentUpon>MaterialEditorPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Attribute Editors\Misc\GlobalConstantsEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attribute Editors\Misc\GlobalConstantsEditor.Designer.cs">
+      <DependentUpon>GlobalConstantsEditor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Attribute Editors\Misc\KeycodeEditor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,8 +132,6 @@
       <DependentUpon>LocalisationEditor.cs</DependentUpon>
     </Compile>
     <Compile Include="Attribute Editors\Misc\LocalisationHandler.cs" />
-    <Compile Include="BML Scripts\AlienConverter.cs" />
-    <Compile Include="BML Scripts\AlienString.cs" />
     <Compile Include="Attribute Editors\AYZ_AttributeEditors.cs" />
     <Compile Include="Attribute Editors\GBL_ITEM\BlueprintEditor.cs">
       <SubType>Form</SubType>
@@ -145,7 +151,6 @@
     <Compile Include="Attribute Editors\GBL_ITEM\BlueprintEditorPopup.Designer.cs">
       <DependentUpon>BlueprintEditorPopup.cs</DependentUpon>
     </Compile>
-    <Compile Include="BML Scripts\BML.cs" />
     <Compile Include="Attribute Editors\CHR_INFO\CharEd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +233,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Attribute Editors\MATERIAL_DATA\MaterialEditorPanel.resx">
       <DependentUpon>MaterialEditorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attribute Editors\Misc\GlobalConstantsEditor.resx">
+      <DependentUpon>GlobalConstantsEditor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Attribute Editors\Misc\KeycodeEditor.resx">
       <DependentUpon>KeycodeEditor.cs</DependentUpon>

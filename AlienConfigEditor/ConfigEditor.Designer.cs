@@ -36,36 +36,38 @@
             System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Hack Tool Difficulties");
             System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Localisation");
             System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Level Text Databases");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Core Game", new System.Windows.Forms.TreeNode[] {
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Global Constants");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Core Game", new System.Windows.Forms.TreeNode[] {
             treeNode1,
             treeNode2,
             treeNode3,
             treeNode4,
             treeNode5,
             treeNode6,
-            treeNode7});
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Difficulty Modifiers");
-            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Senses");
-            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Alien-Specific");
-            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Vision");
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Attributes");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Locomotion");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Character", new System.Windows.Forms.TreeNode[] {
-            treeNode9,
+            treeNode7,
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Difficulty Modifiers");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Senses");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("Alien-Specific");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("Vision");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("Attributes");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("Locomotion");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Character", new System.Windows.Forms.TreeNode[] {
             treeNode10,
             treeNode11,
             treeNode12,
             treeNode13,
-            treeNode14});
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("Items and Weapons");
-            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Ammo");
-            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Inventory", new System.Windows.Forms.TreeNode[] {
-            treeNode16,
-            treeNode17});
-            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Configurations", new System.Windows.Forms.TreeNode[] {
-            treeNode8,
-            treeNode15,
+            treeNode14,
+            treeNode15});
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("Items and Weapons");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("Ammo");
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("Inventory", new System.Windows.Forms.TreeNode[] {
+            treeNode17,
             treeNode18});
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("Configurations", new System.Windows.Forms.TreeNode[] {
+            treeNode9,
+            treeNode16,
+            treeNode19});
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigEditor));
             this.openMaterialPropEditor = new System.Windows.Forms.Button();
             this.dockPanel1 = new WeifenLuo.WinFormsUI.Docking.DockPanel();
@@ -128,48 +130,51 @@
             treeNode7.Name = "Node0";
             treeNode7.Tag = "LEVEL_TEXT_DB_EDITOR";
             treeNode7.Text = "Level Text Databases";
-            treeNode8.ImageKey = "Property.ico";
-            treeNode8.Name = "Node4";
-            treeNode8.SelectedImageIndex = 2;
-            treeNode8.Text = "Core Game";
-            treeNode9.Name = "Node13";
-            treeNode9.Tag = Tabs.DIFFICULTY_EDITOR;
-            treeNode9.Text = "Difficulty Modifiers";
-            treeNode10.Name = "Node14";
-            treeNode10.Tag = Tabs.SENSE_EDITOR;
-            treeNode10.Text = "Senses";
-            treeNode11.Name = "Node15";
-            treeNode11.Tag = Tabs.ALIEN_CONFIG_EDITOR;
-            treeNode11.Text = "Alien-Specific";
-            treeNode12.Name = "Node16";
-            treeNode12.Tag = Tabs.VIEWCONE_EDITOR;
-            treeNode12.Text = "Vision";
-            treeNode13.Name = "Node17";
-            treeNode13.Tag = Tabs.CHARACTER_ATTRIBUTE_EDITOR;
-            treeNode13.Text = "Attributes";
-            treeNode14.Name = "Node18";
-            treeNode14.Tag = Tabs.LOCOMOTION_EDITOR;
-            treeNode14.Text = "Locomotion";
-            treeNode15.ImageKey = "User.ico";
-            treeNode15.Name = "Node5";
-            treeNode15.SelectedImageIndex = 4;
-            treeNode15.Text = "Character";
-            treeNode16.Name = "Node19";
-            treeNode16.Tag = Tabs.ITEM_AND_WEAPON_EDITOR;
-            treeNode16.Text = "Items and Weapons";
-            treeNode17.Name = "Node20";
-            treeNode17.Tag = Tabs.WEAPON_AMMO_EDITOR;
-            treeNode17.Text = "Ammo";
-            treeNode18.ImageKey = "CategoryPageItemTemplate.ico";
-            treeNode18.Name = "Node6";
-            treeNode18.SelectedImageIndex = 0;
-            treeNode18.Text = "Inventory";
-            treeNode19.ImageKey = "Settings.ico";
-            treeNode19.Name = "Node3";
-            treeNode19.SelectedImageIndex = 3;
-            treeNode19.Text = "Configurations";
+            treeNode8.Name = "Node2";
+            treeNode8.Text = "Global Constants";
+            treeNode8.Tag = Tabs.GLOBAL_CONSTANTS_EDITOR;
+            treeNode9.ImageKey = "Property.ico";
+            treeNode9.Name = "Node4";
+            treeNode9.SelectedImageIndex = 2;
+            treeNode9.Text = "Core Game";
+            treeNode10.Name = "Node13";
+            treeNode10.Tag = Tabs.DIFFICULTY_EDITOR;
+            treeNode10.Text = "Difficulty Modifiers";
+            treeNode11.Name = "Node14";
+            treeNode11.Tag = Tabs.SENSE_EDITOR;
+            treeNode11.Text = "Senses";
+            treeNode12.Name = "Node15";
+            treeNode12.Tag = Tabs.ALIEN_CONFIG_EDITOR;
+            treeNode12.Text = "Alien-Specific";
+            treeNode13.Name = "Node16";
+            treeNode13.Tag = Tabs.VIEWCONE_EDITOR;
+            treeNode13.Text = "Vision";
+            treeNode14.Name = "Node17";
+            treeNode14.Tag = Tabs.CHARACTER_ATTRIBUTE_EDITOR;
+            treeNode14.Text = "Attributes";
+            treeNode15.Name = "Node18";
+            treeNode15.Tag = Tabs.LOCOMOTION_EDITOR;
+            treeNode15.Text = "Locomotion";
+            treeNode16.ImageKey = "User.ico";
+            treeNode16.Name = "Node5";
+            treeNode16.SelectedImageIndex = 4;
+            treeNode16.Text = "Character";
+            treeNode17.Name = "Node19";
+            treeNode17.Tag = Tabs.ITEM_AND_WEAPON_EDITOR;
+            treeNode17.Text = "Items and Weapons";
+            treeNode18.Name = "Node20";
+            treeNode18.Tag = Tabs.WEAPON_AMMO_EDITOR;
+            treeNode18.Text = "Ammo";
+            treeNode19.ImageKey = "CategoryPageItemTemplate.ico";
+            treeNode19.Name = "Node6";
+            treeNode19.SelectedImageIndex = 0;
+            treeNode19.Text = "Inventory";
+            treeNode20.ImageKey = "Settings.ico";
+            treeNode20.Name = "Node3";
+            treeNode20.SelectedImageIndex = 3;
+            treeNode20.Text = "Configurations";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode19});
+            treeNode20});
             this.treeView1.SelectedImageIndex = 1;
             this.treeView1.Size = new System.Drawing.Size(234, 772);
             this.treeView1.TabIndex = 56;

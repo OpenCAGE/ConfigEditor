@@ -111,6 +111,9 @@ namespace AlienConfigEditor
                 case Tabs.LEVEL_TEXT_DB_EDITOR:
                     Content = new LevelTextDBEditor();
                     break;
+                case Tabs.GLOBAL_CONSTANTS_EDITOR:
+                    Content = new GlobalConstantsEditor();
+                    break;
             }
         }
     }
@@ -133,5 +136,6 @@ namespace AlienConfigEditor
         GRAPHICS_SETTINGS_EDITOR,
         LOCALISATION_EDITOR,
         LEVEL_TEXT_DB_EDITOR,
+        GLOBAL_CONSTANTS_EDITOR,
     }
 }

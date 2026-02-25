@@ -4,7 +4,8 @@
  * www.mattfiler.co.uk
  * 
  */
- 
+
+using CATHODE;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,6 +13,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
 
@@ -83,19 +85,10 @@ namespace AlienConfigEditor
         */
         private void convertBMLtoXML(string fileName, string filePath)
         {
-            //Required filepaths
-            string filepath_GameBML = SharedData.pathToAI + filePath + fileName + ".BML"; //Game BML file
-            string filepath_WorkingBML = SharedData.pathToWorkingFiles + fileName + ".BML"; //Working BML file
-            string filepath_WorkingXML = SharedData.pathToWorkingFiles + fileName + ".xml"; //Working XML file
+            //todo - deprecate this
 
-            //Copy correct BML to working directory
-            File.Copy(filepath_GameBML, filepath_WorkingBML);
-
-            //Convert BML to XML
-            new AlienConverter(filepath_WorkingBML, filepath_WorkingXML).Run();
-
-            //Delete BML
-            File.Delete(filepath_WorkingBML);
+            BML bml = new BML(SharedData.pathToAI + filePath + fileName + ".BML");
+            bml.Content.Save(SharedData.pathToWorkingFiles + fileName + ".xml");
         }
 
 
@@ -106,25 +99,23 @@ namespace AlienConfigEditor
         */
         public bool saveXML(string fileName, string filePath, XDocument loadedXML)
         {
+            //todo - deprecate this
+
             try
             {
-                //Required filepaths
-                string filepath_GameBML = SharedData.pathToAI + filePath + fileName + ".BML"; //Game BML file
-                string filepath_WorkingBML = SharedData.pathToWorkingFiles + fileName + ".BML"; //Working BML file
                 string filepath_WorkingXML = SharedData.pathToWorkingFiles + fileName + ".xml"; //Working XML file
 
                 //Save XML values
                 loadedXML.Save(filepath_WorkingXML);
-                
-                //Convert XML to BML
-                new AlienConverter(filepath_WorkingXML, filepath_WorkingBML).Run();
+                XmlDocument xml = new XmlDocument();
+                xml.Load(filepath_WorkingXML);
 
-                //Copy new BML to game directory (delete original first)
-                File.Delete(filepath_GameBML);
-                File.Copy(filepath_WorkingBML, filepath_GameBML);
-                File.Delete(filepath_WorkingBML);
+                BML bml = new BML(SharedData.pathToAI + filePath + fileName + ".BML");
+                bml.Content = xml;
+                bml.Save();
 
-                //Succeeded
+                File.Delete(filepath_WorkingXML);
+
                 return true;
             }
             catch

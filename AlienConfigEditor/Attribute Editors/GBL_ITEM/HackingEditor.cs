@@ -5,10 +5,12 @@
  * 
  */
 
+using CATHODE;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Windows.Forms;
+using System.Xml;
 using System.Xml.Linq;
 using System.Xml.XPath;
 using WeifenLuo.WinFormsUI.Docking;
@@ -204,16 +206,12 @@ namespace AlienConfigEditor
                 //Save all to XML
                 ChrAttributeXML.Save(pathToWorkingXML);
 
-                //Convert XML to BML
-                new AlienConverter(pathToWorkingXML, pathToWorkingBML).Run();
-
-                //Copy new BML to game directory & remove working files
-                File.Delete(pathToGameBML);
-                File.Copy(pathToWorkingBML, pathToGameBML);
-                File.Delete(pathToGameXML);
-                File.Copy(pathToWorkingXML, pathToGameXML);
-                File.Delete(pathToWorkingBML);
-                //File.Delete(pathToWorkingXML);
+                //temp! remove this
+                XmlDocument xml = new XmlDocument();
+                xml.Load(pathToWorkingXML);
+                BML bml = new BML(pathToGameBML);
+                bml.Content = xml;
+                bml.Save();
 
                 //Done
                 MessageBox.Show("Saved new hack difficulty settings.");
